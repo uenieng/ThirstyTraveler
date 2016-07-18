@@ -9,7 +9,7 @@
         <!--mainpage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="mainpage" customClass="MapScene" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="map" id="BYZ-38-t0r" userLabel="mainpage" customClass="MapScene" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -63,6 +63,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uC5-Nr-pg7">
                                 <rect key="frame" x="181" y="284" width="92" height="30"/>
                                 <state key="normal" title="Hidden Track"/>
+                                <connections>
+                                    <segue destination="Tih-DR-fhC" kind="presentation" id="62Y-Jd-pJ9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -149,7 +152,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xpk-h4-d8W" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="413.5" y="-297.5"/>
+            <point key="canvasLocation" x="413.5" y="-221.5"/>
         </scene>
         <!--favorite-->
         <scene sceneID="OuL-5P-pbk">
@@ -248,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sK-iz-I73" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26.5" y="-297.5"/>
+            <point key="canvasLocation" x="-21.5" y="596.5"/>
         </scene>
         <!--anam brew detail-->
         <scene sceneID="45e-e0-dlx">
@@ -265,6 +268,12 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_9959" translatesAutoresizingMaskIntoConstraints="NO" id="yoN-FW-PZB">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wSt-Bh-6n5">
+                                <rect key="frame" x="44" y="61" width="141" height="171"/>
+                                <connections>
+                                    <segue destination="suX-AO-hlc" kind="embed" id="YF5-aN-lMI"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -272,7 +281,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vdO-UE-BE4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="236.5" y="386.5"/>
+            <point key="canvasLocation" x="-79.5" y="-221.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="eOV-Yk-6Y0">
@@ -292,6 +301,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ai-S6-eFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2246" y="899"/>
+        </scene>
+        <!--Paging Scene-->
+        <scene sceneID="6Ve-Lm-kSs">
+            <objects>
+                <viewController id="suX-AO-hlc" customClass="PagingScene" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nfs-ay-WPX">
+                        <rect key="frame" x="0.0" y="0.0" width="141" height="171"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="imageBaseName" value="anam"/>
+                    </userDefinedRuntimeAttributes>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Yc-35-s6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188.5" y="-714.5"/>
         </scene>
     </scenes>
     <resources>

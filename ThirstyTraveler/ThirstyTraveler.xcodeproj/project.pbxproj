@@ -16,7 +16,6 @@
 		DA6BBFD11D3734700049C008 /* ThirstyTravelerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFD01D3734700049C008 /* ThirstyTravelerUITests.swift */; };
 		DA6BBFE01D3734A50049C008 /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6BBFDE1D3734A50049C008 /* PilotPlant.framework */; };
 		DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFDF1D3734A50049C008 /* UIViewController+Navigation.swift */; };
-		DA6BBFE21D3734B20049C008 /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6BBFDE1D3734A50049C008 /* PilotPlant.framework */; };
 		DA6BBFE31D3734B20049C008 /* PilotPlant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6BBFDE1D3734A50049C008 /* PilotPlant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
@@ -75,7 +74,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA6BBFE01D3734A50049C008 /* PilotPlant.framework in Frameworks */,
-				DA6BBFE21D3734B20049C008 /* PilotPlant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +519,7 @@
 				DA6BBFD71D3734700049C008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA6BBFD81D3734700049C008 /* Build configuration list for PBXNativeTarget "ThirstyTravelerTests" */ = {
 			isa = XCConfigurationList;
@@ -529,6 +528,7 @@
 				DA6BBFDA1D3734700049C008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA6BBFDB1D3734700049C008 /* Build configuration list for PBXNativeTarget "ThirstyTravelerUITests" */ = {
 			isa = XCConfigurationList;
@@ -537,6 +537,7 @@
 				DA6BBFDD1D3734700049C008 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

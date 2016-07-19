@@ -4,6 +4,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--mainpage-->
@@ -19,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="스크린샷 2016-07-15 오후 1.48.16" translatesAutoresizingMaskIntoConstraints="NO" id="JP2-k5-dqV">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.5" y="0.5" width="375" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="667" id="cbd-9X-514"/>
                                     <constraint firstAttribute="width" constant="375" id="d8l-np-qLg"/>
@@ -41,27 +42,64 @@
                                     <outlet property="delegate" destination="vPZ-qr-wHM" id="4FL-nH-PiJ"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R6h-bk-tJ7">
-                                <rect key="frame" x="10" y="109" width="52" height="30"/>
-                                <state key="normal" title="Factory"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JP-ME-Puk">
+                                <rect key="frame" x="15.5" y="200.5" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="bjN-Vh-hVb"/>
+                                    <constraint firstAttribute="width" constant="44" id="pmb-oD-pJ3"/>
+                                </constraints>
+                                <state key="normal" title="Brewery" image="brewery"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2JP-ME-Puk">
-                                <rect key="frame" x="10" y="147" width="57" height="30"/>
-                                <state key="normal" title="Brewery"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-Ic-gK7">
-                                <rect key="frame" x="10" y="185" width="35" height="30"/>
-                                <state key="normal" title="Draft"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhz-Ic-gK7">
+                                <rect key="frame" x="15.5" y="256" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Cj6-uU-jeg"/>
+                                    <constraint firstAttribute="width" constant="44" id="pyi-hh-zMm"/>
+                                </constraints>
+                                <state key="normal" title="Draft" image="draft0"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jxA-xI-Iuk">
-                                <rect key="frame" x="147" y="412" width="34" height="30"/>
+                                <rect key="frame" x="125" y="412" width="34" height="30"/>
                                 <state key="normal" title="Cass"/>
                                 <connections>
                                     <segue destination="vD4-fM-xff" kind="presentation" id="Adz-ji-4oY"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R6h-bk-tJ7">
+                                <rect key="frame" x="12.5" y="142" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="EJc-eh-joP"/>
+                                    <constraint firstAttribute="height" constant="50" id="ssK-bV-nJO"/>
+                                </constraints>
+                                <state key="normal" image="noun_219411_cc">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Factory">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <state key="selected">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Factory">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="smallSystem"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Px0-xj-a81">
+                                <rect key="frame" x="203" y="276" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uC5-Nr-pg7">
-                                <rect key="frame" x="181" y="284" width="92" height="30"/>
+                                <rect key="frame" x="178" y="293" width="92" height="30"/>
                                 <state key="normal" title="Hidden Track"/>
                                 <connections>
                                     <segue destination="Tih-DR-fhC" kind="presentation" id="62Y-Jd-pJ9"/>
@@ -70,10 +108,16 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dhz-Ic-gK7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="5/6" id="5Lb-Nd-DMV"/>
                             <constraint firstItem="JP2-k5-dqV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A6O-OE-jeB"/>
+                            <constraint firstItem="dhz-Ic-gK7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1/5" id="DdX-6w-77f"/>
                             <constraint firstItem="kv2-7I-b0W" firstAttribute="bottom" secondItem="8bC-Xf-vdC" secondAttribute="bottomMargin" id="DmF-SB-bvn"/>
+                            <constraint firstItem="2JP-ME-Puk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1/5" id="Gc8-Vu-Ggm"/>
+                            <constraint firstItem="2JP-ME-Puk" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="4/6" id="Qec-yx-g3g"/>
                             <constraint firstItem="yy8-Jl-Dph" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="SVK-nT-hP0"/>
                             <constraint firstAttribute="trailingMargin" secondItem="yy8-Jl-Dph" secondAttribute="trailing" constant="-20" id="Tce-fg-xkc"/>
+                            <constraint firstItem="R6h-bk-tJ7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="3/6" id="buB-vv-vA9"/>
+                            <constraint firstItem="R6h-bk-tJ7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1/5" id="eS4-IT-1Um"/>
                             <constraint firstItem="JP2-k5-dqV" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fwz-nD-75D"/>
                             <constraint firstItem="yy8-Jl-Dph" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="20" id="hb3-A0-0eZ"/>
                             <constraint firstItem="kv2-7I-b0W" firstAttribute="top" secondItem="yy8-Jl-Dph" secondAttribute="bottom" id="lMU-90-jbN"/>
@@ -103,7 +147,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-730.5" y="25.5"/>
+            <point key="canvasLocation" x="-648.5" y="-12.5"/>
         </scene>
         <!--setting 01-->
         <scene sceneID="CWa-DA-eRd">
@@ -274,6 +318,13 @@
                                     <segue destination="suX-AO-hlc" kind="embed" id="YF5-aN-lMI"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jTv-IL-bNk">
+                                <rect key="frame" x="164" y="533" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="modalDismiss:" destination="Tih-DR-fhC" eventType="touchUpInside" id="JxJ-BF-qkp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -306,18 +357,23 @@
         <scene sceneID="6Ve-Lm-kSs">
             <objects>
                 <viewController id="suX-AO-hlc" customClass="PagingScene" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Nfs-ay-WPX">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="oZb-UU-DGf"/>
+                        <viewControllerLayoutGuide type="bottom" id="oBX-6b-ke8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="Nfs-ay-WPX">
                         <rect key="frame" x="0.0" y="0.0" width="141" height="171"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="string" keyPath="imageBaseName" value="anam"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="pageIndicator" value="YES"/>
                     </userDefinedRuntimeAttributes>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Yc-35-s6l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="188.5" y="-714.5"/>
+            <point key="canvasLocation" x="330.5" y="-738.5"/>
         </scene>
     </scenes>
     <resources>
@@ -327,6 +383,9 @@
         <image name="IMG_8746" width="1312" height="2336"/>
         <image name="IMG_8800" width="1312" height="2368"/>
         <image name="IMG_9959" width="1376" height="2432"/>
+        <image name="brewery" width="700" height="700"/>
+        <image name="draft0" width="700" height="700"/>
+        <image name="noun_219411_cc" width="700" height="700"/>
         <image name="스크린샷 2016-07-15 오후 1.48.16" width="748" height="1156"/>
     </resources>
 </document>

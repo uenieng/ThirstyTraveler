@@ -33,6 +33,11 @@ class beerPlace {
         }//place type title 닫음
     }// enum placetype 닫음
     
-    init (
+    init (name:String, type:placeType, location:(Double,Double)){
+        self.name = name
+        self.type = type
+        self.location = location
+        
+    }
     
 } //class 닫음

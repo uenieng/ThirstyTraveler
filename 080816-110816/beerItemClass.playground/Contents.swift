@@ -3,16 +3,16 @@
 import UIKit
 
 
-class beerPlace {
+class BeerPlace {
  
     let name:String
-    let type:placeType
+    let type:PlaceType
     var ratings:Double?
     var location:(Double,Double)
     var wishlist:Bool=false
     var haveBeen:Bool=false
     
-    enum placeType{
+    enum PlaceType{
         case beerFactory
         case beerBrewery
         case beerDraft
@@ -33,7 +33,7 @@ class beerPlace {
         }//place type title 닫음
     }// enum placetype 닫음
     
-    init (name:String, type:placeType, location:(Double,Double)){
+    init (name:String, type:PlaceType, location:(Double,Double)){
         self.name = name
         self.type = type
         self.location = location
@@ -42,6 +42,12 @@ class beerPlace {
     
     
 } //class 닫음
+
+
+let cass = BeerPlace(name:"cass", type:.beerFactory, location:(137,125))
+let hiddenTrack = BeerPlace(name:"Hidden Track", type:.beerBrewery, location:(136,123))
+let birdnamu = BeerPlace(name:"Birdnamu", type:.beerBrewery, location:(123,456))
+let nairobi = BeerPlace(name:"Nairobi", type:.beerDraft, location:(123,457))
 
 
 

@@ -460,7 +460,7 @@
         <!--favorite-->
         <scene sceneID="OuL-5P-pbk">
             <objects>
-                <viewController title="favorite" id="B6O-vX-x3Z" customClass="ViewController" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="favorite" id="B6O-vX-x3Z" customClass="UITableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Eo4-eO-0es"/>
                         <viewControllerLayoutGuide type="bottom" id="rsa-MD-wiu"/>

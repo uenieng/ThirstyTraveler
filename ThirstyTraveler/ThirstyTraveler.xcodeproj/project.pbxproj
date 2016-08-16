@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3BEC83141D62D1B000B60366 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83131D62D1B000B60366 /* Factory.swift */; };
 		DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB01D37346F0049C008 /* AppDelegate.swift */; };
 		DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB21D37346F0049C008 /* ViewController.swift */; };
 		DA6BBFB61D37346F0049C008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6BBFB41D37346F0049C008 /* Main.storyboard */; };
@@ -51,6 +52,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3BEC83131D62D1B000B60366 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		DA6BBFAD1D37346F0049C008 /* ThirstyTraveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirstyTraveler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6BBFB01D37346F0049C008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6BBFB21D37346F0049C008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				DA6BBFB71D37346F0049C008 /* Assets.xcassets */,
 				DA6BBFB91D37346F0049C008 /* LaunchScreen.storyboard */,
 				DA6BBFBC1D37346F0049C008 /* Info.plist */,
+				3BEC83131D62D1B000B60366 /* Factory.swift */,
 			);
 			path = ThirstyTraveler;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3BEC83141D62D1B000B60366 /* Factory.swift in Sources */,
 				DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */,
 				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
 				DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */,

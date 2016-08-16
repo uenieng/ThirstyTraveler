@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="B6O-vX-x3Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="eDK-dF-vdT">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -241,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91i-xI-SJN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-744.5" y="1713.5"/>
+            <point key="canvasLocation" x="-1613.5" y="1329.5"/>
         </scene>
         <!--Settings table-->
         <scene sceneID="B86-WT-Z5q">
@@ -456,77 +456,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RaW-Dm-q2P" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-227" y="1604"/>
-        </scene>
-        <!--favorite-->
-        <scene sceneID="OuL-5P-pbk">
-            <objects>
-                <viewController title="favorite" id="B6O-vX-x3Z" customClass="UITableViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Eo4-eO-0es"/>
-                        <viewControllerLayoutGuide type="bottom" id="rsa-MD-wiu"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="yJE-VJ-14d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="28M-8z-tPz">
-                                <rect key="frame" x="20" y="55" width="335" height="29"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="335" id="QhN-cZ-ZAU"/>
-                                </constraints>
-                                <segments>
-                                    <segment title="Favorite"/>
-                                    <segment title="Have been"/>
-                                </segments>
-                            </segmentedControl>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCD-ER-H5m">
-                                <rect key="frame" x="0.0" y="109" width="375" height="509"/>
-                                <connections>
-                                    <segue destination="5mV-ow-y7p" kind="embed" id="oVn-5H-UVc"/>
-                                </connections>
-                            </containerView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="rsa-MD-wiu" firstAttribute="top" secondItem="SCD-ER-H5m" secondAttribute="bottom" id="4w7-g9-GCL"/>
-                            <constraint firstItem="SCD-ER-H5m" firstAttribute="width" secondItem="yJE-VJ-14d" secondAttribute="width" id="ReJ-j2-TnX"/>
-                            <constraint firstItem="28M-8z-tPz" firstAttribute="centerX" secondItem="yJE-VJ-14d" secondAttribute="centerX" id="WZQ-RH-Y3h"/>
-                            <constraint firstItem="SCD-ER-H5m" firstAttribute="top" secondItem="28M-8z-tPz" secondAttribute="bottom" constant="26" id="ace-98-1Nq"/>
-                            <constraint firstItem="28M-8z-tPz" firstAttribute="top" secondItem="Eo4-eO-0es" secondAttribute="bottom" constant="35" id="eov-nH-p71"/>
-                            <constraint firstItem="SCD-ER-H5m" firstAttribute="centerX" secondItem="yJE-VJ-14d" secondAttribute="centerX" id="r8c-He-5PC"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="SpP-fW-A5o"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="L29-1o-g7q" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-744.5" y="898.5"/>
-        </scene>
-        <!--settings 02-->
-        <scene sceneID="aIS-8n-B93">
-            <objects>
-                <viewController title="settings 02" id="Xy0-39-TPD" customClass="ViewController" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EU3-YO-zKW"/>
-                        <viewControllerLayoutGuide type="bottom" id="qyV-VB-izx"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Kko-oQ-6o2">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_8746" translatesAutoresizingMaskIntoConstraints="NO" id="e41-BL-irv">
-                                <rect key="frame" x="7" y="0.0" width="375" height="667"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jnB-1a-3My" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="418.5" y="1343.5"/>
         </scene>
         <!--cass detail-->
         <scene sceneID="zc6-Q7-LHc">
@@ -1095,14 +1024,60 @@
                     </tabBar>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="flw-bI-Wpw"/>
-                        <segue destination="B6O-vX-x3Z" kind="relationship" relationship="viewControllers" id="KZj-Is-Bbt"/>
-                        <segue destination="nJW-41-cAT" kind="relationship" relationship="viewControllers" id="TEC-I9-6eq"/>
-                        <segue destination="f0Z-5O-ygn" kind="relationship" relationship="viewControllers" id="SQ6-og-r7d"/>
+                        <segue destination="VqU-Pe-AIB" kind="relationship" relationship="viewControllers" id="SiH-ch-gzm"/>
+                        <segue destination="nJW-41-cAT" kind="relationship" relationship="viewControllers" id="eqH-EQ-RTV"/>
+                        <segue destination="f0Z-5O-ygn" kind="relationship" relationship="viewControllers" id="u5i-Ss-cZU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ai-S6-eFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2246" y="899"/>
+        </scene>
+        <!--Favorite-->
+        <scene sceneID="cKI-kW-jz3">
+            <objects>
+                <viewController title="Favorite" id="VqU-Pe-AIB" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="inQ-UV-ccj"/>
+                        <viewControllerLayoutGuide type="bottom" id="bDV-Jp-OaC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v5b-6f-VbI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qac-u9-YRr">
+                                <rect key="frame" x="20" y="44" width="335" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="OVt-h4-ARW"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Favorite"/>
+                                    <segment title="Have Been"/>
+                                </segments>
+                            </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-0y-uzD">
+                                <rect key="frame" x="0.0" y="103" width="375" height="515"/>
+                                <connections>
+                                    <segue destination="5mV-ow-y7p" kind="embed" id="Egh-cI-2ff"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qac-u9-YRr" firstAttribute="centerX" secondItem="v5b-6f-VbI" secondAttribute="centerX" id="4aV-Xm-mzk"/>
+                            <constraint firstItem="gW6-0y-uzD" firstAttribute="top" secondItem="qac-u9-YRr" secondAttribute="bottom" constant="31" id="7he-46-Gve"/>
+                            <constraint firstItem="gW6-0y-uzD" firstAttribute="width" secondItem="v5b-6f-VbI" secondAttribute="width" id="CN8-qO-RAS"/>
+                            <constraint firstItem="bDV-Jp-OaC" firstAttribute="top" secondItem="gW6-0y-uzD" secondAttribute="bottom" id="DT6-Mj-Bod"/>
+                            <constraint firstItem="qac-u9-YRr" firstAttribute="top" secondItem="inQ-UV-ccj" secondAttribute="bottom" constant="24" id="Kct-xU-iYz"/>
+                            <constraint firstItem="gW6-0y-uzD" firstAttribute="centerX" secondItem="v5b-6f-VbI" secondAttribute="centerX" id="doR-ZW-zyz"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Pir-gC-ckQ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aSC-Wr-stV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-911.5" y="807.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZGT-rk-Y2G">
@@ -1131,7 +1106,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dep-mq-2ZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2380" y="1635"/>
+            <point key="canvasLocation" x="-1614" y="1961"/>
         </scene>
         <!--anambrew paging-->
         <scene sceneID="6Ve-Lm-kSs">
@@ -1182,7 +1157,7 @@
             <objects>
                 <tableViewController id="5mV-ow-y7p" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="JpB-EE-MdJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="509"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -1331,24 +1306,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qif-1a-rAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-356.5" y="884.5"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="PvZ-cF-a3A">
-            <objects>
-                <viewController id="QMm-4g-v01" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="NDt-RG-hR3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dZQ-t6-Vql" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
+            <point key="canvasLocation" x="-309.5" y="915.5"/>
         </scene>
     </scenes>
     <resources>
-        <image name="IMG_8746" width="1312" height="2336"/>
         <image name="anam_1" width="500" height="488"/>
         <image name="anam_2" width="450" height="450"/>
         <image name="brewery" width="700" height="700"/>

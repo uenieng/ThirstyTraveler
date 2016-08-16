@@ -457,10 +457,38 @@
             </objects>
             <point key="canvasLocation" x="-227" y="1604"/>
         </scene>
+        <!--Table View Controller-->
+        <scene sceneID="TJQ-8n-ck9">
+            <objects>
+                <tableViewController id="QOK-o0-mwZ" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="gRP-Rj-ebp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="cyQ-gf-bzu">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cyQ-gf-bzu" id="zQp-6S-ReR">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QOK-o0-mwZ" id="XIe-mT-ctH"/>
+                            <outlet property="delegate" destination="QOK-o0-mwZ" id="sE9-3h-IyT"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jmb-F4-PUb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-830" y="803"/>
+        </scene>
         <!--favorite-->
         <scene sceneID="OuL-5P-pbk">
             <objects>
-                <viewController title="favorite" id="B6O-vX-x3Z" customClass="ViewController" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="favorite" id="B6O-vX-x3Z" customClass="UITableViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Eo4-eO-0es"/>
                         <viewControllerLayoutGuide type="bottom" id="rsa-MD-wiu"/>

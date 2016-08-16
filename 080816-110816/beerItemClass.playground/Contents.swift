@@ -40,4 +40,9 @@ class beerPlace {
         
     }
     
+    
 } //class 닫음
+
+
+
+

@@ -31,6 +31,28 @@ class BeerPlace {
                 return titleString
             }//get 닫음
         }//place type title 닫음
+
+        
+        
+        //아래 switch문에 placetype에 따라 다른 테이블 뷰를 호출해 오는 코드가 들어갈 수 있음.
+        //아무튼 테이블 뷰는 개별로 코딩을..ㅜㅠ 
+        
+        var placeTypeCode:Int{
+            get{
+                let typeCode:Int
+                switch self{
+                case.beerFactory:
+                    typeCode = 0
+                case.beerBrewery:
+                    typeCode = 1
+                case.beerDraft:
+                    typeCode = 2
+                }//switchself closed
+                return typeCode
+            }//get closed
+        }//placetypecode closed
+    
+    
     }// enum placetype 닫음
     
     init (name:String, type:PlaceType, location:(Double,Double)){

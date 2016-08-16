@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3BEC83141D62D1B000B60366 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83131D62D1B000B60366 /* Factory.swift */; };
-		DA2177C91D62FE94005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; };
-		DA2177CA1D62FE9A005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; };
-		DA2177CB1D62FE9A005C2F9D /* PilotPlant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA2177C11D62FD24005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C01D62FD24005C2F9D /* PilotPlant.framework */; };
+		DA2177C21D62FD36005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C01D62FD24005C2F9D /* PilotPlant.framework */; };
+		DA2177C31D62FD36005C2F9D /* PilotPlant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C01D62FD24005C2F9D /* PilotPlant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB01D37346F0049C008 /* AppDelegate.swift */; };
 		DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB21D37346F0049C008 /* ViewController.swift */; };
 		DA6BBFB61D37346F0049C008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6BBFB41D37346F0049C008 /* Main.storyboard */; };
@@ -45,7 +45,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DA2177CB1D62FE9A005C2F9D /* PilotPlant.framework in Embed Frameworks */,
+				DA2177C31D62FD36005C2F9D /* PilotPlant.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -54,7 +54,7 @@
 
 /* Begin PBXFileReference section */
 		3BEC83131D62D1B000B60366 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
-		DA2177C81D62FE94005C2F9D /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PilotPlant.framework; sourceTree = "<group>"; };
+		DA2177C01D62FD24005C2F9D /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PilotPlant.framework; sourceTree = "<group>"; };
 		DA6BBFAD1D37346F0049C008 /* ThirstyTraveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirstyTraveler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6BBFB01D37346F0049C008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6BBFB21D37346F0049C008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -76,8 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA2177C91D62FE94005C2F9D /* PilotPlant.framework in Frameworks */,
-				DA2177CA1D62FE9A005C2F9D /* PilotPlant.framework in Frameworks */,
+				DA2177C11D62FD24005C2F9D /* PilotPlant.framework in Frameworks */,
+				DA2177C21D62FD36005C2F9D /* PilotPlant.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,7 +121,7 @@
 		DA6BBFAF1D37346F0049C008 /* ThirstyTraveler */ = {
 			isa = PBXGroup;
 			children = (
-				DA2177C81D62FE94005C2F9D /* PilotPlant.framework */,
+				DA2177C01D62FD24005C2F9D /* PilotPlant.framework */,
 				DA6BBFDF1D3734A50049C008 /* UIViewController+Navigation.swift */,
 				DA6BBFB01D37346F0049C008 /* AppDelegate.swift */,
 				DA6BBFB21D37346F0049C008 /* ViewController.swift */,

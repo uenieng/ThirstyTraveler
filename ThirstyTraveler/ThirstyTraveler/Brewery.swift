@@ -34,6 +34,22 @@ class Brewery:BeerPlace{
     var workingHour:hours = (0,0,0,0)
     var brewedBeer:Array<Product> = []
     var bottledBeer:Array<Product> = []
+
     
+    
+    
+    //func SetBeerPlace (name:String,location:(Int,Int))->(){
+        /*
+        self.name = name
+        self.location = location
+        */
+        
+        
+    //}
     
 }
+
+
+
+//var brewery1:Brewery = (BeerPlace.name:"brewery1", BeerPlace.location:(123,345))
+

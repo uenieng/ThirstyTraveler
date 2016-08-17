@@ -20,3 +20,16 @@ class BeerPlace {
     var haveBeen:Bool=false
 }
 
+
+class Brewery:BeerPlace{
+    
+    typealias hours = (openHour:Int,openMinute:Int,closeHour:Int,closeHour:Int)
+    //typealias yoyo
+    typealias Product = [String:Int]
+    
+    var workingHour:hours = (0,0,0,0)
+    var brewedBeer:Array<Product> = []
+    var bottledBeer:Array<Product> = []
+    
+
+}

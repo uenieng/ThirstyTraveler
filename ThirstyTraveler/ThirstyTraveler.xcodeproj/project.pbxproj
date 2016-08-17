@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3BEC83141D62D1B000B60366 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83131D62D1B000B60366 /* Factory.swift */; };
+		3BEC83341D64287700B60366 /* WonyeongParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83331D64287700B60366 /* WonyeongParentClass.swift */; };
+		3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */; };
 		DA2177C91D62FE94005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; };
 		DA2177CA1D62FE9A005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; };
 		DA2177CB1D62FE9A005C2F9D /* PilotPlant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -54,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		3BEC83131D62D1B000B60366 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		3BEC83331D64287700B60366 /* WonyeongParentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WonyeongParentClass.swift; sourceTree = "<group>"; };
+		3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakingFactoryInstance.swift; sourceTree = "<group>"; };
 		DA2177C81D62FE94005C2F9D /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PilotPlant.framework; sourceTree = "<group>"; };
 		DA6BBFAD1D37346F0049C008 /* ThirstyTraveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirstyTraveler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6BBFB01D37346F0049C008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +134,8 @@
 				DA6BBFB91D37346F0049C008 /* LaunchScreen.storyboard */,
 				DA6BBFBC1D37346F0049C008 /* Info.plist */,
 				3BEC83131D62D1B000B60366 /* Factory.swift */,
+				3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */,
+				3BEC83331D64287700B60366 /* WonyeongParentClass.swift */,
 			);
 			path = ThirstyTraveler;
 			sourceTree = "<group>";
@@ -289,7 +295,9 @@
 			files = (
 				3BEC83141D62D1B000B60366 /* Factory.swift in Sources */,
 				DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */,
+				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
 				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
+				3BEC83341D64287700B60366 /* WonyeongParentClass.swift in Sources */,
 				DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

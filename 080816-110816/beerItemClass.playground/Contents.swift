@@ -35,7 +35,7 @@ class BeerPlace {
         
         
         //아래 switch문에 placetype에 따라 다른 테이블 뷰를 호출해 오는 코드가 들어갈 수 있음.
-        //아무튼 테이블 뷰는 개별로 코딩을..ㅜㅠ 
+        //아무튼 테이블 뷰는 개별로 코딩을..ㅜㅠ
         
         var placeTypeCode:Int{
             get{

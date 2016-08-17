@@ -9,14 +9,31 @@
 import Foundation
 
 
-class Brewery {
+
+class BeerPlace {
+    
+    let name:String
+    //let type:PlaceType
+    var ratings:Double?
+    var location:(Double,Double)
+    var wishlist:Bool=false
+    var haveBeen:Bool=false
+    
+    init (name:String,location:(Double,Double)){
+        self.name = name
+        self.location = location
+    }
+}
+
+
+class Brewery:BeerPlace{
     
     typealias hours = (openHour:Int,openMinute:Int,closeHour:Int,closeHour:Int)
-    //typealias yoyo
-
-    var workingHour:hours = (0,0,0,0)
+    typealias Product = [String:Int]
     
-    struct brewedBeer = 
+    var workingHour:hours = (0,0,0,0)
+    var brewedBeer:Array<Product> = []
+    var bottledBeer:Array<Product> = []
     
     
 }

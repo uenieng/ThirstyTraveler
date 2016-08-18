@@ -3,12 +3,8 @@
 import UIKit
 
 
-let cass = BeerPlace(name:"cass", type:"beerFactory", location:(137,125))
-let hiddenTrack = BeerPlace(name:"Hidden Track", type:"beerBrewery", location:(136,123))
-let birdnamu = BeerPlace(name:"Birdnamu", type:"beerBrewery", location:(123,456))
-let nairobi = BeerPlace(name:"Nairobi", type:"beerDraft", location:(123,457))
 
-class BeerPlace {
+class WonyeongBeerPlace {
     
     var name:String = ""
     var type:String = ""

@@ -11,7 +11,7 @@ import Foundation
 
 
 
-class Factory : BeerPlace{
+class Factory : WonyeongBeerPlace{
     var OfficeTime:[Int:Int]
     var ProgramList:[String]
     var OfficeNumber:Int

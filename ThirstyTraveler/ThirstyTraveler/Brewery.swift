@@ -19,11 +19,17 @@ class Brewery:BeerPlace{
     var brewedBeer:Array<Product> = []
     var bottledBeer:Array<Product> = []
 
-
-        func SetBrewery(name:String,location:(Double,Double))
+    
+    init (){
+        super.init(name: <#T##String#>, type: <#T##String#>, location: <#T##(Double, Double)#>, OfficeNumber: <#T##Int#>, OfficeTime: <#T##[(String, Int, Int)]#>)
+    }
+    
+    convenience init (name: String,location:(Double,Double), OfficeNumber: Int, OfficeTime:[(String, Int, Int)])
         {
             self.name = name
             self.location = location
+            self.OfficeNumber = OfficeNumber
+            self.OfficeTime = OfficeTime
         }
 
     }
@@ -35,8 +41,7 @@ var breweryClass:Array<Brewery> = []
 
 func createDefault() -> [Brewery]{
 
-    let brewery1 = Brewery()
-    brewery1.SetBrewery(name:"brewery1", location:(123,345))
+    let brewery1 = Brewery(name:"brewery1", location:(123,345), OfficeNumber:1234452932923, OfficeTime:[("Mon",1200,1800)])
 
     breweryClass += [brewery1]
     

@@ -21,7 +21,9 @@ class Brewery:BeerPlace{
 
     
     init (){
+        
         super.init(name: <#T##String#>, type: <#T##String#>, location: <#T##(Double, Double)#>, OfficeNumber: <#T##Int#>, OfficeTime: <#T##[(String, Int, Int)]#>)
+        
     }
     
     convenience init (name: String,location:(Double,Double), OfficeNumber: Int, OfficeTime:[(String, Int, Int)])

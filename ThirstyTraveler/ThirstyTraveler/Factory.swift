@@ -17,12 +17,13 @@ class Factory : BeerPlace{
     init(){
         self.ProgramList =  [""]
         self.OfficeURL = "http//"
-        super.init(name:"", type:"", location:(0,0))
+        super.init(name:"", type:"", location:(0,0), OfficeNumber: 01000000000, OfficeTime: [("월~일",0900,1800)])
     }
     
     
-    func SetFactory(OfficeTime:[Int:Int], ProgramList:[String], OfficeNumber:Int, OfficeURL:String, name:String, type:String, location:(Double, Double))
+    convenience init(OfficeTime:[(String,Int,Int)], ProgramList:[String], OfficeNumber:Int, OfficeURL:String, name:String, type:String, location:(Double, Double))
     {
+        self.init()
         self.OfficeTime = OfficeTime
         self.ProgramList = ProgramList
         self.OfficeNumber = OfficeNumber

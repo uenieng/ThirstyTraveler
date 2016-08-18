@@ -10,22 +10,6 @@ import Foundation
 
 
 
-class BeerPlace {
-    
-    var name:String
-    //let type:PlaceType
-    var ratings:Double?
-    var location:(Double,Double)
-    var wishlist:Bool=false
-    var haveBeen:Bool=false
-    
-    init (name:String,location:(Double,Double)){
-        self.name = name
-        self.location = location
-    }
-}
-
-
 class Brewery:BeerPlace{
     
     typealias hours = (openHour:Int,openMinute:Int,closeHour:Int,closeHour:Int)
@@ -48,15 +32,6 @@ class Brewery:BeerPlace{
 
     }
     
-    
-    //func SetBeerPlace (name:String,location:(Int,Int))->(){
-        /*
-        self.name = name
-        self.location = location
-        */
-        
-        
-    //}
     
 }
 

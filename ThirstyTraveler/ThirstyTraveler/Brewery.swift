@@ -12,7 +12,7 @@ import Foundation
 
 class BeerPlace {
     
-    let name:String
+    var name:String
     //let type:PlaceType
     var ratings:Double?
     var location:(Double,Double)
@@ -35,7 +35,18 @@ class Brewery:BeerPlace{
     var brewedBeer:Array<Product> = []
     var bottledBeer:Array<Product> = []
 
-    
+    init (){
+        super.init(name:"", location:(0,0))
+        
+        
+        
+        func SetBrewery(name:String,location:(Double,Double))
+        {
+            self.name = name
+            self.location = location
+        }
+
+    }
     
     
     //func SetBeerPlace (name:String,location:(Int,Int))->(){
@@ -49,9 +60,17 @@ class Brewery:BeerPlace{
     
 }
 
-func createDefault() {
+var breweryClass:Array<Brewery> = []
 
-    var brewery1:Brewery = (BeerPlace.name:"brewery1", BeerPlace.location:(123,345))
+func createDefault() -> [Brewery]{
 
+    let brewery1 = Brewery()
+    brewery1.SetBrewery(name:"brewery1", location:(123,345))
+
+    breweryClass += [brewery1]
+    
+    return breweryClass
+    
+    
 }
 

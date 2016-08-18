@@ -12,16 +12,10 @@ import Foundation
 
 
 class Factory : BeerPlace{
-    var OfficeTime:[Int:Int]
     var ProgramList:[String]
-    var OfficeNumber:Int
     var OfficeURL:String
     init(){
-        
-            
-        self.OfficeTime = [0900:1700]
         self.ProgramList =  [""]
-        self.OfficeNumber = 01000000000
         self.OfficeURL = "http//"
         super.init(name:"", type:"", location:(0,0))
     }

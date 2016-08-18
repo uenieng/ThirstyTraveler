@@ -19,11 +19,7 @@ class Brewery:BeerPlace{
     var brewedBeer:Array<Product> = []
     var bottledBeer:Array<Product> = []
 
-    init (){
-        super.init(name:"", location:(0,0))
-        
-        
-        
+
         func SetBrewery(name:String,location:(Double,Double))
         {
             self.name = name
@@ -33,7 +29,7 @@ class Brewery:BeerPlace{
     }
     
     
-}
+
 
 var breweryClass:Array<Brewery> = []
 

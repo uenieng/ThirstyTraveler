@@ -12,16 +12,16 @@ class BeerPlace {
     var location:(Double,Double)
     var wishlist:Bool=false
     var haveBeen:Bool=false
-    var OfficeNumber:Int
-    var OfficeTime:[(String,Int,Int)]
+    var officeNumber:Int
+    var officeTime:[(String,Int,Int)]
   
     
-    init (name:String, type:String, location:(Double,Double), OfficeNumber:Int, OfficeTime:[(String,Int,Int)]){
+    init (name:String, type:String, location:(Double,Double), officeNumber:Int, officeTime:[(String,Int,Int)]){
         self.name = name
         self.type = type
         self.location = location
-        self.OfficeNumber = OfficeNumber
-        self.OfficeTime = OfficeTime
+        self.officeNumber = officeNumber
+        self.officeTime = officeTime
         
     }
     

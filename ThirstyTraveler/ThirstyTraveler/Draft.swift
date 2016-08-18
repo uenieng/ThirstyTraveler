@@ -14,16 +14,17 @@ class DraftBeer : BeerPlace{
     init(){
         self.draftPriceList = [:]
         self.bottledPriceList = [:]
-        super.init(name:"", type:"", location:(0,0), OfficeNumber: 01000000000, OfficeTime: [("월~일",0900,1800)])
+        super.init(name:"", type:"", location:(0,0), officeNumber: 01000000000, officeTime: [("월~일",0900,1800)])
     }
     
     
-    convenience init(OfficeTime:[(String,Int,Int)], ProgramList:[String], OfficeNumber:Int, OfficeURL:String, name:String, type:String, location:(Double, Double))
+    convenience init(officeTime:[(String,Int,Int)], draftPriceList:[String:Int], bottledPriceList:[String:Int],OfficeNumber:Int,  name:String, type:String, location:(Double, Double))
     {
         self.init()
+        self.officeTime = officeTime
         self.draftPriceList = draftPriceList
         self.bottledPriceList = bottledPriceList
-        self.OfficeNumber = OfficeNumber
+        self.officeNumber = officeNumber
         self.name = name
         self.type = type
         self.location = location

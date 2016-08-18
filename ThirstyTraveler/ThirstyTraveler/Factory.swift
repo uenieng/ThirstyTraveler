@@ -12,22 +12,22 @@ import Foundation
 
 
 class Factory : BeerPlace{
-    var ProgramList:[String]
-    var OfficeURL:String
+    var programList:[String]
+    var officeURL:String
     init(){
-        self.ProgramList =  [""]
-        self.OfficeURL = "http//"
-        super.init(name:"", type:"", location:(0,0), OfficeNumber: 01000000000, OfficeTime: [("월~일",0900,1800)])
+        self.programList =  [""]
+        self.officeURL = "http//"
+        super.init(name:"", type:"", location:(0,0), officeNumber: 01000000000, officeTime: [("월~일",0900,1800)])
     }
     
     
-    convenience init(OfficeTime:[(String,Int,Int)], ProgramList:[String], OfficeNumber:Int, OfficeURL:String, name:String, type:String, location:(Double, Double))
+    convenience init(officeTime:[(String,Int,Int)], programList:[String], officeNumber:Int, officeURL:String, name:String, type:String, location:(Double, Double))
     {
         self.init()
-        self.OfficeTime = OfficeTime
-        self.ProgramList = ProgramList
-        self.OfficeNumber = OfficeNumber
-        self.OfficeURL = OfficeURL
+        self.officeTime = officeTime
+        self.programList = programList
+        self.officeNumber = officeNumber
+        self.officeURL = officeURL
         self.name = name
         self.type = type
         self.location = location

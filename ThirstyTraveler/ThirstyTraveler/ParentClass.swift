@@ -4,7 +4,7 @@ import UIKit
 
 
 
-class WonyeongBeerPlace {
+class BeerPlace {
     
     var name:String = ""
     var type:String = ""

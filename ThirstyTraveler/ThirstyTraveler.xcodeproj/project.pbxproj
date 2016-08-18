@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3BEC83141D62D1B000B60366 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83131D62D1B000B60366 /* Factory.swift */; };
-		3BEC83341D64287700B60366 /* WonyeongParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83331D64287700B60366 /* WonyeongParentClass.swift */; };
+		3BEC83341D64287700B60366 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83331D64287700B60366 /* ParentClass.swift */; };
 		3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */; };
 		DA2177C91D62FE94005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; };
 		DA2177CA1D62FE9A005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; };
@@ -57,7 +57,7 @@
 
 /* Begin PBXFileReference section */
 		3BEC83131D62D1B000B60366 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
-		3BEC83331D64287700B60366 /* WonyeongParentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WonyeongParentClass.swift; sourceTree = "<group>"; };
+		3BEC83331D64287700B60366 /* ParentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
 		3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakingFactoryInstance.swift; sourceTree = "<group>"; };
 		DA2177C81D62FE94005C2F9D /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PilotPlant.framework; sourceTree = "<group>"; };
 		DA2178061D641882005C2F9D /* Brewery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
@@ -137,7 +137,7 @@
 				DA6BBFBC1D37346F0049C008 /* Info.plist */,
 				3BEC83131D62D1B000B60366 /* Factory.swift */,
 				3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */,
-				3BEC83331D64287700B60366 /* WonyeongParentClass.swift */,
+				3BEC83331D64287700B60366 /* ParentClass.swift */,
 				DA2178061D641882005C2F9D /* Brewery.swift */,
 			);
 			path = ThirstyTraveler;
@@ -300,7 +300,7 @@
 				DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */,
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
 				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
-				3BEC83341D64287700B60366 /* WonyeongParentClass.swift in Sources */,
+				3BEC83341D64287700B60366 /* ParentClass.swift in Sources */,
 				DA2178071D641882005C2F9D /* Brewery.swift in Sources */,
 				DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */,
 			);

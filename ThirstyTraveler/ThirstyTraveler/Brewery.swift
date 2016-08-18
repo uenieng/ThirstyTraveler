@@ -49,7 +49,9 @@ class Brewery:BeerPlace{
     
 }
 
+func createDefault() {
 
+    var brewery1:Brewery = (BeerPlace.name:"brewery1", BeerPlace.location:(123,345))
 
-//var brewery1:Brewery = (BeerPlace.name:"brewery1", BeerPlace.location:(123,345))
+}
 

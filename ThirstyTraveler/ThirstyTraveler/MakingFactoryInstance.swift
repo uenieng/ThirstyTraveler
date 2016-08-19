@@ -7,11 +7,72 @@
 //
 
 import Foundation
-var FactoryArray:[Factory] = []
-func initialize() -> [Factory]{
+var factoryArray:[Factory] = []
+func defaultFactory() -> [Factory]{
    
-    let casss = Factory(officeTime: [("월~금",0900,1700),("토~일",0000,0000)], programList:["맥주만들기"], officeNumber:01035867237, officeURL:"http://etc", name:"casss", type:"Factory", location:(134,230))
-    FactoryArray += [casss]
+    let factory1 = Factory(name:"cass", type:"Factory", location:(134,230), officeTime: [("월~금",0900,1700),("토~일",0000,0000)], programList:["맥주만들기"], officeNumber:01035867237, officeURL:"http://www.youtube.com")
+
     
-    return   FactoryArray
+    let factory2 = Factory(name:"maecdu", type:"Factory", location:(134,230),officeTime:[("월~금",0900,1700),("토~일",0000,0000)], programList:["맥듀만들기","공장투어"], officeNumber:028549587, officeURL:"http://www.naver.com" )
+
+    let factory3 = Factory(name:"maecju", type:"Factory", location:(134,230),officeTime:[("월~목",0900,1700),("금",0000,0000),("토~일",1000,1500)], programList:["맥쥬만들기"], officeNumber:025784984, officeURL:"http://etc" )
+    
+    let factory4 = Factory( name:"Hite", type:"Factory", location:(134,230),officeTime: [("월~금",0900,1700),("토~일",0000,0000)], programList:["하이트만들기","공장투어"], officeNumber:025804567, officeURL:"http://www.daum.net")
+    
+    let factory5 = Factory(name:"하이네켄", type:"Factory", location:(134,230), officeTime: [("월~금",0900,1700),("토~일",0000,0000)], programList:["하이네켄만들기","시음하기","공장투어"], officeNumber:07045687982, officeURL:"http://facebook.com" )
+    
+    
+        factoryArray += [factory1,factory2,factory3,factory4,factory5]
+    
+    return   factoryArray
 }
+
+
+
+
+var draftArray:[DraftBeer] = []
+
+
+func defaultDraft() -> [DraftBeer]{
+    
+    let draft1 = DraftBeer(officeTime: [("월~목",1500,2400),("금,토",1700,0100),("일",0000,0000)],draftPriceList:["IPA":7000,"Duh":8000,"Whaeva":7500],bottledDPriceList:["버드와이저":3500,"Cass":3300,"Hite":4000], OfficeNumber : 025478546, name:"힛맨",type:"Draft", location:(123,456))
+    
+    let draft2 = DraftBeer(officeTime: [("월~금",1800,2400),("토,일",1930,0100)],draftPriceList:["IPA4":7000,"Idk":8000,"Wtf":7500],bottledDPriceList:["버드와이저":3500,"Cass":3300,"Hite":4000], OfficeNumber : 025478546, name:"Irish Pub",type:"Draft", location:(4545,456))
+    
+    let draft3 = DraftBeer(officeTime: [("월",0000,0000),("화~일",1700,2300)],draftPriceList:["IPA":7000,"Duh":8000,"Whaeva":7500],bottledDPriceList:["버드와이저":3500,"Cass":3300,"Hite":4000], OfficeNumber : 025478546, name:"the Good Beer",type:"Draft", location:(123,456))
+    
+    let draft4 = DraftBeer(officeTime: [("월~일",1700,2400)],draftPriceList:["IPA":7000,"Duh":8000,"Whaeva":7500],bottledDPriceList:["버드와이저":3500,"Cass":3300,"Hite":4000], OfficeNumber : 025478546, name:"The Cask",type:"Draft", location:(123,456))
+    
+    let draft5 = DraftBeer(officeTime: [("월~금",1800,2330),("토",1700,0230),("일",0000,0000)],draftPriceList:["IPA":7000,"Duh":8000,"Whaeva":7500],bottledDPriceList:["버드와이저":3500,"Cass":3300,"Hite":4000], OfficeNumber : 025478546, name:"Kwak.pub",type:"Draft", location:(123,456))
+    
+    
+    
+    
+    draftArray += [draft1,draft2,draft3,draft4,draft5]
+    
+    return   draftArray}
+
+
+var breweryArray:[Brewery] = []
+
+func defaultBrewery() -> [Brewery]{
+    
+    
+    let brewery1 = Brewery(name:"brewery1", location:(123,345), officeNumber:01085489535, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+
+    let brewery2 = Brewery(name:"brewery2", location:(123,345), officeNumber:02784568, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    
+    let brewery3 = Brewery(name:"brewery3", location:(123,345), officeNumber:025189638, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    
+    let brewery4 = Brewery(name:"brewery4", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    
+    let brewery5 = Brewery(name:"brewery5", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    
+    breweryArray += [ brewery1, brewery2, brewery3, brewery4, brewery5]
+    
+    return breweryArray
+}
+
+
+
+

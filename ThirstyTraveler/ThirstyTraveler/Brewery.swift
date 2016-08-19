@@ -43,6 +43,9 @@ var breweryClass:Array<Brewery> = []
 
 func createDefault() -> [Brewery]{
 
+    
+    
+    
     let brewery1 = Brewery(name:"brewery1", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)])
 
     breweryClass += [brewery1]

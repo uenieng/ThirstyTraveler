@@ -15,6 +15,8 @@
 		DA2177CB1D62FE9A005C2F9D /* PilotPlant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA2178071D641882005C2F9D /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2178061D641882005C2F9D /* Brewery.swift */; };
 		DA354CDB1D669FAC00CC89B3 /* BreweryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDA1D669FAC00CC89B3 /* BreweryTableViewController.swift */; };
+		DA354CDD1D66C6B400CC89B3 /* FavobeenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */; };
+		DA354CDF1D66C79E00CC89B3 /* FavoBeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */; };
 		DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB01D37346F0049C008 /* AppDelegate.swift */; };
 		DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB21D37346F0049C008 /* ViewController.swift */; };
 		DA6BBFB61D37346F0049C008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6BBFB41D37346F0049C008 /* Main.storyboard */; };
@@ -64,6 +66,8 @@
 		DA2177C81D62FE94005C2F9D /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PilotPlant.framework; sourceTree = "<group>"; };
 		DA2178061D641882005C2F9D /* Brewery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
 		DA354CDA1D669FAC00CC89B3 /* BreweryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryTableViewController.swift; sourceTree = "<group>"; };
+		DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavobeenTableViewController.swift; sourceTree = "<group>"; };
+		DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoBeenViewController.swift; sourceTree = "<group>"; };
 		DA6BBFAD1D37346F0049C008 /* ThirstyTraveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirstyTraveler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6BBFB01D37346F0049C008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6BBFB21D37346F0049C008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -137,6 +141,7 @@
 				DA6BBFB01D37346F0049C008 /* AppDelegate.swift */,
 				DA6BBFB21D37346F0049C008 /* ViewController.swift */,
 				DA6BBFB41D37346F0049C008 /* Main.storyboard */,
+				DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */,
 				DA6BBFB71D37346F0049C008 /* Assets.xcassets */,
 				DA6BBFB91D37346F0049C008 /* LaunchScreen.storyboard */,
 				DA6BBFBC1D37346F0049C008 /* Info.plist */,
@@ -145,6 +150,7 @@
 				3BEC83331D64287700B60366 /* ParentClass.swift */,
 				DA2178061D641882005C2F9D /* Brewery.swift */,
 				DD7A3A231D65838C0059A1A7 /* Draft.swift */,
+				DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */,
 			);
 			path = ThirstyTraveler;
 			sourceTree = "<group>";
@@ -302,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA354CDF1D66C79E00CC89B3 /* FavoBeenViewController.swift in Sources */,
 				3BEC83141D62D1B000B60366 /* Factory.swift in Sources */,
 				DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */,
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
@@ -309,6 +316,7 @@
 				3BEC83341D64287700B60366 /* ParentClass.swift in Sources */,
 				DA2178071D641882005C2F9D /* Brewery.swift in Sources */,
 				DA354CDB1D669FAC00CC89B3 /* BreweryTableViewController.swift in Sources */,
+				DA354CDD1D66C6B400CC89B3 /* FavobeenTableViewController.swift in Sources */,
 				DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */,
 				DD7A3A241D65838C0059A1A7 /* Draft.swift in Sources */,
 			);

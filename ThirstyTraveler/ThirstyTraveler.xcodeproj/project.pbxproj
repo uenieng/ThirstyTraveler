@@ -152,11 +152,8 @@
 				3BEC83331D64287700B60366 /* ParentClass.swift */,
 				DA2178061D641882005C2F9D /* Brewery.swift */,
 				DD7A3A231D65838C0059A1A7 /* Draft.swift */,
-<<<<<<< HEAD
 				DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */,
-=======
 				DDD15EB51D66A6CC0050D862 /* FilterToggle.swift */,
->>>>>>> origin/master
 			);
 			path = ThirstyTraveler;
 			sourceTree = "<group>";

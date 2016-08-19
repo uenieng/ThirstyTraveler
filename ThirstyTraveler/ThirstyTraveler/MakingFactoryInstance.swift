@@ -5,6 +5,7 @@
 //  Created by nariyoon on 2016. 8. 18..
 //  Copyright © 2016년 moonyoung. All rights reserved.
 //
+//
 
 import Foundation
 var factoryArray:[Factory] = []

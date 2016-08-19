@@ -12,12 +12,12 @@ import Foundation
 
 class Brewery:BeerPlace{
     
-    typealias hours = (openHour:Int,openMinute:Int,closeHour:Int,closeHour:Int)
+ /*   typealias hours = (openHour:Int,openMinute:Int,closeHour:Int,closeHour:Int)
     typealias Product = [String:Int]
     
-    var workingHour:hours = (0,0,0,0)
-    var brewedBeer:Array<Product> = []
-    var bottledBeer:Array<Product> = []
+    var workingHour:hours = (0,0,0,0)*/
+    var brewedPricelist:[String:Int]
+    var bottledBPricelist:[String:Int]
 
     
     init (){
@@ -26,12 +26,14 @@ class Brewery:BeerPlace{
         
     }
     
-    convenience init (name: String,location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)])
+    convenience init (name: String,location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledBPricelist:[String:Int])
         {
             self.name = name
             self.location = location
             self.officeNumber = officeNumber
             self.officeTime = officeTime
+            self.brewedPricelist = brewedPricelist
+            self.bottledBPricelist = bottledBPricelist
         }
 
     }
@@ -39,8 +41,8 @@ class Brewery:BeerPlace{
     
 
 
-var breweryClass:Array<Brewery> = []
 
+<<<<<<< HEAD
 func createDefault() -> [Brewery]{
 
     
@@ -54,4 +56,6 @@ func createDefault() -> [Brewery]{
     
     
 }
+=======
+>>>>>>> origin/master
 

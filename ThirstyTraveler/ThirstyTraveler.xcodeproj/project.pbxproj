@@ -26,6 +26,7 @@
 		DA6BBFD11D3734700049C008 /* ThirstyTravelerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFD01D3734700049C008 /* ThirstyTravelerUITests.swift */; };
 		DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFDF1D3734A50049C008 /* UIViewController+Navigation.swift */; };
 		DD7A3A241D65838C0059A1A7 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3A231D65838C0059A1A7 /* Draft.swift */; };
+		DDD15EB61D66A6CC0050D862 /* FilterToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD15EB51D66A6CC0050D862 /* FilterToggle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		DA6BBFD21D3734700049C008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6BBFDF1D3734A50049C008 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		DD7A3A231D65838C0059A1A7 /* Draft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
+		DDD15EB51D66A6CC0050D862 /* FilterToggle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterToggle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,7 +152,11 @@
 				3BEC83331D64287700B60366 /* ParentClass.swift */,
 				DA2178061D641882005C2F9D /* Brewery.swift */,
 				DD7A3A231D65838C0059A1A7 /* Draft.swift */,
+<<<<<<< HEAD
 				DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */,
+=======
+				DDD15EB51D66A6CC0050D862 /* FilterToggle.swift */,
+>>>>>>> origin/master
 			);
 			path = ThirstyTraveler;
 			sourceTree = "<group>";
@@ -314,6 +320,7 @@
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
 				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
 				3BEC83341D64287700B60366 /* ParentClass.swift in Sources */,
+				DDD15EB61D66A6CC0050D862 /* FilterToggle.swift in Sources */,
 				DA2178071D641882005C2F9D /* Brewery.swift in Sources */,
 				DA354CDB1D669FAC00CC89B3 /* BreweryTableViewController.swift in Sources */,
 				DA354CDD1D66C6B400CC89B3 /* FavobeenTableViewController.swift in Sources */,

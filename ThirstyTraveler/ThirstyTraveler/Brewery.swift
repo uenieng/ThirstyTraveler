@@ -22,16 +22,16 @@ class Brewery:BeerPlace{
     
     init (){
         
-        super.init(name: <#T##String#>, type: <#T##String#>, location: <#T##(Double, Double)#>, OfficeNumber: <#T##Int#>, OfficeTime: <#T##[(String, Int, Int)]#>)
+        super.init(name: <#T##String#>, type: <#T##String#>, location: <#T##(Double, Double)#>, officeNumber: <#T##Int#>, officeTime: <#T##[(String, Int, Int)]#>)
         
     }
     
-    convenience init (name: String,location:(Double,Double), OfficeNumber: Int, OfficeTime:[(String, Int, Int)])
+    convenience init (name: String,location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)])
         {
             self.name = name
             self.location = location
-            self.OfficeNumber = OfficeNumber
-            self.OfficeTime = OfficeTime
+            self.officeNumber = officeNumber
+            self.officeTime = officeTime
         }
 
     }
@@ -43,7 +43,7 @@ var breweryClass:Array<Brewery> = []
 
 func createDefault() -> [Brewery]{
 
-    let brewery1 = Brewery(name:"brewery1", location:(123,345), OfficeNumber:1234452932923, OfficeTime:[("Mon",1200,1800)])
+    let brewery1 = Brewery(name:"brewery1", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)])
 
     breweryClass += [brewery1]
     

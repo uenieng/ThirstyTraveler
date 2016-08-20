@@ -59,15 +59,15 @@ var breweryArray:[Brewery] = []
 func defaultBrewery() -> [Brewery]{
     
     
-    let brewery1 = Brewery(name:"brewery1", location:(37.582887,127.029656), officeNumber:01085489535, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    let brewery1 = Brewery(name:"brewery1", type:"Brewery", location:(37.582887,127.029656), officeNumber:01085489535, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
 
-    let brewery2 = Brewery(name:"brewery2", location:(37.582919,127.030068), officeNumber:02784568, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    let brewery2 = Brewery(name:"brewery2", type:"Brewery",location:(37.582919,127.030068), officeNumber:02784568, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
     
-    let brewery3 = Brewery(name:"brewery3", location:(37.583451,127.029110), officeNumber:025189638, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    let brewery3 = Brewery(name:"brewery3", type:"Brewery",location:(37.583451,127.029110), officeNumber:025189638, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
     
-    let brewery4 = Brewery(name:"brewery4", location:(37.584393,127.029901), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    let brewery4 = Brewery(name:"brewery4", type:"Brewery",location:(37.584393,127.029901), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
     
-    let brewery5 = Brewery(name:"brewery5", location:(37.582557,127.028976), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
+    let brewery5 = Brewery(name:"brewery5", type:"Brewery",location:(37.582557,127.028976), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
     
     breweryArray += [ brewery1, brewery2, brewery3, brewery4, brewery5]
     

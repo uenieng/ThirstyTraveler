@@ -14,14 +14,14 @@ class FavoBeenViewController: UIViewController {
     
     var beerTableVC:FavoBeenTableViewController?
 
-    @IBAction func FaveBeenEmbed(sender: UISegmentedControl) {
+    @IBAction func FaveBeenEmbed(sender: UISegmentedControl) -> Array<BeerPlace> {
         
         var returnValue:Array<BeerPlace> = []
         
         switch(FavoBeen.selectedSegmentIndex)
         {
         case 0:
-            for name in [Brewery]{
+            for .name in [Brewery]{
                 
                 if self.wishlist == true {
                     returnValue += self
@@ -30,7 +30,7 @@ class FavoBeenViewController: UIViewController {
             }
              break
         case 1:
-            for name in [Brewery]{
+            for .name in [Brewery]{
                 
                 if self.haveBeen == true {
                     returnValue += self

@@ -16,24 +16,30 @@ class Brewery:BeerPlace{
     typealias Product = [String:Int]
     
     var workingHour:hours = (0,0,0,0)*/
-    var brewedPricelist:[String:Int]
-    var bottledPricelist:[String:Int]
+    var brewedPricelist:[String:Int]?
+    var bottledBPricelist:[String:Int]?
 
     
     init (){
+        self.bottledBPricelist = [:]
+        self.brewedPricelist = [:]
         
-        super.init(name: <#T##String#>, type: <#T##String#>, location: <#T##(Double, Double)#>, officeNumber: <#T##Int#>, officeTime: <#T##[(String, Int, Int)]#>)
+        super.init(name:"", type:"", location:(0,0),officeNumber:0,officeTime:[("",0,0)])
+        
+        
         
     }
     
-    convenience init (name: String,location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledPricelist:[String:Int])
+    convenience init (name: String, type: String, location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledBPricelist:[String:Int])
         {
+            self.init()
             self.name = name
+            self.type = type
             self.location = location
             self.officeNumber = officeNumber
             self.officeTime = officeTime
             self.brewedPricelist = brewedPricelist
-            self.bottledPricelist = bottledPricelist
+            self.bottledBPricelist = bottledBPricelist
         }
 
     }
@@ -47,9 +53,9 @@ func createDefault() -> [Brewery]{
     
     
     
-    let brewery1 = Brewery(name:"brewery1", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)], brewedPricelist: ["":0], bottledPricelist:["":0])
+    let brewery11 = Brewery(name:"brewery1", type:"Brewery", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)], brewedPricelist:["":0],bottledBPricelist:["":0])
 
-    breweryClass += [brewery1]
+    breweryClass += [brewery11]
     
     return breweryClass
     

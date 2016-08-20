@@ -42,7 +42,6 @@ class Brewery:BeerPlace{
 
 
 
-<<<<<<< HEAD
 func createDefault() -> [Brewery]{
 
     
@@ -56,6 +55,3 @@ func createDefault() -> [Brewery]{
     
     
 }
-=======
->>>>>>> origin/master
-

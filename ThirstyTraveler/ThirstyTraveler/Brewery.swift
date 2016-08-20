@@ -17,7 +17,7 @@ class Brewery:BeerPlace{
     
     var workingHour:hours = (0,0,0,0)*/
     var brewedPricelist:[String:Int]
-    var bottledBPricelist:[String:Int]
+    var bottledPricelist:[String:Int]
 
     
     init (){
@@ -26,20 +26,20 @@ class Brewery:BeerPlace{
         
     }
     
-    convenience init (name: String,location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledBPricelist:[String:Int])
+    convenience init (name: String,location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledPricelist:[String:Int])
         {
             self.name = name
             self.location = location
             self.officeNumber = officeNumber
             self.officeTime = officeTime
             self.brewedPricelist = brewedPricelist
-            self.bottledBPricelist = bottledBPricelist
+            self.bottledPricelist = bottledPricelist
         }
 
     }
     
     
-
+var breweryClass:Array<Brewery> = []
 
 
 func createDefault() -> [Brewery]{
@@ -47,11 +47,11 @@ func createDefault() -> [Brewery]{
     
     
     
-    let brewery1 = Brewery(name:"brewery1", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)])
+    let brewery1 = Brewery(name:"brewery1", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)], brewedPricelist: ["":0], bottledPricelist:["":0])
 
     breweryClass += [brewery1]
     
     return breweryClass
     
-    
 }
+

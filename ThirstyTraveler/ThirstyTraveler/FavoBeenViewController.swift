@@ -8,19 +8,21 @@
 
 import UIKit
 
+
+
 class FavoBeenViewController: UIViewController {
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UIView!
     
     var beerTableVC:FavobeenTableViewController?
 
-    @IBAction func FaveBeenEmbed(sender: UISegmentedControl){
+    
+    
+    var wishlist:Array<BeerPlace> = []
+    var haveBeen:Array<BeerPlace> = []
+    @IBAction func FavoBeenEmbed(sender: UISegmentedControl){
         
        
-        
-        
-        var wishlist:Array<BeerPlace> = []
-        var haveBeen:Array<BeerPlace> = []
         
         switch(FavoBeen.selectedSegmentIndex)
         {
@@ -30,7 +32,19 @@ class FavoBeenViewController: UIViewController {
                 if items.wishlist == true {
                     wishlist += [items]
                 }
+                
             
+            }
+            for items in factoryArray {
+                if items.wishlist == true{
+                    wishlist += [items]
+                }
+            }
+            
+            for items in draftArray {
+                if items.wishlist == true{
+                    wishlist += [items]
+                }
             }
              break
         case 1:
@@ -41,6 +55,21 @@ class FavoBeenViewController: UIViewController {
                 }
                 
             }
+            for items in factoryArray {
+                
+                if items.haveBeen == true {
+                    haveBeen += [items]
+                }
+                
+            }
+            for items in draftArray {
+                
+                if items.haveBeen == true {
+                    haveBeen += [items]
+                }
+                
+            }
+
             break
             
         default:
@@ -59,7 +88,6 @@ class FavoBeenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        beerTableVC = self.childViewControllers.first
         // Do any additional setup after loading the view.
     }
     

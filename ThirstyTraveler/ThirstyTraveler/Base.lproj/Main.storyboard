@@ -1052,12 +1052,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-0y-uzD">
-                                <rect key="frame" x="0.0" y="103" width="375" height="515"/>
-                                <connections>
-                                    <segue destination="5mV-ow-y7p" kind="embed" id="Egh-cI-2ff"/>
-                                </connections>
-                            </containerView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="qac-u9-YRr">
                                 <rect key="frame" x="20" y="44" width="335" height="29"/>
                                 <constraints>
@@ -1071,6 +1065,12 @@
                                     <action selector="FaveBeenEmbed:" destination="VqU-Pe-AIB" eventType="valueChanged" id="6Kw-pd-EdX"/>
                                 </connections>
                             </segmentedControl>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-0y-uzD">
+                                <rect key="frame" x="0.0" y="103" width="375" height="515"/>
+                                <connections>
+                                    <segue destination="5mV-ow-y7p" kind="embed" id="Are-YL-NXX"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1166,10 +1166,10 @@
             </objects>
             <point key="canvasLocation" x="-443" y="509"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Favobeen Table View Controller-->
         <scene sceneID="6qK-hm-7ga">
             <objects>
-                <tableViewController id="5mV-ow-y7p" sceneMemberID="viewController">
+                <tableViewController id="5mV-ow-y7p" customClass="FavobeenTableViewController" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="JpB-EE-MdJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="515"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1320,7 +1320,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qif-1a-rAb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-536.5" y="959.5"/>
+            <point key="canvasLocation" x="-457.5" y="768.5"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="0yb-ZA-wCI">

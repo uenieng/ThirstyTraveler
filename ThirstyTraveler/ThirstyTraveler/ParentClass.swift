@@ -10,8 +10,8 @@ class BeerPlace {
     var type:String = ""
     var ratings:Double?
     var location:(Double,Double)
-    var wishlist:Bool=false
-    var haveBeen:Bool=false
+    var wishlist:Bool=true
+    var haveBeen:Bool=true
     var officeNumber:Int
     var officeTime:[(String,Int,Int)]
   

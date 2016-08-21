@@ -10,6 +10,10 @@ import UIKit
 
 class BreweryTableViewController: UITableViewController {
 
+    
+    var breweryMenus:Array<[String:[String:Int]]> = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +22,9 @@ class BreweryTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+    
+    breweryMenus = ["BrewedBeer":brewery1.brewedPricelist,"BottledBeer":brewery1.bottledBPricelist]
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -29,7 +36,11 @@ class BreweryTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        
+        //드래프트 종류, 병맥 종류 두가지가 기본으로 출력되고 드래프트만 파는곳은 드래프트만, 병맥만 파는곳은 병맥만 나오게..
+        
+        
+        return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

@@ -12,28 +12,32 @@ class FavoBeenViewController: UIViewController {
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UIView!
     
-    var beerTableVC:FavoBeenTableViewController?
+    var beerTableVC:FavobeenTableViewController?
 
     @IBAction func FaveBeenEmbed(sender: UISegmentedControl){
         
-        var returnValue:Array<BeerPlace> = []
+       
+        
+        
+        var wishlist:Array<BeerPlace> = []
+        var haveBeen:Array<BeerPlace> = []
         
         switch(FavoBeen.selectedSegmentIndex)
         {
         case 0:
             for items in breweryArray {
                 
-                if self.wishlist == true {
-                    returnValue += self
+                if items.wishlist == true {
+                    wishlist += [items]
                 }
             
             }
              break
         case 1:
-            for .name in [Brewery]{
+            for items in breweryArray {
                 
-                if self.haveBeen == true {
-                    returnValue += self
+                if items.haveBeen == true {
+                    haveBeen += [items]
                 }
                 
             }

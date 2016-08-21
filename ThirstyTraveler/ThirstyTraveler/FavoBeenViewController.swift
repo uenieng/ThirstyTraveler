@@ -14,14 +14,14 @@ class FavoBeenViewController: UIViewController {
     
     var beerTableVC:FavoBeenTableViewController?
 
-    @IBAction func FaveBeenEmbed(sender: UISegmentedControl) -> Array<BeerPlace> {
+    @IBAction func FaveBeenEmbed(sender: UISegmentedControl){
         
         var returnValue:Array<BeerPlace> = []
         
         switch(FavoBeen.selectedSegmentIndex)
         {
         case 0:
-            for .name in [Brewery]{
+            for items in breweryArray {
                 
                 if self.wishlist == true {
                     returnValue += self
@@ -44,7 +44,7 @@ class FavoBeenViewController: UIViewController {
             
         }
         
-        return returnValue
+        return
         
         //여기에 returnValue array 값 childViewControllers로 보내는 매쏘드 작성 해야함
         

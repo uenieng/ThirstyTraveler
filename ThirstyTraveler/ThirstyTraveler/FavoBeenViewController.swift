@@ -18,19 +18,15 @@ class FavoBeenViewController: UIViewController {
 
     
     
-    var wishlist:Array<BeerPlace> = []
-    var haveBeen:Array<BeerPlace> = []
     @IBAction func FavoBeenEmbed(sender: UISegmentedControl){
         
-        let factoryArray:[Factory] = defaultFactory()
-        let breweryArray:[Brewery] = defaultBrewery()
-        let draftArray:[DraftBeer] = defaultDraft()
+     
        
         
         switch(FavoBeen.selectedSegmentIndex)
         {
         case 0:
-            for items in breweryArray {
+            for items in breweryArray0 {
                 
                 if items.wishlist == true {
                     wishlist += [items]
@@ -38,34 +34,34 @@ class FavoBeenViewController: UIViewController {
                 
             
             }
-            for items in factoryArray {
+            for items in factoryArray0 {
                 if items.wishlist == true{
                     wishlist += [items]
                 }
             }
             
-            for items in draftArray {
+            for items in draftArray0 {
                 if items.wishlist == true{
                     wishlist += [items]
                 }
             }
              break
         case 1:
-            for items in breweryArray {
+            for items in breweryArray0 {
                 
                 if items.haveBeen == true {
                     haveBeen += [items]
                 }
                 
             }
-            for items in factoryArray {
+            for items in factoryArray0 {
                 
                 if items.haveBeen == true {
                     haveBeen += [items]
                 }
                 
             }
-            for items in draftArray {
+            for items in draftArray0 {
                 
                 if items.haveBeen == true {
                     haveBeen += [items]
@@ -90,6 +86,10 @@ class FavoBeenViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        let wishlist:Array<BeerPlace> = []
+        let haveBeen:Array<BeerPlace> = []
+        let favobeen:[String:[BeerPlace]] = ["즐겨찾기":wishlist,"방문기록":haveBeen]
 
         
        

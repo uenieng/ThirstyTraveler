@@ -10,7 +10,9 @@ import UIKit
 
 
 
-class FavoBeenViewController: UIViewController {
+class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
+    
+    
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UIView!
     
@@ -35,7 +37,7 @@ class FavoBeenViewController: UIViewController {
                     wishlist += [items]
                 }
                 
-                print(wishlist[0].name)
+              //  print(wishlist[0].name)
 
             }
             for items in factoryArray0 {
@@ -108,6 +110,47 @@ class FavoBeenViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        var returnValue = 0
+        
+        
+        
+        return returnValue
+        
+        
+        
+    }
+    //Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+    
+    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls) 
+    
+    
+    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+    
+    {
+        let favobeenCell = tableview.dequeueReusableCellWithIdentifier("favobeenCell", forIndexPath: indexPath)
+        
+        return favobeenCell
+    }
+    
+    
+   /* public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        // #warning Incomplete implementation, return the number of sections
+        return 1
+    }
+    
+    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        // #warning Incomplete implementation, return the number of rows
+        return 0 //favobeen.count
+    }
+*/
+    
+    
+    
+    
     
 
     /*

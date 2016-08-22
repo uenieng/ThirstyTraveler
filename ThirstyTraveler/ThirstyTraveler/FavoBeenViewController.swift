@@ -61,7 +61,8 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             }
         }
 
-       
+       //itemsonsegview가 nil일때 빈 테이블뷰를 호출하는 코드 작성
+        //빈 테이블뷰를 어떻게 불러오지? 
         
         // Do any additional setup after loading the view.
     }
@@ -158,8 +159,15 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
 //            favobeenCell.beerplaceName.text = itemsOnSegView[i].name
 //            favobeenCell.beerplaceAddress.text = String("itemsOnSegView.location")
 //        }
-//        
         
+        // 지금까지 제대로 실행되었다면 itemsOnSegView에 beerplace타입의 객체들이 인스턴스화 되어있을것.
+        // 그러면 불러와야할 것은
+        // 가게 이름, 주소, 이미지, 평점, 타입 이정도인데
+        let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView[indexPath.row].name)
+        let placeName:String = placeNames[indexPath.section]
+        let placeAddress:String = String(itemsOnSegView[indexPath.row].name)
+        
+    
         return favobeenCell
     }
 

@@ -1229,11 +1229,8 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGs-ma-wPr" id="DeU-HP-vxV">
-<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
-=======
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
->>>>>>> origin/master
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="anam_1" translatesAutoresizingMaskIntoConstraints="NO" id="wPl-Rv-tcC">
@@ -1277,11 +1274,8 @@
                                         <rect key="frame" x="0.0" y="60" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8EK-eb-maS" id="E7f-EM-8ro">
-<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
-=======
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
->>>>>>> origin/master
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="anam_2" translatesAutoresizingMaskIntoConstraints="NO" id="Vo5-q8-3lY">
@@ -1325,11 +1319,8 @@
                                         <rect key="frame" x="0.0" y="120" width="600" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vMH-es-700" id="H9X-KN-JU1">
-<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="59"/>
-=======
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
->>>>>>> origin/master
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="cass_1" translatesAutoresizingMaskIntoConstraints="NO" id="00F-rD-QLU">

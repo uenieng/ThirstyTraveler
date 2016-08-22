@@ -5,7 +5,7 @@
 //  Created by 양문영 on 2016. 8. 19..
 //  Copyright © 2016년 moonyoung. All rights reserved.
 //
-
+/*
 import UIKit
 
 class BreweryTableViewController: UITableViewController {
@@ -36,15 +36,22 @@ class BreweryTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        
+       
         //드래프트 종류, 병맥 종류 두가지가 기본으로 출력되고 드래프트만 파는곳은 드래프트만, 병맥만 파는곳은 병맥만 나오게..
         
         
-        return 2
+        return breweryMenus.count
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+       
+        let typeOfBeer:[String] = Array(breweryMenus.keys)
+        let typeOfBeerName:String = typeOfBeer[section]
+        let breweryMenuAndPrice:[[String:Int]] = breweryMenus[typeOfBeer]!
+        
+        
+        
         return 0
     }
 
@@ -103,4 +110,4 @@ class BreweryTableViewController: UITableViewController {
     }
     */
 
-}
+} */

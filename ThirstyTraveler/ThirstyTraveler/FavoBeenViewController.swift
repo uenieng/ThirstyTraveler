@@ -22,6 +22,9 @@ class FavoBeenViewController: UIViewController {
     var haveBeen:Array<BeerPlace> = []
     @IBAction func FavoBeenEmbed(sender: UISegmentedControl){
         
+        let factoryArray:[Factory] = defaultFactory()
+        let breweryArray:[Brewery] = defaultBrewery()
+        let draftArray:[DraftBeer] = defaultDraft()
        
         
         switch(FavoBeen.selectedSegmentIndex)
@@ -88,6 +91,9 @@ class FavoBeenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+       
+        
         // Do any additional setup after loading the view.
     }
     

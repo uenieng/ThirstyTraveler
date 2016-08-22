@@ -34,7 +34,7 @@ class FavobeenTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return favobeen.count
+        return 0 //favobeen.count
     }
 
     /*

@@ -15,12 +15,15 @@ class FavoBeenViewController: UIViewController {
     @IBOutlet var FavoEmbed: UIView!
     
     var beerTableVC:FavobeenTableViewController?
+    var wishlist:Array<BeerPlace> = []
+    var haveBeen:Array<BeerPlace> = []
+  //  let favobeen:[String:[BeerPlace]] = ["즐겨찾기":wishlist,"방문기록":haveBeen]
 
     
     
     @IBAction func FavoBeenEmbed(sender: UISegmentedControl){
         
-     
+
        
         
         switch(FavoBeen.selectedSegmentIndex)
@@ -32,7 +35,8 @@ class FavoBeenViewController: UIViewController {
                     wishlist += [items]
                 }
                 
-            
+                print(wishlist[0].name)
+
             }
             for items in factoryArray0 {
                 if items.wishlist == true{
@@ -76,7 +80,11 @@ class FavoBeenViewController: UIViewController {
             
         }
         
+        
+
+        
         return
+        
         
         //여기에 returnValue array 값 childViewControllers로 보내는 매쏘드 작성 해야함
         
@@ -87,10 +95,7 @@ class FavoBeenViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let wishlist:Array<BeerPlace> = []
-        let haveBeen:Array<BeerPlace> = []
-        let favobeen:[String:[BeerPlace]] = ["즐겨찾기":wishlist,"방문기록":haveBeen]
-
+     
         
        
         

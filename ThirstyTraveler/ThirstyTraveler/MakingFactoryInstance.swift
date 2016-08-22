@@ -51,7 +51,9 @@ func defaultDraft() -> [DraftBeer]{
     
     draftArray += [draft1,draft2,draft3,draft4,draft5]
     
+    
     return   draftArray}
+
 
 
 var breweryArray:[Brewery] = []
@@ -69,9 +71,13 @@ func defaultBrewery() -> [Brewery]{
     
     let brewery5 = Brewery(name:"brewery5", type:"Brewery",location:(37.582557,127.028976), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
     
-    breweryArray += [ brewery1, brewery2, brewery3, brewery4, brewery5]
+    breweryArray += [brewery1, brewery2, brewery3, brewery4, brewery5]
+    
+
     
     return breweryArray
+    
+
 }
 
 
@@ -79,6 +85,7 @@ func defaultBrewery() -> [Brewery]{
 let factoryArray0:[Factory] = defaultFactory()
 let breweryArray0:[Brewery] = defaultBrewery()
 let draftArray0:[DraftBeer] = defaultDraft()
+
 
 
 

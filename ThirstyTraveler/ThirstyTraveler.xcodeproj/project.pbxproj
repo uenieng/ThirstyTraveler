@@ -17,6 +17,7 @@
 		DA354CDB1D669FAC00CC89B3 /* BreweryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDA1D669FAC00CC89B3 /* BreweryTableViewController.swift */; };
 		DA354CDD1D66C6B400CC89B3 /* FavobeenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */; };
 		DA354CDF1D66C79E00CC89B3 /* FavoBeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */; };
+		DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */; };
 		DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB01D37346F0049C008 /* AppDelegate.swift */; };
 		DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB21D37346F0049C008 /* ViewController.swift */; };
 		DA6BBFB61D37346F0049C008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA6BBFB41D37346F0049C008 /* Main.storyboard */; };
@@ -69,6 +70,7 @@
 		DA354CDA1D669FAC00CC89B3 /* BreweryTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryTableViewController.swift; sourceTree = "<group>"; };
 		DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavobeenTableViewController.swift; sourceTree = "<group>"; };
 		DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoBeenViewController.swift; sourceTree = "<group>"; };
+		DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favobeenTableViewCell.swift; sourceTree = "<group>"; };
 		DA6BBFAD1D37346F0049C008 /* ThirstyTraveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirstyTraveler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA6BBFB01D37346F0049C008 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA6BBFB21D37346F0049C008 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				3BEC83331D64287700B60366 /* ParentClass.swift */,
 				DA2178061D641882005C2F9D /* Brewery.swift */,
 				DD7A3A231D65838C0059A1A7 /* Draft.swift */,
+				DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */,
 				DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */,
 				DDD15EB51D66A6CC0050D862 /* FilterToggle.swift */,
 			);
@@ -315,6 +318,7 @@
 				3BEC83141D62D1B000B60366 /* Factory.swift in Sources */,
 				DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */,
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
+				DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */,
 				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
 				3BEC83341D64287700B60366 /* ParentClass.swift in Sources */,
 				DDD15EB61D66A6CC0050D862 /* FilterToggle.swift in Sources */,

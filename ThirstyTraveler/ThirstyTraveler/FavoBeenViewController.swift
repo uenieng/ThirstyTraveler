@@ -23,74 +23,6 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
 
     
     
-    @IBAction func FavoBeenEmbed(sender: UISegmentedControl){
-        
-
-       
-        
-        switch(FavoBeen.selectedSegmentIndex)
-        {
-        case 0:
-            for items in breweryArray0 {
-                
-                if items.wishlist == true {
-                    wishlist += [items]
-                }
-                
-              //  print(wishlist[0].name)
-
-            }
-            for items in factoryArray0 {
-                if items.wishlist == true{
-                    wishlist += [items]
-                }
-            }
-            
-            for items in draftArray0 {
-                if items.wishlist == true{
-                    wishlist += [items]
-                }
-            }
-             break
-        case 1:
-            for items in breweryArray0 {
-                
-                if items.haveBeen == true {
-                    haveBeen += [items]
-                }
-                
-            }
-            for items in factoryArray0 {
-                
-                if items.haveBeen == true {
-                    haveBeen += [items]
-                }
-                
-            }
-            for items in draftArray0 {
-                
-                if items.haveBeen == true {
-                    haveBeen += [items]
-                }
-                
-            }
-
-            break
-            
-        default:
-            break
-            
-        }
-        
-        
-
-        
-        return
-        
-        
-        //여기에 returnValue array 값 childViewControllers로 보내는 매쏘드 작성 해야함
-        
-    }
     
     
     
@@ -98,7 +30,37 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         super.viewDidLoad()
 
      
+        for items in breweryArray0 {
+            
+            if items.wishlist == true {
+                wishlist += [items]
+                
+            }
+            if items.haveBeen == true {
+                    haveBeen += [items]
+            }
+            
+            //  print(wishlist[0].name)
+            
+        }
+        for items in factoryArray0 {
+            if items.wishlist == true{
+                wishlist += [items]
+            }
+            if items.haveBeen == true {
+                haveBeen += [items]
+            }
+        }
         
+        for items in draftArray0 {
+            if items.wishlist == true{
+                wishlist += [items]
+            }
+            if items.haveBeen == true {
+                haveBeen += [items]
+            }
+        }
+
        
         
         // Do any additional setup after loading the view.
@@ -112,11 +74,22 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     }
     
     
-    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         var returnValue = 0
         
         
+        switch(FavoBeen.selectedSegmentIndex){
+        case 0:
+            returnValue = wishlist.count
+            break
+        case 1:
+            returnValue = haveBeen.count
+            break
+        
+        default :
+        break
+        }
         
         return returnValue
         
@@ -128,13 +101,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls) 
     
     
-    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
-    
-    {
-        let favobeenCell = tableview.dequeueReusableCellWithIdentifier("favobeenCell", forIndexPath: indexPath)
-        
-        return favobeenCell
-    }
+   
     
     
    /* public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -148,10 +115,53 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     }
 */
     
+    var itemsOnSegView:Array<BeerPlace> = []
+
     
-    
-    
-    
+    @IBAction func FavoBeenEmbed(sender: UISegmentedControl){
+        
+        
+        
+        switch(FavoBeen.selectedSegmentIndex)
+        {
+        case 0:
+            itemsOnSegView = wishlist
+            break
+        case 1:
+            itemsOnSegView = haveBeen
+            break
+            
+        default:
+            break
+            
+        }
+        
+        
+        
+        
+        return
+        
+        
+        //여기에 returnValue array 값 childViewControllers로 보내는 매쏘드 작성 해야함
+        
+    }
+
+     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
+        
+    {
+        let favobeenCell = tableView.dequeueReusableCellWithIdentifier("favobeenCell", forIndexPath: indexPath) as! favobeenTableViewCell
+        
+//        for i in itemsOnSegView {
+//        var placeNames:[String] = Array(itemsOnSegView[i].name)
+//        var placeAddress:[String] = Array(String(itemsOnSegView[i].location))
+//        
+//            favobeenCell.beerplaceName.text = itemsOnSegView[i].name
+//            favobeenCell.beerplaceAddress.text = String("itemsOnSegView.location")
+//        }
+//        
+        
+        return favobeenCell
+    }
 
     /*
     // MARK: - Navigation
@@ -164,3 +174,28 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     */
 
 }
+
+
+
+//for items in breweryArray0 {
+//    
+//    if items.haveBeen == true {
+//        haveBeen += [items]
+//    }
+//    
+//}
+//for items in factoryArray0 {
+//    
+//    if items.haveBeen == true {
+//        haveBeen += [items]
+//    }
+//    
+//}
+//for items in draftArray0 {
+//    
+//    if items.haveBeen == true {
+//        haveBeen += [items]
+//    }
+//    
+//}
+

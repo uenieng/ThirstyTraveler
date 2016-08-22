@@ -14,6 +14,8 @@
 		DDD15ECE1D66D9000050D862 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDD15ECC1D66D9000050D862 /* LaunchScreen.storyboard */; };
 		DDD15ED61D66DA3A0050D862 /* DrinkTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD15ED51D66DA3A0050D862 /* DrinkTableViewController.swift */; };
 		DDD15ED81D66DA810050D862 /* DrinkerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD15ED71D66DA810050D862 /* DrinkerTableViewCell.swift */; };
+		DDEB0DCB1D6ACEC400EE9BDD /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB0DCA1D6ACEC400EE9BDD /* DetailTableViewController.swift */; };
+		DDEB0DCD1D6ACED600EE9BDD /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEB0DCC1D6ACED600EE9BDD /* DetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		DDD15ECF1D66D9000050D862 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD15ED51D66DA3A0050D862 /* DrinkTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkTableViewController.swift; sourceTree = "<group>"; };
 		DDD15ED71D66DA810050D862 /* DrinkerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrinkerTableViewCell.swift; sourceTree = "<group>"; };
+		DDEB0DCA1D6ACEC400EE9BDD /* DetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		DDEB0DCC1D6ACED600EE9BDD /* DetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				DDD15EC31D66D9000050D862 /* AppDelegate.swift */,
 				DDD15EC51D66D9000050D862 /* ViewController.swift */,
 				DDD15EC71D66D9000050D862 /* Main.storyboard */,
+				DDEB0DCA1D6ACEC400EE9BDD /* DetailTableViewController.swift */,
+				DDEB0DCC1D6ACED600EE9BDD /* DetailTableViewCell.swift */,
 				DDD15ED51D66DA3A0050D862 /* DrinkTableViewController.swift */,
 				DDD15ED71D66DA810050D862 /* DrinkerTableViewCell.swift */,
 				DDD15ECA1D66D9000050D862 /* Assets.xcassets */,
@@ -141,7 +147,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEB0DCD1D6ACED600EE9BDD /* DetailTableViewCell.swift in Sources */,
 				DDD15EC61D66D9000050D862 /* ViewController.swift in Sources */,
+				DDEB0DCB1D6ACEC400EE9BDD /* DetailTableViewController.swift in Sources */,
 				DDD15ED61D66DA3A0050D862 /* DrinkTableViewController.swift in Sources */,
 				DDD15EC41D66D9000050D862 /* AppDelegate.swift in Sources */,
 				DDD15ED81D66DA810050D862 /* DrinkerTableViewCell.swift in Sources */,
@@ -294,6 +302,7 @@
 				DDD15ED41D66D9000050D862 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,8 +29,11 @@ class DrinkerDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
         drinkerNameLabel.text = currentDrinker?.name
+        
         drinkerLocationLabel.text = String(currentDrinker?.locationString)
+        
         drinkerRatingLabel.text = String(currentDrinker?.ratings)
        // drinkerTypeLabel.text = String(currentDrinker?.typeImage)
         

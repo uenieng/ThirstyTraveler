@@ -105,6 +105,13 @@ class DrinkTableViewController: UITableViewController {
         return cell
     }
     
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        let areaNames:[String] = Array(drinkers.keys)
+        let areaName:String = areaNames[section]
+        
+        return areaName
+    }
 
     /*
     // Override to support conditional editing of the table view.

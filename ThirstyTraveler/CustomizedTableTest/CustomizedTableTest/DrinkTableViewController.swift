@@ -104,7 +104,7 @@ class DrinkTableViewController: UITableViewController {
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -141,14 +141,35 @@ class DrinkTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        
+        if segue.identifier == "DetailSegue" {
+            //목적지 뷰 컨트롤러 확보
+            let destVC = segue.destinationViewController as! DrinkerDetailViewController
+            
+            //테이블뷰에서 선택된 어브젝트 확보
+            let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+            
+            let areaNames:[String] = Array(drinkers.keys)
+            let areaName:String = areaNames[selectedIndex.section]
+            
+            let areaForCell:[Drinker] = drinkers[areaName]!
+            let selected:Drinker = areaForCell[selectedIndex.row]
+            
+            //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
+            destVC.currentDrinker = selected
+        }
     }
-    */
+    
+    
+    
+    
 
 }

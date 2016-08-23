@@ -27,7 +27,7 @@ class Brewery:BeerPlace{
         super.init(name:"", type:"", location:(0,0),officeNumber:0,officeTime:[("",0,0)])
         
         
-        
+            
     }
     
     convenience init (name: String, type: String, location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledBPricelist:[String:Int])

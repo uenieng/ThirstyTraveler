@@ -57,5 +57,20 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     }
     
     
+    func createImageButton () {
+        let button = UIButton();
+        button.setImage(UIImage(named: "beer_1_black"), forState: .Normal)
+        button.frame = CGRectMake(20, 50, 43, 43) // X, Y, width, height
+        button.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
+        button.backgroundColor = UIColor(red: (31/255.0), green: (146/255.0), blue: (160/255.0), alpha: 1.0)
+        
+        button.layer.cornerRadius = 0
+        button.layer.masksToBounds = true
+        
+        self.view.addSubview(button)
+    }
+    
+    
+    
 }
 

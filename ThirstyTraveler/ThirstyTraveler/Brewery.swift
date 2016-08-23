@@ -24,13 +24,13 @@ class Brewery:BeerPlace{
         self.bottledBPricelist = [:]
         self.brewedPricelist = [:]
         
-        super.init(name:"", type:"", location:(0,0),officeNumber:0,officeTime:[("",0,0)])
+        super.init(name:"", type:"", location:(0,0),officeNumber:"010-0000-0000",officeTime:[("",0,0)])
         
         
             
     }
     
-    convenience init (name: String, type: String, location:(Double,Double), officeNumber: Int, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledBPricelist:[String:Int])
+    convenience init (name: String, type: String, location:(Double,Double), officeNumber: String, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledBPricelist:[String:Int])
         {
             self.init()
             self.name = name
@@ -43,21 +43,21 @@ class Brewery:BeerPlace{
         }
 
     }
-    
-    
-var breweryClass:Array<Brewery> = []
-
-
-func createDefault() -> [Brewery]{
-
-    
-    
-    
-    let brewery11 = Brewery(name:"brewery1", type:"Brewery", location:(123,345), officeNumber:1234452932923, officeTime:[("Mon",1200,1800)], brewedPricelist:["":0],bottledBPricelist:["":0])
-
-    breweryClass += [brewery11]
-    
-    return breweryClass
-    
-}
+//    
+//    
+//var breweryClass:Array<Brewery> = []
+//
+//
+//func createDefault() -> [Brewery]{
+//
+//    
+//    
+//    
+//    let brewery11 = Brewery(name:"brewery1", type:"Brewery", location:(123,345), officeNumber:"", officeTime:[("Mon",1200,1800)], brewedPricelist:["":0],bottledBPricelist:["":0])
+//
+//    breweryClass += [brewery11]
+//    
+//    return breweryClass
+//    
+//}
 

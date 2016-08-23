@@ -17,11 +17,11 @@ class Factory : BeerPlace{
     init(){
         self.programList =  [""]
         self.officeURL = "http//"
-        super.init(name:"", type:"", location:(0,0), officeNumber: 01000000000, officeTime: [("월~일",0900,1800)])
+        super.init(name:"", type:"", location:(0,0), officeNumber: "010-0000-0000", officeTime: [("월~일",0900,1800)])
     }
     
     
-    convenience init( name:String, type:String, location:(Double, Double),officeTime:[(String,Int,Int)], programList:[String], officeNumber:Int, officeURL:String)
+    convenience init( name:String, type:String, location:(Double, Double),officeTime:[(String,Int,Int)], programList:[String], officeNumber:String, officeURL:String)
     {
         self.init()
         self.officeTime = officeTime

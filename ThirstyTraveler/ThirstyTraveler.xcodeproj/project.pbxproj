@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B0B9DE61D6CBA3700D84884 /* CreatingMark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0B9DE51D6CBA3700D84884 /* CreatingMark.swift */; };
+		3B4D81321D6C8F7500168C19 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D81311D6C8F7500168C19 /* data.json */; };
+		3B4D81341D6C964000168C19 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D81331D6C964000168C19 /* data.json */; };
 		3B60E8C31D6C190600AE6CF5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */; };
 		3B60E8C51D6C194A00AE6CF5 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */; };
 		3BEC83141D62D1B000B60366 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83131D62D1B000B60366 /* Factory.swift */; };
@@ -69,12 +72,15 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3B0B9DE51D6CBA3700D84884 /* CreatingMark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreatingMark.swift; sourceTree = "<group>"; };
+		3B4D81311D6C8F7500168C19 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		3B4D81331D6C964000168C19 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ThirstyTraveler/data.json; sourceTree = "<group>"; };
 		3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
 		3BEC83131D62D1B000B60366 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		3BEC83331D64287700B60366 /* ParentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
 		3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakingFactoryInstance.swift; sourceTree = "<group>"; };
-		50FD0D35F47EBF17C8BECFAC /* libPods-ThirstyTraveler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirstyTraveler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		635382223661B55994141704 /* libPods-ThirstyTraveler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirstyTraveler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6576056E687BE5690C94AB43 /* Pods-ThirstyTraveler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirstyTraveler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThirstyTraveler/Pods-ThirstyTraveler.debug.xcconfig"; sourceTree = "<group>"; };
 		69F8CA4C587D2216B2A14D01 /* Pods-ThirstyTraveler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirstyTraveler.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirstyTraveler/Pods-ThirstyTraveler.release.xcconfig"; sourceTree = "<group>"; };
 		DA2177C81D62FE94005C2F9D /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PilotPlant.framework; sourceTree = "<group>"; };
@@ -136,7 +142,7 @@
 		635F6F90EF93ACE954D54493 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				50FD0D35F47EBF17C8BECFAC /* libPods-ThirstyTraveler.a */,
+				635382223661B55994141704 /* libPods-ThirstyTraveler.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +159,7 @@
 		DA6BBFA41D37346F0049C008 = {
 			isa = PBXGroup;
 			children = (
+				3B4D81331D6C964000168C19 /* data.json */,
 				DA6BBFAF1D37346F0049C008 /* ThirstyTraveler */,
 				DA6BBFC41D37346F0049C008 /* ThirstyTravelerTests */,
 				DA6BBFCF1D3734700049C008 /* ThirstyTravelerUITests */,
@@ -175,14 +182,13 @@
 		DA6BBFAF1D37346F0049C008 /* ThirstyTraveler */ = {
 			isa = PBXGroup;
 			children = (
+				3B4D81311D6C8F7500168C19 /* data.json */,
 				DA2177C81D62FE94005C2F9D /* PilotPlant.framework */,
 				DA6BBFDF1D3734A50049C008 /* UIViewController+Navigation.swift */,
 				DA354CDA1D669FAC00CC89B3 /* BreweryTableViewController.swift */,
 				DA6BBFB01D37346F0049C008 /* AppDelegate.swift */,
 				DA6BBFB21D37346F0049C008 /* ViewController.swift */,
 				DA6BBFB41D37346F0049C008 /* Main.storyboard */,
-				3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */,
-				3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */,
 				DDFB004C1D6C12490037BF23 /* DraftDetailTableViewController.swift */,
 				DDFB00521D6C147B0037BF23 /* DraftDetailTableViewCell.swift */,
 				DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */,
@@ -200,6 +206,9 @@
 				DA2178061D641882005C2F9D /* Brewery.swift */,
 				3BEC83131D62D1B000B60366 /* Factory.swift */,
 				3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */,
+				3B0B9DE51D6CBA3700D84884 /* CreatingMark.swift */,
+				3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */,
+				3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */,
 			);
 			path = ThirstyTraveler;
 			sourceTree = "<group>";
@@ -336,6 +345,8 @@
 				DA6BBFBB1D37346F0049C008 /* LaunchScreen.storyboard in Resources */,
 				DA6BBFB81D37346F0049C008 /* Assets.xcassets in Resources */,
 				DA6BBFB61D37346F0049C008 /* Main.storyboard in Resources */,
+				3B4D81341D6C964000168C19 /* data.json in Resources */,
+				3B4D81321D6C8F7500168C19 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +427,7 @@
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
 				DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */,
 				DDFB00571D6C14950037BF23 /* FactoryDatailTableViewCell.swift in Sources */,
+				3B0B9DE61D6CBA3700D84884 /* CreatingMark.swift in Sources */,
 				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
 				DDFB00551D6C14860037BF23 /* BreweryDetailTableViewCell.swift in Sources */,
 				3BEC83341D64287700B60366 /* ParentClass.swift in Sources */,

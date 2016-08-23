@@ -2,28 +2,78 @@ import UIKit
 import GoogleMaps
 import GoogleMapsCore
 
+
 class MapViewController: UIViewController, GMSMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        let camera = GMSCameraPosition.cameraWithLatitude(-33.86,
-                                                          longitude: 151.20, zoom: 15)
+        let camera = GMSCameraPosition.cameraWithLatitude(37.539051,
+                                                          longitude: 126.988116, zoom: 10)
         let thismapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         thismapView.myLocationEnabled = true
         thismapView.delegate = self
         self.view = thismapView
         
-        let position = CLLocationCoordinate2DMake(-33.86, 151.20)
-        let marker = GMSMarker(position: position)
-        marker.title = "Sydney"
-        marker.snippet = "Australia"
-        let markerIcon = UIImage(named: "draft")
+        var draftIcon = UIImage(named: "beer_1_fill")
+        var breweryIcon = UIImage(named: "beer_2_fill2")
+        var factoryIcon = UIImage(named: "beer_3_fill")
         let markerSize = CGSize(width: 8, height: 8)
-        marker.icon = scaleImage(markerIcon!, toSize: markerSize)
-        marker.map = thismapView
+        draftIcon = scaleImage(draftIcon!, toSize: markerSize)
+        breweryIcon = scaleImage(breweryIcon!, toSize: markerSize)
+        factoryIcon = scaleImage(factoryIcon!, toSize: markerSize)
         
+        for draft in draftArray0{
+            print(draft.location)
+        }
+        
+        createMarker(thismapView, DraftList: draftArray0, icon: draftIcon!)
+        createMarker(thismapView, BreweryList: breweryArray0, icon: breweryIcon!)
+        createMarker(thismapView, FactoryList: factoryArray0, icon: factoryIcon!)
+        
+//        let position = CLLocationCoordinate2DMake(37.539051, 126.988116)
+//        let marker = GMSMarker(position: position)
+//        marker.title = "Sydney"
+//        marker.snippet = "Australia"
+//        var markerIcon = UIImage(named: "beer_1_fill")
+//        marker.icon = scaleImage(markerIcon!, toSize: markerSize)
+//        marker.map = thismapView
+        
+        createImageButton()
+        
+        
+        //let wonyeongURL = NSURL(string : "https://github.com/ProjectInTheClass/TakeCareOfMyDetail/blob/master/Wonyeong2Detail/Json/ThirstyTravelrer.json")
+        
+        //let wonyeongURL = NSBundle.mainBundle().URLForResource("data", withExtension: "json")
+        
+//        let wonyeongURL: NSURL
+//        
+//        if let URL = NSURL(fileURLWithPath: "data.json"){
+//            wonyeongURL = URL
+//        }
+//        print(wonyeongURL)
+//        let data = NSData(contentsOfURL: wonyeongURL)
+        
+
+        
+        
+        
+//        let data = NSData(contentsOfFile: path)
+//        print(data)
+//        do {
+//            let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+//            print(object)
+//            if let dictionary = object as? [AnyObject] {
+//                //readJSONObject(dictionary)
+//                print("start read")
+//            }
+//        } catch {
+//            print("error")
+//            // Handle Error
+//        }
+
+
         
     }
     func scaleImage(image: UIImage, toSize newSize: CGSize) -> (UIImage) {
@@ -62,14 +112,13 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         button.setImage(UIImage(named: "beer_1_black"), forState: .Normal)
         button.frame = CGRectMake(20, 50, 43, 43) // X, Y, width, height
         button.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
-        button.backgroundColor = UIColor(red: (31/255.0), green: (146/255.0), blue: (160/255.0), alpha: 1.0)
+        //button.backgroundColor = UIColor(red: (31/255.0), green: (146/255.0), blue: (160/255.0), alpha: 1.0)
         
         button.layer.cornerRadius = 0
         button.layer.masksToBounds = true
         
         self.view.addSubview(button)
     }
-    
     
     
 }

@@ -17,19 +17,19 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     @IBOutlet var FavoEmbed: UIView!
     
     var beerTableVC:FavobeenTableViewController?
+    var beerplaces:Array<BeerPlace> = []
+    
     var wishlist:Array<BeerPlace> = []
     var haveBeen:Array<BeerPlace> = []
   //  let favobeen:[String:[BeerPlace]] = ["즐겨찾기":wishlist,"방문기록":haveBeen]
 
-    
-    
-    
-    
-    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-     
+     print(itemsOnSegView)
+        
         for items in breweryArray0 {
             
             if items.wishlist == true {
@@ -39,8 +39,6 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             if items.haveBeen == true {
                     haveBeen += [items]
             }
-            
-            //  print(wishlist[0].name)
             
         }
         for items in factoryArray0 {
@@ -59,10 +57,13 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             if items.haveBeen == true {
                 haveBeen += [items]
             }
+            
+            itemsOnSegView += wishlist
+
         }
 
-       //itemsonsegview가 nil일때 빈 테이블뷰를 호출하는 코드 작성
-        //빈 테이블뷰를 어떻게 불러오지? 
+       //itemsOnSegview가 nil일때 빈 테이블뷰를 호출하는 코드 작성
+        //빈 테이블뷰를 어떻게 불러오지?
         
         // Do any additional setup after loading the view.
     }
@@ -105,17 +106,6 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
    
     
     
-   /* public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
-    
-    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0 //favobeen.count
-    }
-*/
-    
     var itemsOnSegView:Array<BeerPlace> = []
 
     
@@ -152,13 +142,6 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     {
         let favobeenCell = tableView.dequeueReusableCellWithIdentifier("favobeenCell", forIndexPath: indexPath) as! favobeenTableViewCell
         
-//        for i in itemsOnSegView {
-//        var placeNames:[String] = Array(itemsOnSegView[i].name)
-//        var placeAddress:[String] = Array(String(itemsOnSegView[i].location))
-//        
-//            favobeenCell.beerplaceName.text = itemsOnSegView[i].name
-//            favobeenCell.beerplaceAddress.text = String("itemsOnSegView.location")
-//        }
         
         // 지금까지 제대로 실행되었다면 itemsOnSegView에 beerplace타입의 객체들이 인스턴스화 되어있을것.
         // 그러면 불러와야할 것은
@@ -183,27 +166,4 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
 
 }
 
-
-
-//for items in breweryArray0 {
-//    
-//    if items.haveBeen == true {
-//        haveBeen += [items]
-//    }
-//    
-//}
-//for items in factoryArray0 {
-//    
-//    if items.haveBeen == true {
-//        haveBeen += [items]
-//    }
-//    
-//}
-//for items in draftArray0 {
-//    
-//    if items.haveBeen == true {
-//        haveBeen += [items]
-//    }
-//    
-//}
 

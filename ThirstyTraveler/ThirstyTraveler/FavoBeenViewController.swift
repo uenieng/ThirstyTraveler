@@ -146,11 +146,22 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         // 지금까지 제대로 실행되었다면 itemsOnSegView에 beerplace타입의 객체들이 인스턴스화 되어있을것.
         // 그러면 불러와야할 것은
         // 가게 이름, 주소, 이미지, 평점, 타입 이정도인데
-        let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView[indexPath.row].name)
+        let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView[indexPath.row].name) //
         let placeName:String = placeNames[indexPath.section]
-        let placeAddress:String = String(itemsOnSegView[indexPath.row].name)
+        let placeAddress:String = String(itemsOnSegView[indexPath.row].name) // 나중에 parentclass에 address 넣으면 .address로 변경하면 됨.
         
+//        for items in itemsOnSegView {
+//            print(items.name)
+//        }
+        
+        print(placeNames)
+        print(placeName)
+        print(placeAddress)
     
+        favobeenCell.beerplaceName.text = placeName
+        favobeenCell.beerplaceAddress.text = placeAddress
+        
+        
         return favobeenCell
     }
 

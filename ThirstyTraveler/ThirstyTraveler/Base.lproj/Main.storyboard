@@ -268,6 +268,46 @@
             </objects>
             <point key="canvasLocation" x="-648.5" y="-12.5"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="bgl-ff-Y76">
+            <objects>
+                <viewController storyboardIdentifier="SliderController" id="OWB-c1-Bbi" customClass="SliderController" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7aQ-1T-v3O"/>
+                        <viewControllerLayoutGuide type="bottom" id="6Rx-bx-IW2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QwK-oX-Y2d">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beer_favorites_fill" translatesAutoresizingMaskIntoConstraints="NO" id="hU1-Q6-D0m">
+                                <rect key="frame" x="73" y="64" width="138" height="130"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="rlt-M5-ckq">
+                                <rect key="frame" x="251" y="109" width="263" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="OWB-c1-Bbi" eventType="valueChanged" id="gbh-TY-tBI"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hxt-Ud-CQL">
+                                <rect key="frame" x="392" y="173" width="29" height="46"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.4321535665301196" blue="0.82202081553312623" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.32196518481725611" green="0.99073436322744213" blue="1" alpha="0.87089982269503541" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="57d-0M-J57"/>
+                    <connections>
+                        <outlet property="Label" destination="Hxt-Ud-CQL" id="1j5-GV-kbh"/>
+                        <outlet property="Slider" destination="rlt-M5-ckq" id="pYZ-jW-C3c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cT3-OZ-w2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2046" y="1432"/>
+        </scene>
         <!--setting 01-->
         <scene sceneID="CWa-DA-eRd">
             <objects>
@@ -294,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91i-xI-SJN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1613.5" y="1329.5"/>
+            <point key="canvasLocation" x="-1537.5" y="1585.5"/>
         </scene>
         <!--Settings table-->
         <scene sceneID="B86-WT-Z5q">
@@ -853,8 +893,13 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftDetailTableViewCell" rowHeight="157" id="C4y-ZQ-47j" customClass="DraftDetailTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="157"/>
                                 <autoresizingMask key="autoresizingMask"/>
+
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C4y-ZQ-47j" id="WxH-hH-ErT">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
+
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dbt-q6-Ykb" id="PYW-oG-V86">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
+
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e63-2r-tcZ">
@@ -1237,9 +1282,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="nJW-41-cAT" kind="relationship" relationship="viewControllers" id="eqH-EQ-RTV"/>
                         <segue destination="f0Z-5O-ygn" kind="relationship" relationship="viewControllers" id="u5i-Ss-cZU"/>
                         <segue destination="wmD-c4-ywK" kind="relationship" relationship="viewControllers" id="e00-W2-mqN"/>
+                        <segue destination="OWB-c1-Bbi" kind="relationship" relationship="viewControllers" id="Xls-OG-9Hg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ai-S6-eFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2167,7 +2212,14 @@
         <image name="beer_2_black" width="270" height="270"/>
         <image name="beer_2_fill2" width="270" height="270"/>
         <image name="beer_3_black" width="303" height="303"/>
+        
+        
+
+
         <image name="beer_3_fill" width="303" height="303"/>
+
+        <image name="beer_favorites_fill" width="300" height="299"/>
+
         <image name="beer_favorites_gray" width="300" height="299"/>
         <image name="beer_visited_gray" width="305" height="302"/>
         <image name="brewery" width="700" height="700"/>

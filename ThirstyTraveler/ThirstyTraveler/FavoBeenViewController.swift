@@ -67,7 +67,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        var returnValue = 0
+        var returnValue = 1
         
         
         switch(FavoBeen.selectedSegmentIndex){

@@ -1258,6 +1258,7 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="fK8-WD-PJR">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" red="0.9137254901960784" green="0.69803921568627447" blue="0.17254901960784313" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="wmD-c4-ywK" kind="relationship" relationship="viewControllers" id="01z-bI-U8H"/>
@@ -1850,7 +1851,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfI-EW-R2V">
                                         <rect key="frame" x="201" y="255" width="39" height="30"/>
                                         <state key="normal" title="Close">
-                                            <color key="titleColor" red="1" green="0.14638597262485631" blue="0.94846960009433923" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleColor" red="0.91372549020000005" green="0.69803921570000005" blue="0.17254901959999999" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="popUpClose:" destination="7FQ-CA-yiE" eventType="touchUpInside" id="lL5-ak-6It"/>

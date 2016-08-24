@@ -101,15 +101,41 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     func createImageButton () {
         let button = UIButton();
+        let button1 = UIButton();
+        let button2 = UIButton();
+        let button3 = UIButton();
         button.setImage(UIImage(named: "beer_1_black"), forState: .Normal)
-        button.frame = CGRectMake(20, 50, 43, 43) // X, Y, width, height
+        button.frame = CGRectMake(20, 50, 43, 43)
         button.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
-        //button.backgroundColor = UIColor(red: (31/255.0), green: (146/255.0), blue: (160/255.0), alpha: 1.0)
         
         button.layer.cornerRadius = 0
         button.layer.masksToBounds = true
         
+        button1.setImage(UIImage(named: "beer_2_black"), forState: .Normal)
+        button1.frame = CGRectMake(20, 100, 43, 43)
+        button1.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
+        
+        button1.layer.cornerRadius = 0
+        button1.layer.masksToBounds = true
+        
+        button2.setImage(UIImage(named: "beer_3_black"), forState: .Normal)
+        button2.frame = CGRectMake(20, 150, 43, 43)
+        button2.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
+        
+        button2.layer.cornerRadius = 0
+        button2.layer.masksToBounds = true
+        
+        button3.setImage(UIImage(named: "beer_favorites"), forState: .Normal)
+        button3.frame = CGRectMake(20, 200, 43, 43)
+        button3.addTarget(self, action: "buttonPressed:", forControlEvents: .TouchUpInside)
+        
+        button3.layer.cornerRadius = 0
+        button3.layer.masksToBounds = true
+        
         self.view.addSubview(button)
+        self.view.addSubview(button1)
+        self.view.addSubview(button2)
+        self.view.addSubview(button3)
     }
     
     

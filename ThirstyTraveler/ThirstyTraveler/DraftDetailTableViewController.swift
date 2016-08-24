@@ -42,16 +42,19 @@ class DraftDetailTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        var rowCount:Int
+        var rowCount:Int = 0
         if section == 0{
+            rowCount = 1
+        }
+        if section == 1{
             rowCount = currentDraft!.officeTime.count
         }
         
-        if section == 1{
+        if section == 2{
             rowCount = currentDraft!.draftPriceList.count
         }
         
-        else{
+        if section == 3{
             rowCount = currentDraft!.bottledDPriceList.count
         }
         
@@ -73,8 +76,9 @@ class DraftDetailTableViewController: UITableViewController {
         case 2:
             identifier = "DraftBeerCell"
 
-        default:
+        case 3:
             identifier = "BottledBeerCell"
+        default : identifier = ""
         }
         
         
@@ -83,15 +87,24 @@ class DraftDetailTableViewController: UITableViewController {
         // Configure the cell...
         if let cleanDraft = currentDraft{
         switch indexPath.section{
-       /*case 0:
+      /*  case 0:
         let cell0 = cell as! DraftDetailTableViewCell
-            //cell0.draftProfile.image = currentDraft!.
+            cell0.draftProfile.image = "beer1_yellow
             //cell0.draftType
             cell0.draftTitle.text = cleanDraft.name
-            //cell0.draftRatings.= cleanDraft.ratings
+            cell0.draftRatings.text = String(cleanDraft.ratings)
             cell0.draftLocation.text = cleanDraft.placeID
             cell0.draftFavorites.enabled = cleanDraft.wishlist
             cell0.draftVisited.enabled = cleanDraft.haveBeen*/
+            
+        case 0:
+            let cell0 = cell as! DraftDetailTableViewCell
+          //  cell0.draftProfile.image = beer1
+            cell0.draftRatingsLabel.text = cleanDraft.name
+            cell0.draftLocationLabel.text = cleanDraft.placeID
+            cell0.draftFavorites.enabled = cleanDraft.wishlist
+            cell0.draftVisited.enabled = cleanDraft.haveBeen
+            
         case 1:
             let openTime:OpenTime = cleanDraft.officeTime[indexPath.row]
             //(cell as! OfficeTimeCell).dayLabel.text = openTime.day*/
@@ -101,6 +114,8 @@ class DraftDetailTableViewController: UITableViewController {
             //(cell as! OfficeTimeCell).timeLabel.text = "\(openTime.open)~\(openTime.close)"
             
         case 2:
+        //let nameList:[String] = cleanDraft.draftPriceList.keys
+            
             let cell2 = cell as! DraftBeerCell
             cell2.draftBeerNameLabel.text = String(cleanDraft.draftPriceList.keys)
             cell2.draftBeerPriceLabel.text = String(cleanDraft.draftPriceList.values)
@@ -111,7 +126,7 @@ class DraftDetailTableViewController: UITableViewController {
             (cell as!BottledBeerCell).bottledBeerNameLabel.text = String(currentDraft!.bottledDPriceList.keys)
             (cell as!BottledBeerCell).bottledBeerPriceLabel.text = String(currentDraft!.bottledDPriceList.values)
          */
-        case 3:
+        case 3 :
             let cell3 = cell as! BottledBeerCell
             cell3.bottledBeerNameLabel.text = String(cleanDraft.bottledDPriceList.keys)
             cell3.bottledBeerNameLabel.text = String(cleanDraft.bottledDPriceList.values)
@@ -189,14 +204,11 @@ class DraftDetailTableViewController: UITableViewController {
 
 }
 
-class DraftDetailTableViewCell: UITableViewCell{
-    
+class DraftDetailTableViewCell:UITableViewCell{
     @IBOutlet weak var draftProfile: UIImageView!
-    @IBOutlet weak var draftType: UIImageView!
-    @IBOutlet weak var draftRatings: UILabel!
-    @IBOutlet weak var draftLocation: UILabel!
-    
-    @IBOutlet weak var draftTitle: UILabel!
+    @IBOutlet weak var draftNameLabel: UILabel!
+    @IBOutlet weak var draftRatingsLabel: UILabel!
+    @IBOutlet weak var draftLocationLabel: UILabel!
     @IBOutlet weak var draftFavorites: UIButton!
     @IBOutlet weak var draftVisited: UIButton!
     

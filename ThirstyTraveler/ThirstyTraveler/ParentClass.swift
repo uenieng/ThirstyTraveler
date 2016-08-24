@@ -2,7 +2,7 @@
 
 import UIKit
 
-
+typealias OpenTime = (day:String, open:Int, close:Int)
 
 class BeerPlace {
     
@@ -17,7 +17,7 @@ class BeerPlace {
     var address:String=""
     var placeID:String=""
     
-    init (name:String, type:String, location:(Double,Double), officeNumber:String, officeTime:[(String,Int,Int)]){
+    init (name:String, type:String, location:(Double,Double), officeNumber:String, officeTime:[OpenTime]){
         self.name = name
         self.type = type
         self.location = location

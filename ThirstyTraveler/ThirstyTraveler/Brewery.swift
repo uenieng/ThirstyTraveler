@@ -30,7 +30,7 @@ class Brewery:BeerPlace{
             
     }
     
-    convenience init (name: String, type: String, location:(Double,Double), officeNumber: String, officeTime:[(String, Int, Int)],brewedPricelist:[String:Int],bottledBPricelist:[String:Int])
+    convenience init (name: String, type: String, location:(Double,Double), officeNumber: String, officeTime:[OpenTime],brewedPricelist:[String:Int],bottledBPricelist:[String:Int])
         {
             self.init()
             self.name = name

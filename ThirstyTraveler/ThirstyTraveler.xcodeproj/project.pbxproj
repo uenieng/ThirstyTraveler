@@ -12,6 +12,7 @@
 		3B4D81341D6C964000168C19 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 3B4D81331D6C964000168C19 /* data.json */; };
 		3B60E8C31D6C190600AE6CF5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */; };
 		3B60E8C51D6C194A00AE6CF5 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */; };
+		3B8A070B1D6D7FEE00FCB98C /* SliderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B8A070A1D6D7FEE00FCB98C /* SliderController.swift */; };
 		3BEC83141D62D1B000B60366 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83131D62D1B000B60366 /* Factory.swift */; };
 		3BEC83341D64287700B60366 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83331D64287700B60366 /* ParentClass.swift */; };
 		3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */; };
@@ -75,6 +76,7 @@
 		3B4D81331D6C964000168C19 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ThirstyTraveler/data.json; sourceTree = "<group>"; };
 		3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
+		3B8A070A1D6D7FEE00FCB98C /* SliderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderController.swift; sourceTree = "<group>"; };
 		3BEC83131D62D1B000B60366 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
 		3BEC83331D64287700B60366 /* ParentClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentClass.swift; sourceTree = "<group>"; };
 		3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MakingFactoryInstance.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				DA6BBFB01D37346F0049C008 /* AppDelegate.swift */,
 				DA6BBFB21D37346F0049C008 /* ViewController.swift */,
 				DA6BBFB41D37346F0049C008 /* Main.storyboard */,
+				3B8A070A1D6D7FEE00FCB98C /* SliderController.swift */,
 				DDFB004C1D6C12490037BF23 /* DraftDetailTableViewController.swift */,
 				DDFB00521D6C147B0037BF23 /* DraftDetailTableViewCell.swift */,
 				DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */,
@@ -417,6 +420,7 @@
 				3BEC83141D62D1B000B60366 /* Factory.swift in Sources */,
 				DDFB00531D6C147B0037BF23 /* DraftDetailTableViewCell.swift in Sources */,
 				DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */,
+				3B8A070B1D6D7FEE00FCB98C /* SliderController.swift in Sources */,
 				DDFB00511D6C125E0037BF23 /* FactoryDetailTableViewController.swift in Sources */,
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
 				DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */,

@@ -104,14 +104,8 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         // 가게 이름, 주소, 이미지, 평점, 타입 이정도인데
         let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView[indexPath.row].name) //
         let placeName:String = placeNames[indexPath.section]
-        let placeAddress:String = String(itemsOnSegView[indexPath.row].name) // 나중에 parentclass에 address 넣으면 .address로 변경하면 됨.
+        let placeAddress:String = String(itemsOnSegView[indexPath.row].address) // 나중에 parentclass에 address 넣으면 .address로 변경하면 됨.
 
-        
-//        print(placeNames)
-        print(placeName)
-//        print(placeAddress)
-    
-        print(itemsOnSegView)
         favobeenCell.beerplaceName.text = placeName
         favobeenCell.beerplaceAddress.text = placeAddress
         

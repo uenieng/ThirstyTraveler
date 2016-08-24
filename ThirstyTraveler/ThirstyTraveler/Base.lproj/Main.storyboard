@@ -308,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cT3-OZ-w2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2046" y="1432"/>
+            <point key="canvasLocation" x="-1674" y="1536"/>
         </scene>
         <!--setting 01-->
         <scene sceneID="CWa-DA-eRd">
@@ -1262,6 +1262,7 @@
                         <segue destination="f0Z-5O-ygn" kind="relationship" relationship="viewControllers" id="u5i-Ss-cZU"/>
                         <segue destination="wmD-c4-ywK" kind="relationship" relationship="viewControllers" id="e00-W2-mqN"/>
                         <segue destination="OWB-c1-Bbi" kind="relationship" relationship="viewControllers" id="Xls-OG-9Hg"/>
+                        <segue destination="VqU-Pe-AIB" kind="relationship" relationship="viewControllers" id="WgM-tZ-sxS"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ai-S6-eFF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1395,7 +1396,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSC-Wr-stV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-941.5" y="782.5"/>
+            <point key="canvasLocation" x="-1616.5" y="747.5"/>
         </scene>
         <!--Item-->
         <scene sceneID="ZGT-rk-Y2G">

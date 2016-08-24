@@ -9,7 +9,7 @@ class BeerPlace {
     
     var name:String = ""
     var type:String = ""
-    var ratings:Double?
+    var ratings:Double = 2.0
     var location:(Double,Double)
     var wishlist:Bool=true
     var haveBeen:Bool=true

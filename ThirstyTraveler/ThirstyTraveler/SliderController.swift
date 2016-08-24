@@ -7,22 +7,27 @@
 //
 
 import UIKit
-
+import GoogleMaps
+var currentValue:Double = 0.0
 class SliderController: UIViewController {
-
+    
+    let viewChange = MapViewController()
+    var silderView: UIView!
+    
     @IBOutlet weak var Slider: UISlider!
     
     @IBOutlet weak var Label: UILabel!
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        var currentValue = round(Float(sender.value)*10)/10
-        
+        currentValue = round(Double(sender.value)*10)/10
         Label.text = "\(currentValue)"
+        
+        //viewChange.viewDidLoad()
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

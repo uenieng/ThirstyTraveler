@@ -10,8 +10,16 @@ import UIKit
 
 class DraftDetailTableViewController: UITableViewController {
 
+    var myData:[DraftBeer] = []
+    var currentDraft:DraftBeer?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        myData += defaultDraft()
+        //아래부분을 앞의 뷰와 연결해야함.
+        currentDraft = myData[0]
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +37,61 @@ class DraftDetailTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        var rowCount:Int
+        if section == 0{
+            rowCount = currentDraft!.officeTime.count
+        }
+        
+        if section == 1{
+            rowCount = currentDraft!.draftPriceList.count
+        }
+        
+        else{
+            rowCount = currentDraft!.bottledDPriceList.count
+        }
+        
+        
+        return rowCount
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let identifier:String
+        switch indexPath.section{
+        case 0:
+            identifier = "OfficeTimeCell"
+
+        case 1:
+            identifier = "DraftBeerCell"
+
+        default:
+            identifier = "BottledBeerCell"
+
+        
+        }
+        
+        
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
         // Configure the cell...
+        switch indexPath.section{
+        case 0:
+            let openTime:OpenTime = currentDraft!.officeTime[indexPath.row]
+            (cell as! OfficeTimeCell).dayLabel.text = openTime.day
+            (cell as! OfficeTimeCell).timeLabel.text = "
+        }
+        
+        
 
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
@@ -92,4 +138,19 @@ class DraftDetailTableViewController: UITableViewController {
     }
     */
 
+}
+
+
+class OfficeTimeCell: UITableViewCell{
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+}
+
+class DraftBeerCell: UITableViewCell{
+    
+}
+
+class BottledBeerCell: UITableViewCell{
+    
 }

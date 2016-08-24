@@ -15,7 +15,7 @@ class SliderController: UIViewController {
     @IBOutlet weak var Label: UILabel!
     
     @IBAction func sliderValueChanged(sender: UISlider) {
-        var currentValue = Float(sender.value)
+        var currentValue = round(Float(sender.value)*10)/10
         
         Label.text = "\(currentValue)"
     }

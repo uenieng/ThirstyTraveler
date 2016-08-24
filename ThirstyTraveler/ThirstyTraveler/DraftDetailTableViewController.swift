@@ -83,9 +83,12 @@ class DraftDetailTableViewController: UITableViewController {
         switch indexPath.section{
         case 0:
             (cell as!DraftDetailTableViewCell).draftProfile
-            (cell as!DraftDetailTableViewCell).draftProfile
-            (cell as!DraftDetailTableViewCell).draftProfile
-            (cell as!DraftDetailTableViewCell).draftProfile
+            (cell as!DraftDetailTableViewCell).draftType
+            (cell as!DraftDetailTableViewCell).draftTitle.text = currentDraft!.name
+            (cell as!DraftDetailTableViewCell).draftRatings = currentDraft!.ratings
+            (cell as!DraftDetailTableViewCell).draftLocation.text = currentDraft?.placeID
+            (cell as!DraftDetailTableViewCell).draftFavorites
+            (cell as!DraftDetailTableViewCell).draftVisited
         case 1:
             let openTime:OpenTime = currentDraft!.officeTime[indexPath.row]
             (cell as! OfficeTimeCell).dayLabel.text = openTime.day
@@ -108,9 +111,7 @@ class DraftDetailTableViewController: UITableViewController {
     
     
     func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String!{
-        if (section == 0){
-            
-        }
+
         if (section == 1){
             return "영업시간"
         }

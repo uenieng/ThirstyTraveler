@@ -102,6 +102,26 @@ class DraftDetailTableViewController: UITableViewController {
     }
     
 
+    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let  headerCell = tableView.dequeueReusableCellWithIdentifier("HeaderCell") as! CustomHeaderCell
+        headerCell.backgroundColor = UIColor.grayColor()
+        
+        switch (section) {
+        case 0:
+            headerCell.headerLabel.text = "Europe";
+            //return sectionHeaderView
+        case 1:
+            headerCell.headerLabel.text = "Asia";
+            //return sectionHeaderView
+        case 2:
+            headerCell.headerLabel.text = "South America";
+            //return sectionHeaderView
+        default:
+            headerCell.headerLabel.text = "Other";
+        }
+        
+        return headerCell
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

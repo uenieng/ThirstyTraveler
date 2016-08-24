@@ -82,8 +82,8 @@ class DraftDetailTableViewController: UITableViewController {
         // Configure the cell...
         switch indexPath.section{
         case 0:
-            (cell as!DraftDetailTableViewCell).draftProfile
-            (cell as!DraftDetailTableViewCell).draftType
+            //(cell as!DraftDetailTableViewCell).draftProfile
+            //(cell as!DraftDetailTableViewCell).draftType
             (cell as!DraftDetailTableViewCell).draftTitle.text = currentDraft!.name
             //(cell as!DraftDetailTableViewCell).draftRatings.= currentDraft!.ratings
             (cell as!DraftDetailTableViewCell).draftLocation.text = currentDraft?.placeID

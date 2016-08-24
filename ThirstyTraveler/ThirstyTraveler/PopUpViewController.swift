@@ -10,16 +10,9 @@ import UIKit
 
 class PopUpViewController: UIViewController {
     
-    @IBOutlet weak var PopUpImage: UIImageView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        var image : UIImageView = UIImageView(iden: "afte")!
-//        bgImage = UIImageView(image: image)
-//        bgImage.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
-//        view.addSubview(bgImage)
-//        
         // Do any additional setup after loading the view.
     }
     

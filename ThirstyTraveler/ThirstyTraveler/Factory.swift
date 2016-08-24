@@ -21,7 +21,7 @@ class Factory : BeerPlace{
     }
     
     
-    convenience init( name:String, type:String, location:(Double, Double),officeTime:[(String,Int,Int)], programList:[String], officeNumber:String, officeURL:String)
+    convenience init( name:String, type:String, location:(Double, Double),officeTime:[OpenTime], programList:[String], officeNumber:String, officeURL:String)
     {
         self.init()
         self.officeTime = officeTime

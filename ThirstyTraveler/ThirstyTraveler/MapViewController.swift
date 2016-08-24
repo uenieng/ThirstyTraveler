@@ -1,7 +1,7 @@
 import UIKit
 import GoogleMaps
 import GoogleMapsCore
-import GooglePlaces
+
 
 class MapViewController: UIViewController, GMSMapViewDelegate {
     
@@ -19,7 +19,7 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         var draftIcon = UIImage(named: "beer_1_fill")
         var breweryIcon = UIImage(named: "beer_2_fill2")
         var factoryIcon = UIImage(named: "beer_3_fill")
-        let markerSize = CGSize(width: 12, height: 12)
+        let markerSize = CGSize(width: 8, height: 8)
         draftIcon = scaleImage(draftIcon!, toSize: markerSize)
         breweryIcon = scaleImage(breweryIcon!, toSize: markerSize)
         factoryIcon = scaleImage(factoryIcon!, toSize: markerSize)
@@ -32,10 +32,47 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         createMarker(thismapView, BreweryList: breweryArray0, icon: breweryIcon!)
         createMarker(thismapView, FactoryList: factoryArray0, icon: factoryIcon!)
         
+//        let position = CLLocationCoordinate2DMake(37.539051, 126.988116)
+//        let marker = GMSMarker(position: position)
+//        marker.title = "Sydney"
+//        marker.snippet = "Australia"
+//        var markerIcon = UIImage(named: "beer_1_fill")
+//        marker.icon = scaleImage(markerIcon!, toSize: markerSize)
+//        marker.map = thismapView
         
         createImageButton()
         
-    
+        
+        //let wonyeongURL = NSURL(string : "https://github.com/ProjectInTheClass/TakeCareOfMyDetail/blob/master/Wonyeong2Detail/Json/ThirstyTravelrer.json")
+        
+        //let wonyeongURL = NSBundle.mainBundle().URLForResource("data", withExtension: "json")
+        
+//        let wonyeongURL: NSURL
+//        
+//        if let URL = NSURL(fileURLWithPath: "data.json"){
+//            wonyeongURL = URL
+//        }
+//        print(wonyeongURL)
+//        let data = NSData(contentsOfURL: wonyeongURL)
+        
+
+        
+        
+        
+//        let data = NSData(contentsOfFile: path)
+//        print(data)
+//        do {
+//            let object = try NSJSONSerialization.JSONObjectWithData(data!, options: .AllowFragments)
+//            print(object)
+//            if let dictionary = object as? [AnyObject] {
+//                //readJSONObject(dictionary)
+//                print("start read")
+//            }
+//        } catch {
+//            print("error")
+//            // Handle Error
+//        }
+
 
         
     }
@@ -54,48 +91,19 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
         
-        let position:CLLocationCoordinate2D = marker.position
-        let PlaceIdOfMark = getIdByCoordinate(position)
-        popUp(PlaceIdOfMark)
+        //        let loginPageView =  self.storyboard?.instantiateViewControllerWithIdentifier("PopUpID") as! PopUpViewController
+        //        self.presentViewController(loginPageView, animated: true, completion: nil)
         
+        //        let popOverVC = UIStroyboard(
+        abc()
         return true
     }
-    
-    func popUp(PlaceIdOfMark: String){
+    func abc(){
         let popOverVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("PopUpID") as! PopUpViewController
-        
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMoveToParentViewController(self)
-        loadFirstPhotoForPlace(PlaceIdOfMark, imageView: popOverVC.PopUpImage)
-    }
-
-    
-    
-    func loadFirstPhotoForPlace(placeID: String, imageView: UIImageView) {
-        GMSPlacesClient.sharedClient().lookUpPhotosForPlaceID(placeID) { (photos, error) -> Void in
-            if let error = error {
-                // TODO: handle the error.
-                print("Error: \(error.description)")
-            } else {
-                if let firstPhoto = photos?.results.first {
-                    self.loadImageForMetadata(firstPhoto, imageView: imageView)
-                }
-            }
-        }
-    }
-    
-    func loadImageForMetadata(photoMetadata: GMSPlacePhotoMetadata, imageView: UIImageView) {
-        GMSPlacesClient.sharedClient().loadPlacePhoto(photoMetadata, constrainedToSize: imageView.bounds.size,scale: imageView.window!.screen.scale) { (photo, error) -> Void in
-                if let error = error {
-            // TODO: handle the error.
-                    print("Error: \(error.description)")
-                    } else {
-                        imageView.image = photo;
-                        //self.attributionTextView.attributedText = photoMetadata.attributions;
-                    }
-        }
     }
     
     
@@ -113,29 +121,5 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     }
     
     
-    func getIdByCoordinate(location: CLLocationCoordinate2D)-> String{
-        var result:String = ""
-        for draft in draftArray0{
-            if(location.latitude == draft.location.0 && location.longitude == draft.location.1){
-                result = draft.placeID
-                return result
-            }
-        }
-        for brewery in breweryArray0{
-            if(location.latitude == brewery.location.0 && location.longitude == brewery.location.1){
-                result = brewery.placeID
-                return result
-            }
-        }
-        for factory in draftArray0{
-            if(location.latitude == factory.location.0 && location.longitude == factory.location.1){
-                result = factory.placeID
-                return result
-            }
-        }
-        return result
-    }
-    
 }
-
 

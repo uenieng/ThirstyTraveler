@@ -10,6 +10,16 @@ import UIKit
 
 class SliderController: UIViewController {
 
+    @IBOutlet weak var Slider: UISlider!
+    
+    @IBOutlet weak var Label: UILabel!
+    
+    @IBAction func sliderValueChanged(sender: UISlider) {
+        var currentValue = Int(sender.value)
+        
+        Label.text = "\(currentValue)"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

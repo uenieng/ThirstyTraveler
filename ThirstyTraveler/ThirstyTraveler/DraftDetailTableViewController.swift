@@ -112,15 +112,20 @@ class DraftDetailTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String!{
 
+        
+        var returnValue:String = ""
         if (section == 1){
-            return "영업시간"
+            returnValue = "영업시간"
         }
         if (section == 2){
-            return "Draft Beer"
+            returnValue =  "Draft Beer"
         }
         if (section == 3){
-            return "Bottle Beer"
+            returnValue = "Bottle Beer"
         }
+        
+        return returnValue
+        
     }
 
     /*

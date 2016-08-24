@@ -6,6 +6,7 @@ typealias OpenTime = (day:String, open:Int, close:Int)
 
 class BeerPlace {
     
+    
     var name:String = ""
     var type:String = ""
     var ratings:Double?

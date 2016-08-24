@@ -62,7 +62,8 @@ class DraftDetailTableViewController: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let identifier:String
+        var identifier:String
+        
         switch indexPath.section{
         case 0:
             identifier = "OfficeTimeCell"
@@ -72,23 +73,21 @@ class DraftDetailTableViewController: UITableViewController {
 
         default:
             identifier = "BottledBeerCell"
-
-        
         }
         
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath)
 
         // Configure the cell...
         switch indexPath.section{
-        case 0:
-            //(cell as!DraftDetailTableViewCell).draftProfile
+       /* case 0:
+            //(cell as!DraftDetailTableViewCell).draftProfile.image = currentDraft!.
             //(cell as!DraftDetailTableViewCell).draftType
             (cell as!DraftDetailTableViewCell).draftTitle.text = currentDraft!.name
             //(cell as!DraftDetailTableViewCell).draftRatings.= currentDraft!.ratings
             (cell as!DraftDetailTableViewCell).draftLocation.text = currentDraft?.placeID
             (cell as!DraftDetailTableViewCell).draftFavorites.enabled = currentDraft!.wishlist
-            (cell as!DraftDetailTableViewCell).draftVisited.enabled = currentDraft!.haveBeen
+            (cell as!DraftDetailTableViewCell).draftVisited.enabled = currentDraft!.haveBeen*/
         case 1:
             let openTime:OpenTime = currentDraft!.officeTime[indexPath.row]
             (cell as! OfficeTimeCell).dayLabel.text = openTime.day
@@ -97,9 +96,9 @@ class DraftDetailTableViewController: UITableViewController {
         case 2:
             (cell as! DraftBeerCell).draftBeerNameLabel.text = String(currentDraft!.draftPriceList.keys)
             (cell as!DraftBeerCell).draftBeerPriceLabel.text = String(currentDraft!.draftPriceList.values)
-        default:
-            (cell as! BottledBeerCell).bottledBeerNameLabel.text = String(currentDraft!.bottledDPriceList.keys)
-            (cell as!BottledBeerCell).bottledBeerPriceLabel.text = String(currentDraft!.bottledDPriceList.values)
+        default: break
+            /*(cell as!BottledBeerCell).bottledBeerNameLabel.text = String(currentDraft!.bottledDPriceList.keys)
+            (cell as!BottledBeerCell).bottledBeerPriceLabel.text = String(currentDraft!.bottledDPriceList.values)*/
 
         }
         
@@ -110,7 +109,7 @@ class DraftDetailTableViewController: UITableViewController {
     }
     
     
-    override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String!{
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String?{
 
         
         var returnValue:String = ""

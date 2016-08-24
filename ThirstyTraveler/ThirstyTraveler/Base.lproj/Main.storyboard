@@ -927,7 +927,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeCell" id="7e2-hG-dHS" customClass="OfficeTimeCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeCell" id="7e2-hG-dHS" customClass="OfficeTimeCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="185" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7e2-hG-dHS" id="HgX-pV-Xes">
@@ -953,7 +953,7 @@
                                     <outlet property="timeLabel" destination="8ff-5N-PmA" id="XXf-rS-qo0"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="K51-0N-8Ut" customClass="DraftBeerCell">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="K51-0N-8Ut" customClass="DraftBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="229" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K51-0N-8Ut" id="4yh-EH-y7A">

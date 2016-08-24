@@ -34,7 +34,6 @@
 		DDFB004D1D6C12490037BF23 /* DraftDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB004C1D6C12490037BF23 /* DraftDetailTableViewController.swift */; };
 		DDFB004F1D6C12550037BF23 /* BreweryDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */; };
 		DDFB00511D6C125E0037BF23 /* FactoryDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */; };
-		DDFB00531D6C147B0037BF23 /* DraftDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00521D6C147B0037BF23 /* DraftDetailTableViewCell.swift */; };
 		DDFB00551D6C14860037BF23 /* BreweryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */; };
 		DDFB00571D6C14950037BF23 /* FactoryDatailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00561D6C14950037BF23 /* FactoryDatailTableViewCell.swift */; };
 /* End PBXBuildFile section */
@@ -105,7 +104,6 @@
 		DDFB004C1D6C12490037BF23 /* DraftDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftDetailTableViewController.swift; sourceTree = "<group>"; };
 		DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDetailTableViewController.swift; sourceTree = "<group>"; };
 		DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryDetailTableViewController.swift; sourceTree = "<group>"; };
-		DDFB00521D6C147B0037BF23 /* DraftDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DDFB00561D6C14950037BF23 /* FactoryDatailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryDatailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,7 +186,6 @@
 				DA6BBFB41D37346F0049C008 /* Main.storyboard */,
 				3B8A070A1D6D7FEE00FCB98C /* SliderController.swift */,
 				DDFB004C1D6C12490037BF23 /* DraftDetailTableViewController.swift */,
-				DDFB00521D6C147B0037BF23 /* DraftDetailTableViewCell.swift */,
 				DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */,
 				DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */,
 				DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */,
@@ -418,7 +415,6 @@
 			files = (
 				DA354CDF1D66C79E00CC89B3 /* FavoBeenViewController.swift in Sources */,
 				3BEC83141D62D1B000B60366 /* Factory.swift in Sources */,
-				DDFB00531D6C147B0037BF23 /* DraftDetailTableViewCell.swift in Sources */,
 				DA6BBFE11D3734A60049C008 /* UIViewController+Navigation.swift in Sources */,
 				3B8A070B1D6D7FEE00FCB98C /* SliderController.swift in Sources */,
 				DDFB00511D6C125E0037BF23 /* FactoryDetailTableViewController.swift in Sources */,

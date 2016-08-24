@@ -82,11 +82,16 @@ class DraftDetailTableViewController: UITableViewController {
         // Configure the cell...
         switch indexPath.section{
         case 0:
+            (cell as!DraftDetailTableViewCell).draftProfile
+            (cell as!DraftDetailTableViewCell).draftProfile
+            (cell as!DraftDetailTableViewCell).draftProfile
+            (cell as!DraftDetailTableViewCell).draftProfile
+        case 1:
             let openTime:OpenTime = currentDraft!.officeTime[indexPath.row]
             (cell as! OfficeTimeCell).dayLabel.text = openTime.day
             (cell as! OfficeTimeCell).timeLabel.text = "\(openTime.open)~\(openTime.close)"
             
-        case 1:
+        case 2:
             (cell as! DraftBeerCell).draftBeerNameLabel.text = String(currentDraft!.draftPriceList.keys)
             (cell as!DraftBeerCell).draftBeerPriceLabel.text = String(currentDraft!.draftPriceList.values)
         default:
@@ -101,24 +106,22 @@ class DraftDetailTableViewController: UITableViewController {
         return cell
     }
     
-
-    override func tableView(tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let  headerCell = tableView.dequeueReusableCellWithIdentifier("HeaderCell") as! CustomHeaderCell
-        headerCell.backgroundColor = UIColor.grayColor()
-        
-        switch (section) {
-        case 0:
-            headerCell.headerLabel.text = "영업시간";
-            //return sectionHeaderView
-        case 1:
-            headerCell.headerLabel.text = "Draft Beer";
-            //return sectionHeaderView
-        default:
-            headerCell.headerLabel.text = "Bottled Beer";
+    
+    func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String!{
+        if (section == 0){
+            
         }
-        
-        return headerCell
+        if (section == 1){
+            return "영업시간"
+        }
+        if (section == 2){
+            return "Draft Beer"
+        }
+        if (section == 3){
+            return "Bottle Beer"
+        }
     }
+
     /*
     // Override to support conditional editing of the table view.
     override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {

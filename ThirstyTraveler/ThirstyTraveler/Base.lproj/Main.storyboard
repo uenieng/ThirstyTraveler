@@ -298,6 +298,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="beer_tab_3_size" id="57d-0M-J57"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

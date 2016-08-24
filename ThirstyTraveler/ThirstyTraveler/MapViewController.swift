@@ -2,14 +2,16 @@ import UIKit
 import GoogleMaps
 import GoogleMapsCore
 import GooglePlaces
-
+let Slider = SliderController()
 class MapViewController: UIViewController, GMSMapViewDelegate {
     var sliderValue: Double = 0
     var masterMakrer: [AnyObject] = []
+    var index: Double = 0.000001
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let camera = GMSCameraPosition.cameraWithLatitude(37.539051,longitude: 126.988116, zoom: 10)
+        let camera = GMSCameraPosition.cameraWithLatitude(37.539051,longitude: 126.988116+index, zoom: 10)
+        index += 0.00001
         let thismapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
         
         thismapView.myLocationEnabled = true
@@ -25,14 +27,38 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         draftIcon = scaleImage(draftIcon!, toSize: markerSize)
         breweryIcon = scaleImage(breweryIcon!, toSize: markerSize)
         factoryIcon = scaleImage(factoryIcon!, toSize: markerSize)
+        sliderValue = currentValue
         
+//        createMarker(thismapView, DraftList: draftArray0, icon: draftIcon!, sliderValue: sliderValue)
+//        createMarker(thismapView, BreweryList: breweryArray0, icon: breweryIcon!, sliderValue: sliderValue)
+//        createMarker(thismapView, FactoryList: factoryArray0, icon: factoryIcon!, sliderValue: sliderValue)
+        
+    }
+    override func viewDidAppear(animated: Bool) {
+        //super.viewDidLoad()
+        let camera = GMSCameraPosition.cameraWithLatitude(37.539051,longitude: 126.988116+index, zoom: 10)
+        index += 0.00001
+        let thismapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        
+        thismapView.myLocationEnabled = true
+        thismapView.delegate = self
+        thismapView.clear()
+        self.view = thismapView
+        
+        var draftIcon = UIImage(named: "beer_1_fill")
+        var breweryIcon = UIImage(named: "beer_2_fill2")
+        var factoryIcon = UIImage(named: "beer_3_fill")
+        let markerSize = CGSize(width: 12, height: 12)
+        draftIcon = scaleImage(draftIcon!, toSize: markerSize)
+        breweryIcon = scaleImage(breweryIcon!, toSize: markerSize)
+        factoryIcon = scaleImage(factoryIcon!, toSize: markerSize)
+        sliderValue = currentValue
         
         createMarker(thismapView, DraftList: draftArray0, icon: draftIcon!, sliderValue: sliderValue)
         createMarker(thismapView, BreweryList: breweryArray0, icon: breweryIcon!, sliderValue: sliderValue)
         createMarker(thismapView, FactoryList: factoryArray0, icon: factoryIcon!, sliderValue: sliderValue)
-        
-        
     }
+    
     func makeView(thismapView: GMSMapView){
         var draftIcon = UIImage(named: "beer_1_fill")
         var breweryIcon = UIImage(named: "beer_2_fill2")

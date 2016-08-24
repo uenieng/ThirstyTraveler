@@ -8,9 +8,9 @@
 
 import UIKit
 import GoogleMaps
-
+var currentValue:Double = 0.0
 class SliderController: UIViewController {
-    var currentValue:Double = 0
+    
     let viewChange = MapViewController()
     var silderView: UIView!
     
@@ -22,15 +22,12 @@ class SliderController: UIViewController {
         currentValue = round(Double(sender.value)*10)/10
         Label.text = "\(currentValue)"
         
-        viewChange.sliderValue = currentValue
-        
-        viewChange.viewDidLoad()
+        //viewChange.viewDidLoad()
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

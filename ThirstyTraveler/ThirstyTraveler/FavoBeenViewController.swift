@@ -48,7 +48,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         } //반복문 종료
         haveBeen = temporary
 
-//            itemsOnSegView = wishList
+            itemsOnSegView = wishList
 
         }
     
@@ -76,7 +76,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             break
         case 1:
             returnValue = haveBeen.count
-            print(returnValue)
+//            print(returnValue)
             break
         
         default : 0
@@ -120,8 +120,8 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         // 그러면 불러와야할 것은
         // 가게 이름, 주소, 이미지, 평점, 타입 이정도인데
         
-        if itemsOnSegView != nil {
-            
+//        if itemsOnSegView != nil {
+        
             let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView![indexPath.row].name) //
             print (placeNames)
             let placeName:String = placeNames[indexPath.section]
@@ -129,10 +129,10 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             
             favobeenCell.beerplaceName.text = placeName
             favobeenCell.beerplaceAddress.text = placeAddress
-        } else {
-            favobeenCell.beerplaceName.text = "안녕하세요!"
-            favobeenCell.beerplaceAddress.text = "좀더 둘러볼까요?"
-        }
+//        } else {
+//            favobeenCell.beerplaceName.text = "안녕하세요!"
+//            favobeenCell.beerplaceAddress.text = "좀더 둘러볼까요?"
+//        }
         
         
         return favobeenCell

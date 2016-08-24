@@ -85,10 +85,10 @@ class DraftDetailTableViewController: UITableViewController {
             (cell as!DraftDetailTableViewCell).draftProfile
             (cell as!DraftDetailTableViewCell).draftType
             (cell as!DraftDetailTableViewCell).draftTitle.text = currentDraft!.name
-            (cell as!DraftDetailTableViewCell).draftRatings = currentDraft!.ratings
+            //(cell as!DraftDetailTableViewCell).draftRatings.= currentDraft!.ratings
             (cell as!DraftDetailTableViewCell).draftLocation.text = currentDraft?.placeID
-            (cell as!DraftDetailTableViewCell).draftFavorites
-            (cell as!DraftDetailTableViewCell).draftVisited
+            (cell as!DraftDetailTableViewCell).draftFavorites.enabled = currentDraft!.wishlist
+            (cell as!DraftDetailTableViewCell).draftVisited.enabled = currentDraft!.haveBeen
         case 1:
             let openTime:OpenTime = currentDraft!.officeTime[indexPath.row]
             (cell as! OfficeTimeCell).dayLabel.text = openTime.day

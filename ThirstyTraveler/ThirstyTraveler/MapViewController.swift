@@ -56,42 +56,44 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         
         let position:CLLocationCoordinate2D = marker.position
         let PlaceIdOfMark = getIdByCoordinate(position)
-        popUp()
+        popUp(PlaceIdOfMark)
         
         return true
     }
     
-    func popUp(){
+    func popUp(PlaceIdOfMark: String){
         let popOverVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("PopUpID") as! PopUpViewController
+        
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMoveToParentViewController(self)
+        loadFirstPhotoForPlace(PlaceIdOfMark, imageView: popOverVC.PopUpImage)
     }
 
     
     
-    func loadFirstPhotoForPlace(placeID: String) {
+    func loadFirstPhotoForPlace(placeID: String, imageView: UIImageView) {
         GMSPlacesClient.sharedClient().lookUpPhotosForPlaceID(placeID) { (photos, error) -> Void in
             if let error = error {
                 // TODO: handle the error.
                 print("Error: \(error.description)")
             } else {
                 if let firstPhoto = photos?.results.first {
-                    self.loadImageForMetadata(firstPhoto)
+                    self.loadImageForMetadata(firstPhoto, imageView: imageView)
                 }
             }
         }
     }
     
-    func loadImageForMetadata(photoMetadata: GMSPlacePhotoMetadata) {
-        GMSPlacesClient.sharedClient().loadPlacePhoto(photoMetadata, constrainedToSize: imageView.bounds.size,scale: self.imageView.window!.screen.scale) { (photo, error) -> Void in
+    func loadImageForMetadata(photoMetadata: GMSPlacePhotoMetadata, imageView: UIImageView) {
+        GMSPlacesClient.sharedClient().loadPlacePhoto(photoMetadata, constrainedToSize: imageView.bounds.size,scale: imageView.window!.screen.scale) { (photo, error) -> Void in
                 if let error = error {
             // TODO: handle the error.
                     print("Error: \(error.description)")
                     } else {
-                        self.imageView.image = photo;
-                        self.attributionTextView.attributedText = photoMetadata.attributions;
+                        imageView.image = photo;
+                        //self.attributionTextView.attributedText = photoMetadata.attributions;
                     }
         }
     }
@@ -131,8 +133,9 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
                 return result
             }
         }
-        
+        return result
     }
     
 }
+
 

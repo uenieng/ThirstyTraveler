@@ -1708,6 +1708,9 @@
                             <constraint firstItem="zQ5-AE-CaW" firstAttribute="centerY" secondItem="gUj-Wn-AC3" secondAttribute="centerY" id="ln3-FS-9xk"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="PopUpImage" destination="d81-Gb-ise" id="gMt-tc-jbN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFq-U6-XoS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -10,6 +10,8 @@ import UIKit
 
 class PopUpViewController: UIViewController {
     
+    @IBOutlet weak var PopUpImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

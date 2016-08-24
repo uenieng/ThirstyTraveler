@@ -68,7 +68,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMoveToParentViewController(self)
+        
         loadFirstPhotoForPlace(PlaceIdOfMark, imageView: popOverVC.PopUpImage)
+        popOverVC.PopUpTitle.text = getNameById(PlaceIdOfMark)
+        print("result : \(popOverVC.PopUpTitle.text)")
     }
     
     
@@ -81,6 +84,9 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
             } else {
                 if let firstPhoto = photos?.results.first {
                     self.loadImageForMetadata(firstPhoto, imageView: imageView)
+                }
+                else{
+                    imageView.image = UIImage(named: "defaultImage")
                 }
             }
         }
@@ -161,7 +167,21 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         }
         return result
     }
-    
+    func getNameById(placeId: String) -> String{
+        for draft in draftArray0{
+            if(placeId == draft.placeID){
+                return draft.name}
+        }
+        for brewery in breweryArray0{
+            if(placeId == brewery.placeID){
+                return brewery.name}
+        }
+        for factory in factoryArray0{
+            if(placeId == factory.placeID){
+                return factory.name}
+        }
+        return "no name"
+    }
 }
 
 

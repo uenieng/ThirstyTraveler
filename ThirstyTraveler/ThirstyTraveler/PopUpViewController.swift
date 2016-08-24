@@ -10,6 +10,7 @@ import UIKit
 
 class PopUpViewController: UIViewController {
     
+    @IBOutlet weak var PopUpTitle: UILabel!
     @IBOutlet weak var PopUpImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()

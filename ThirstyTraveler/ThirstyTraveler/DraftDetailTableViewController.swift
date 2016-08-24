@@ -84,8 +84,17 @@ class DraftDetailTableViewController: UITableViewController {
         case 0:
             let openTime:OpenTime = currentDraft!.officeTime[indexPath.row]
             (cell as! OfficeTimeCell).dayLabel.text = openTime.day
-            (cell as! OfficeTimeCell).timeLabel.text = "
+            (cell as! OfficeTimeCell).timeLabel.text = "\(openTime.open)~\(openTime.close)"
+            
+        case 1:
+            (cell as! DraftBeerCell).draftBeerNameLabel.text = String(currentDraft!.draftPriceList.keys)
+            (cell as!DraftBeerCell).draftBeerPriceLabel.text = String(currentDraft!.draftPriceList.values)
+        default:
+            (cell as! BottledBeerCell).bottledBeerNameLabel.text = String(currentDraft!.bottledDPriceList.keys)
+            (cell as!BottledBeerCell).bottledBeerPriceLabel.text = String(currentDraft!.bottledDPriceList.values)
+
         }
+        
         
         
 
@@ -148,9 +157,13 @@ class OfficeTimeCell: UITableViewCell{
 }
 
 class DraftBeerCell: UITableViewCell{
+    @IBOutlet weak var draftBeerNameLabel: UILabel!
+    @IBOutlet weak var draftBeerPriceLabel: UILabel!
     
 }
 
 class BottledBeerCell: UITableViewCell{
+    @IBOutlet weak var bottledBeerNameLabel: UILabel!
     
+    @IBOutlet weak var bottledBeerPriceLabel: UILabel!
 }

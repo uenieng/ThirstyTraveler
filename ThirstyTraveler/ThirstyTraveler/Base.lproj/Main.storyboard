@@ -939,8 +939,12 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="draftBeerNameLabel" destination="8Fq-0g-p63" id="yQN-NE-5ga"/>
+                                    <outlet property="draftBeerPriceLabel" destination="yS0-0P-bNe" id="egc-bH-RWS"/>
+                                </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="2Bg-R7-n0Y">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BottledBeerCell" id="2Bg-R7-n0Y" customClass="BottledBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="317" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2Bg-R7-n0Y" id="OPO-1M-xff">
@@ -961,6 +965,10 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bottledBeerNameLabel" destination="t7f-r7-kEH" id="miM-Pw-6gN"/>
+                                    <outlet property="bottledBeerPriceLabel" destination="c5l-ci-cPw" id="NZY-ci-cIJ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

@@ -893,61 +893,12 @@
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftDetailTableViewCell" rowHeight="157" id="C4y-ZQ-47j" customClass="DraftDetailTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="72" width="375" height="157"/>
                                 <autoresizingMask key="autoresizingMask"/>
-
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="C4y-ZQ-47j" id="WxH-hH-ErT">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
-
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dbt-q6-Ykb" id="PYW-oG-V86">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="153.5"/>
-
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="e63-2r-tcZ">
-                                            <rect key="frame" x="17" y="1" width="150" height="150"/>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3V-PV-4WX">
-                                            <rect key="frame" x="238" y="21" width="110" height="26"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OOB-MM-HcV">
-                                            <rect key="frame" x="194" y="73" width="146" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WeG-bb-Mhb">
-                                            <rect key="frame" x="238" y="50" width="84" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ0-st-Aex">
-                                            <rect key="frame" x="195" y="97" width="40" height="40"/>
-                                            <state key="normal" title="Button" image="beer_favorites_gray"/>
-                                        </button>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beer_1_fill" translatesAutoresizingMaskIntoConstraints="NO" id="35n-iZ-19o">
-                                            <rect key="frame" x="194" y="24" width="41" height="41"/>
-                                        </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="27c-ak-qVh">
-                                            <rect key="frame" x="247" y="97" width="41" height="40"/>
-                                            <state key="normal" title="Button" image="beer_visited_gray"/>
-                                        </button>
-                                    </subviews>
                                 </tableViewCellContentView>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" header="YES"/>
                                 </accessibility>
-                                <connections>
-                                    <outlet property="draftFavorites" destination="CZ0-st-Aex" id="bgk-k2-EeQ"/>
-                                    <outlet property="draftLocation" destination="OOB-MM-HcV" id="9wT-mS-ALe"/>
-                                    <outlet property="draftProfile" destination="e63-2r-tcZ" id="xPD-t3-2Rr"/>
-                                    <outlet property="draftRatings" destination="WeG-bb-Mhb" id="fMB-rK-7nN"/>
-                                    <outlet property="draftTitle" destination="J3V-PV-4WX" id="OFR-am-WOX"/>
-                                    <outlet property="draftType" destination="35n-iZ-19o" id="y4O-Wk-9cL"/>
-                                    <outlet property="draftVisited" destination="27c-ak-qVh" id="srY-aP-UAK"/>
-                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeCell" id="7e2-hG-dHS" customClass="OfficeTimeCell">
                                 <rect key="frame" x="0.0" y="229" width="375" height="44"/>
@@ -2208,18 +2159,11 @@
         <image name="anam_1" width="500" height="488"/>
         <image name="anam_2" width="450" height="450"/>
         <image name="beer_1_black" width="210" height="210"/>
-        <image name="beer_1_fill" width="210" height="210"/>
         <image name="beer_2_black" width="270" height="270"/>
         <image name="beer_2_fill2" width="270" height="270"/>
         <image name="beer_3_black" width="303" height="303"/>
-        
-        
-
-
         <image name="beer_3_fill" width="303" height="303"/>
-
         <image name="beer_favorites_fill" width="300" height="299"/>
-
         <image name="beer_favorites_gray" width="300" height="299"/>
         <image name="beer_visited_gray" width="305" height="302"/>
         <image name="brewery" width="700" height="700"/>

@@ -13,7 +13,7 @@ class BeerPlace {
     var wishlist:Bool=true
     var haveBeen:Bool=true
     var officeNumber:String
-    var officeTime:[(String,Int,Int)]
+    var officeTime:[OpenTime]
     var address:String=""
     var placeID:String=""
     

@@ -16,7 +16,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UIView!
     
-    var beerplaces:Array<[BeerPlace]> = []
+    var beerplaces:Array<BeerPlace> = []
     var wishlist:Array<BeerPlace> = []
     var haveBeen:Array<BeerPlace> = []
     var itemsOnSegView:Array<BeerPlace> = []
@@ -24,21 +24,20 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        beerplaces.append(factoryArray0)
-        beerplaces.append(breweryArray0)
-        beerplaces.append(draftArray0)
+        beerplaces = []
+        beerplaces += (factoryArray0 as [BeerPlace])
+        beerplaces += (breweryArray0 as [BeerPlace])
+        beerplaces += (draftArray0 as [BeerPlace])
         
-        for items in beerplaces{
-                 wishlist = items.filter ({(i:BeerPlace) -> (Bool) in
+                 wishlist = beerplaces.filter ({(i:BeerPlace) -> (Bool) in
                 if i.wishlist == true {return true}
                 return false})
-                haveBeen = items.filter ({(i:BeerPlace) -> (Bool) in
+                haveBeen = beerplaces.filter ({(i:BeerPlace) -> (Bool) in
                 if i.haveBeen == true {return true}
                 return false})
             
             itemsOnSegView = wishlist
-        }
-
+        
        //itemsOnSegview가 nil일때 빈 테이블뷰를 호출하는 코드 작성
         //빈 테이블뷰를 어떻게 불러오지?
         }
@@ -103,6 +102,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         // 그러면 불러와야할 것은
         // 가게 이름, 주소, 이미지, 평점, 타입 이정도인데
         let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView[indexPath.row].name) //
+        print (placeNames)
         let placeName:String = placeNames[indexPath.section]
         let placeAddress:String = String(itemsOnSegView[indexPath.row].address) // 나중에 parentclass에 address 넣으면 .address로 변경하면 됨.
 

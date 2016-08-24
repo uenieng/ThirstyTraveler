@@ -337,7 +337,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="91i-xI-SJN" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1537.5" y="1585.5"/>
+            <point key="canvasLocation" x="-965.5" y="1341.5"/>
         </scene>
         <!--Settings table-->
         <scene sceneID="B86-WT-Z5q">
@@ -1260,10 +1260,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="f0Z-5O-ygn" kind="relationship" relationship="viewControllers" id="u5i-Ss-cZU"/>
-                        <segue destination="wmD-c4-ywK" kind="relationship" relationship="viewControllers" id="e00-W2-mqN"/>
-                        <segue destination="OWB-c1-Bbi" kind="relationship" relationship="viewControllers" id="Xls-OG-9Hg"/>
-                        <segue destination="VqU-Pe-AIB" kind="relationship" relationship="viewControllers" id="WgM-tZ-sxS"/>
+                        <segue destination="wmD-c4-ywK" kind="relationship" relationship="viewControllers" id="01z-bI-U8H"/>
+                        <segue destination="VqU-Pe-AIB" kind="relationship" relationship="viewControllers" id="ay6-3W-60x"/>
+                        <segue destination="OWB-c1-Bbi" kind="relationship" relationship="viewControllers" id="Nwp-gd-cXV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ai-S6-eFF" userLabel="First Responder" sceneMemberID="firstResponder"/>

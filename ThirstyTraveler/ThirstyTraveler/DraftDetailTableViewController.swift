@@ -110,7 +110,7 @@ class DraftDetailTableViewController: UITableViewController {
     }
     
     
-    func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String!{
+    override func tableView(tableView: UITableView!, titleForHeaderInSection section: Int) -> String!{
 
         if (section == 1){
             return "영업시간"

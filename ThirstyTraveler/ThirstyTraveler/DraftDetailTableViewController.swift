@@ -108,16 +108,13 @@ class DraftDetailTableViewController: UITableViewController {
         
         switch (section) {
         case 0:
-            headerCell.headerLabel.text = "Europe";
+            headerCell.headerLabel.text = "영업시간";
             //return sectionHeaderView
         case 1:
-            headerCell.headerLabel.text = "Asia";
-            //return sectionHeaderView
-        case 2:
-            headerCell.headerLabel.text = "South America";
+            headerCell.headerLabel.text = "Draft Beer";
             //return sectionHeaderView
         default:
-            headerCell.headerLabel.text = "Other";
+            headerCell.headerLabel.text = "Bottled Beer";
         }
         
         return headerCell
@@ -167,6 +164,19 @@ class DraftDetailTableViewController: UITableViewController {
     }
     */
 
+}
+
+class DraftDetailTableViewCell: UITableViewCell{
+    
+    @IBOutlet weak var draftProfile: UIImageView!
+    @IBOutlet weak var draftType: UIImageView!
+    @IBOutlet weak var draftRatings: UILabel!
+    @IBOutlet weak var draftLocation: UILabel!
+    
+    @IBOutlet weak var draftTitle: UILabel!
+    @IBOutlet weak var draftFavorites: UIButton!
+    @IBOutlet weak var draftVisited: UIButton!
+    
 }
 
 

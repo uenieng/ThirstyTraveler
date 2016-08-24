@@ -11,7 +11,7 @@ import UIKit
 class DraftDetailTableViewController: UITableViewController {
 
     var myData:[DraftBeer] = []
-    var currentDraft:DraftBeer?
+    var currentDraft:DraftBeer? = nil
     
     
     override func viewDidLoad() {
@@ -66,9 +66,11 @@ class DraftDetailTableViewController: UITableViewController {
         
         switch indexPath.section{
         case 0:
+            identifier = "DraftDetailTableViewCell"
+        case 1:
             identifier = "OfficeTimeCell"
 
-        case 1:
+        case 2:
             identifier = "DraftBeerCell"
 
         default:
@@ -79,30 +81,44 @@ class DraftDetailTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath)
 
         // Configure the cell...
+        if let cleanDraft = currentDraft{
         switch indexPath.section{
-       /* case 0:
-            //(cell as!DraftDetailTableViewCell).draftProfile.image = currentDraft!.
-            //(cell as!DraftDetailTableViewCell).draftType
-            (cell as!DraftDetailTableViewCell).draftTitle.text = currentDraft!.name
-            //(cell as!DraftDetailTableViewCell).draftRatings.= currentDraft!.ratings
-            (cell as!DraftDetailTableViewCell).draftLocation.text = currentDraft?.placeID
-            (cell as!DraftDetailTableViewCell).draftFavorites.enabled = currentDraft!.wishlist
-            (cell as!DraftDetailTableViewCell).draftVisited.enabled = currentDraft!.haveBeen*/
+       /*case 0:
+        let cell0 = cell as! DraftDetailTableViewCell
+            //cell0.draftProfile.image = currentDraft!.
+            //cell0.draftType
+            cell0.draftTitle.text = cleanDraft.name
+            //cell0.draftRatings.= cleanDraft.ratings
+            cell0.draftLocation.text = cleanDraft.placeID
+            cell0.draftFavorites.enabled = cleanDraft.wishlist
+            cell0.draftVisited.enabled = cleanDraft.haveBeen*/
         case 1:
-            let openTime:OpenTime = currentDraft!.officeTime[indexPath.row]
-            (cell as! OfficeTimeCell).dayLabel.text = openTime.day
-            (cell as! OfficeTimeCell).timeLabel.text = "\(openTime.open)~\(openTime.close)"
+            let openTime:OpenTime = cleanDraft.officeTime[indexPath.row]
+            //(cell as! OfficeTimeCell).dayLabel.text = openTime.day*/
+            let cell1 = cell as! OfficeTimeCell
+            cell1.dayLabel.text = openTime.day
+            cell1.timeLabel.text = "\(openTime.open) ~ \(openTime.close)"
+            //(cell as! OfficeTimeCell).timeLabel.text = "\(openTime.open)~\(openTime.close)"
             
         case 2:
+            let cell2 = cell as! DraftBeerCell
+            cell2.draftBeerNameLabel.text = String(cleanDraft.draftPriceList.keys)
+            cell2.draftBeerPriceLabel.text = String(cleanDraft.draftPriceList.values)
+            /*
             (cell as! DraftBeerCell).draftBeerNameLabel.text = String(currentDraft!.draftPriceList.keys)
-            (cell as!DraftBeerCell).draftBeerPriceLabel.text = String(currentDraft!.draftPriceList.values)
+            (cell as!DraftBeerCell).draftBeerPriceLabel.text = String(currentDraft!.draftPriceList.values)*/
+        /*default:
+            (cell as!BottledBeerCell).bottledBeerNameLabel.text = String(currentDraft!.bottledDPriceList.keys)
+            (cell as!BottledBeerCell).bottledBeerPriceLabel.text = String(currentDraft!.bottledDPriceList.values)
+         */
+        case 3:
+            let cell3 = cell as! BottledBeerCell
+            cell3.bottledBeerNameLabel.text = String(cleanDraft.bottledDPriceList.keys)
+            cell3.bottledBeerNameLabel.text = String(cleanDraft.bottledDPriceList.values)
         default: break
-            /*(cell as!BottledBeerCell).bottledBeerNameLabel.text = String(currentDraft!.bottledDPriceList.keys)
-            (cell as!BottledBeerCell).bottledBeerPriceLabel.text = String(currentDraft!.bottledDPriceList.values)*/
-
         }
         
-        
+        }
 
         return cell
     }

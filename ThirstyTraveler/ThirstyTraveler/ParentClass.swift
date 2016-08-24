@@ -12,7 +12,7 @@ class BeerPlace {
     var ratings:Double = 2.0
     var location:(Double,Double)
     var wishlist:Bool=true
-    var haveBeen:Bool=true
+    var haveBeen:Bool=false
     var officeNumber:String
     var officeTime:[OpenTime]
     var address:String=""

@@ -1366,6 +1366,7 @@
                                         <connections>
                                             <outlet property="beerplaceAddress" destination="BYI-Vp-ss1" id="2Q0-HU-1zn"/>
                                             <outlet property="beerplaceImage" destination="nOn-1m-Uyz" id="emJ-Dp-S0x"/>
+                                            <outlet property="beerplaceName" destination="fRm-we-fVP" id="ST2-7a-uaM"/>
                                             <outlet property="beerplaceRatings" destination="VJb-Y2-ui4" id="DB7-Hj-LEc"/>
                                             <outlet property="beerplaceType" destination="xG3-Xe-QB0" id="ndT-Tm-jR6"/>
                                         </connections>

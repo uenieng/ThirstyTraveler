@@ -1,7 +1,7 @@
 import UIKit
 import GoogleMaps
 import GoogleMapsCore
-
+import GooglePlaces
 
 class MapViewController: UIViewController, GMSMapViewDelegate {
     
@@ -53,16 +53,47 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     }
     
     func mapView(mapView: GMSMapView!, didTapMarker marker: GMSMarker!) -> Bool {
-        abc()
+        
+        let position:CLLocationCoordinate2D = marker.position
+        let PlaceIdOfMark = getIdByCoordinate(position)
+        popUp()
+        
         return true
     }
     
-    func abc(){
+    func popUp(){
         let popOverVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("PopUpID") as! PopUpViewController
         self.addChildViewController(popOverVC)
         popOverVC.view.frame = self.view.frame
         self.view.addSubview(popOverVC.view)
         popOverVC.didMoveToParentViewController(self)
+    }
+
+    
+    
+    func loadFirstPhotoForPlace(placeID: String) {
+        GMSPlacesClient.sharedClient().lookUpPhotosForPlaceID(placeID) { (photos, error) -> Void in
+            if let error = error {
+                // TODO: handle the error.
+                print("Error: \(error.description)")
+            } else {
+                if let firstPhoto = photos?.results.first {
+                    self.loadImageForMetadata(firstPhoto)
+                }
+            }
+        }
+    }
+    
+    func loadImageForMetadata(photoMetadata: GMSPlacePhotoMetadata) {
+        GMSPlacesClient.sharedClient().loadPlacePhoto(photoMetadata, constrainedToSize: imageView.bounds.size,scale: self.imageView.window!.screen.scale) { (photo, error) -> Void in
+                if let error = error {
+            // TODO: handle the error.
+                    print("Error: \(error.description)")
+                    } else {
+                        self.imageView.image = photo;
+                        self.attributionTextView.attributedText = photoMetadata.attributions;
+                    }
+        }
     }
     
     
@@ -79,6 +110,29 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         self.view.addSubview(button)
     }
     
+    
+    func getIdByCoordinate(location: CLLocationCoordinate2D)-> String{
+        var result:String = ""
+        for draft in draftArray0{
+            if(location.latitude == draft.location.0 && location.longitude == draft.location.1){
+                result = draft.placeID
+                return result
+            }
+        }
+        for brewery in breweryArray0{
+            if(location.latitude == brewery.location.0 && location.longitude == brewery.location.1){
+                result = brewery.placeID
+                return result
+            }
+        }
+        for factory in draftArray0{
+            if(location.latitude == factory.location.0 && location.longitude == factory.location.1){
+                result = factory.placeID
+                return result
+            }
+        }
+        
+    }
     
 }
 

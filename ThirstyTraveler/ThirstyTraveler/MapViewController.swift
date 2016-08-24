@@ -4,16 +4,18 @@ import GoogleMapsCore
 import GooglePlaces
 
 class MapViewController: UIViewController, GMSMapViewDelegate {
+    var sliderValue: Double = 0
+    var masterMakrer: [AnyObject] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        let camera = GMSCameraPosition.cameraWithLatitude(37.539051,
-                                                          longitude: 126.988116, zoom: 10)
+        let camera = GMSCameraPosition.cameraWithLatitude(37.539051,longitude: 126.988116, zoom: 10)
         let thismapView = GMSMapView.mapWithFrame(CGRectZero, camera: camera)
+        
         thismapView.myLocationEnabled = true
         thismapView.delegate = self
+        thismapView.clear()
+        self.view = nil
         self.view = thismapView
         
         var draftIcon = UIImage(named: "beer_1_fill")
@@ -24,21 +26,28 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
         breweryIcon = scaleImage(breweryIcon!, toSize: markerSize)
         factoryIcon = scaleImage(factoryIcon!, toSize: markerSize)
         
-        for draft in draftArray0{
-            print(draft.location)
-        }
         
-        createMarker(thismapView, DraftList: draftArray0, icon: draftIcon!)
-        createMarker(thismapView, BreweryList: breweryArray0, icon: breweryIcon!)
-        createMarker(thismapView, FactoryList: factoryArray0, icon: factoryIcon!)
-        
-        
-        createImageButton()
-        
-        
+        createMarker(thismapView, DraftList: draftArray0, icon: draftIcon!, sliderValue: sliderValue)
+        createMarker(thismapView, BreweryList: breweryArray0, icon: breweryIcon!, sliderValue: sliderValue)
+        createMarker(thismapView, FactoryList: factoryArray0, icon: factoryIcon!, sliderValue: sliderValue)
         
         
     }
+    func makeView(thismapView: GMSMapView){
+        var draftIcon = UIImage(named: "beer_1_fill")
+        var breweryIcon = UIImage(named: "beer_2_fill2")
+        var factoryIcon = UIImage(named: "beer_3_fill")
+        let markerSize = CGSize(width: 12, height: 12)
+        draftIcon = scaleImage(draftIcon!, toSize: markerSize)
+        breweryIcon = scaleImage(breweryIcon!, toSize: markerSize)
+        factoryIcon = scaleImage(factoryIcon!, toSize: markerSize)
+        
+        
+        createMarker(thismapView, DraftList: draftArray0, icon: draftIcon!, sliderValue: sliderValue)
+        createMarker(thismapView, BreweryList: breweryArray0, icon: breweryIcon!, sliderValue: sliderValue)
+        createMarker(thismapView, FactoryList: factoryArray0, icon: factoryIcon!, sliderValue: sliderValue)
+    }
+    
     func scaleImage(image: UIImage, toSize newSize: CGSize) -> (UIImage) {
         let newRect = CGRectIntegral(CGRectMake(0,0, newSize.width, newSize.height))
         UIGraphicsBeginImageContextWithOptions(newSize, false, 0)

@@ -2009,15 +2009,18 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQ5-AE-CaW">
                                 <rect key="frame" x="164" y="211" width="255" height="265"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" restorationIdentifier="PopUpImage" translatesAutoresizingMaskIntoConstraints="NO" id="d81-Gb-ise">
+                                        <rect key="frame" x="0.0" y="0.0" width="255" height="149"/>
+                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfI-EW-R2V">
-                                        <rect key="frame" x="42" y="208" width="46" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <rect key="frame" x="12" y="227" width="39" height="30"/>
+                                        <state key="normal" title="Close"/>
                                         <connections>
                                             <action selector="popUpClose:" destination="7FQ-CA-yiE" eventType="touchUpInside" id="Rci-Iw-xPb"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.89037622500000002" blue="0.023375983810000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="265" id="STh-Si-Kgc"/>
                                     <constraint firstAttribute="width" constant="255" id="crC-F7-Sm9"/>

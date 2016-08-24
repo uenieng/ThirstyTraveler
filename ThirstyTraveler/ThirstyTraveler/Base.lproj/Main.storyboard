@@ -1905,16 +1905,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BZw-oc-eRQ">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BZw-oc-eRQ" id="vCJ-Ob-nHA">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftDetailTableViewCell" rowHeight="157" id="Ilm-7X-riW" customClass="DraftDetailTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="72" width="375" height="157"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="157"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ilm-7X-riW" id="qqu-NV-CaB">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
@@ -1958,17 +1950,20 @@
                                     <accessibilityTraits key="traits" header="YES"/>
                                 </accessibility>
                                 <connections>
-                                    <outlet property="draftFavorites" destination="lOv-tU-6ld" id="Hvx-Ye-Lcw"/>
+                                    <outlet property="draftFavorites" destination="lOv-tU-6ld" id="UfF-NI-A3I"/>
                                     <outlet property="draftLocation" destination="Ehm-30-PPs" id="SNM-QA-fdH"/>
-                                    <outlet property="draftProfile" destination="s32-sh-k97" id="3Yk-zh-8VK"/>
+                                    <outlet property="draftLocationLabel" destination="Ehm-30-PPs" id="vqh-7y-Tkt"/>
+                                    <outlet property="draftNameLabel" destination="Obo-i4-1Ks" id="Rzi-de-C8n"/>
+                                    <outlet property="draftProfile" destination="s32-sh-k97" id="EUM-M4-N84"/>
                                     <outlet property="draftRatings" destination="q46-CR-DMe" id="HvC-pD-rYi"/>
+                                    <outlet property="draftRatingsLabel" destination="q46-CR-DMe" id="zY6-Tc-9HP"/>
                                     <outlet property="draftTitle" destination="Obo-i4-1Ks" id="rKx-Yc-yUu"/>
                                     <outlet property="draftType" destination="ic0-Zw-BFW" id="3WV-u5-qvr"/>
-                                    <outlet property="draftVisited" destination="JxX-Vp-tY0" id="N0J-1S-qig"/>
+                                    <outlet property="draftVisited" destination="JxX-Vp-tY0" id="aMH-hd-tvd"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeCell" id="3l3-Af-WsZ" customClass="OfficeTimeCell">
-                                <rect key="frame" x="0.0" y="229" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeCell" id="3l3-Af-WsZ" customClass="OfficeTimeCell" customModule="ThirstyTraveler" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="185" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3l3-Af-WsZ" id="9nZ-Kk-whR">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -1989,12 +1984,12 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="dayLabel" destination="uFc-A4-P1W" id="wU6-Sk-EHD"/>
-                                    <outlet property="timeLabel" destination="kQF-y5-V7P" id="h36-bA-daK"/>
+                                    <outlet property="dayLabel" destination="uFc-A4-P1W" id="YFM-4U-QeR"/>
+                                    <outlet property="timeLabel" destination="kQF-y5-V7P" id="hRk-Ci-Ngn"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="TCA-IA-wAx" customClass="DraftBeerCell">
-                                <rect key="frame" x="0.0" y="273" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="TCA-IA-wAx" customClass="DraftBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="229" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TCA-IA-wAx" id="tWA-hd-i1t">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -2015,12 +2010,12 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="draftBeerNameLabel" destination="9mg-uh-z1n" id="6Sv-qk-08d"/>
-                                    <outlet property="draftBeerPriceLabel" destination="ZVl-w9-gjk" id="cUD-1W-Hvq"/>
+                                    <outlet property="draftBeerNameLabel" destination="9mg-uh-z1n" id="0NY-zP-Ren"/>
+                                    <outlet property="draftBeerPriceLabel" destination="ZVl-w9-gjk" id="7uu-Cm-UAC"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BottledBeerCell" id="Neb-Fh-YcR" customClass="BottledBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="317" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="273" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Neb-Fh-YcR" id="NIw-0N-OAq">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -2041,8 +2036,8 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="bottledBeerNameLabel" destination="ryV-Y0-opB" id="3Bs-sJ-hCx"/>
-                                    <outlet property="bottledBeerPriceLabel" destination="ZI4-hF-o28" id="Uzh-IM-Isr"/>
+                                    <outlet property="bottledBeerNameLabel" destination="ryV-Y0-opB" id="3KJ-Oe-T3Q"/>
+                                    <outlet property="bottledBeerPriceLabel" destination="ZI4-hF-o28" id="Arr-El-vt3"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

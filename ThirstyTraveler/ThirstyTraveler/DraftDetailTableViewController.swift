@@ -97,14 +97,15 @@ class DraftDetailTableViewController: UITableViewController {
                 cell0.draftFavorites.enabled = cleanDraft.wishlist
                 cell0.draftVisited.enabled = cleanDraft.haveBeen*/
                 
-            case 0:
+            /*case 0:
                 let cell0 = cell as! DraftDetailTableViewCell
-                //  cell0.draftProfile.image = beer1
-                cell0.draftRatingsLabel.text = cleanDraft.name
+                 // cell0.draftProfile.image = beer1
+                cell0.draftNameLabel.text = cleanDraft.name
+                cell0.draftRatingsLabel.text = String(cleanDraft.ratings)
                 cell0.draftLocationLabel.text = cleanDraft.placeID
                 cell0.draftFavorites.enabled = cleanDraft.wishlist
                 cell0.draftVisited.enabled = cleanDraft.haveBeen
-                
+                */
             case 1:
                 let openTime:OpenTime = cleanDraft.officeTime[indexPath.row]
                 //(cell as! OfficeTimeCell).dayLabel.text = openTime.day*/
@@ -129,7 +130,7 @@ class DraftDetailTableViewController: UITableViewController {
             case 3 :
                 let cell3 = cell as! BottledBeerCell
                 cell3.bottledBeerNameLabel.text = String(cleanDraft.bottledDPriceList.keys)
-                cell3.bottledBeerNameLabel.text = String(cleanDraft.bottledDPriceList.values)
+                cell3.bottledBeerPriceLabel.text = String(cleanDraft.bottledDPriceList.values)
             default: break
             }
             
@@ -204,19 +205,21 @@ class DraftDetailTableViewController: UITableViewController {
     
 }
 
-class DraftDetailTableViewCell:UITableViewCell{
-    @IBOutlet weak var draftProfile: UIImageView!
-    @IBOutlet weak var draftNameLabel: UILabel!
-    @IBOutlet weak var draftRatingsLabel: UILabel!
-    @IBOutlet weak var draftLocationLabel: UILabel!
-    @IBOutlet weak var draftFavorites: UIButton!
+class DraftDetailTableViewCell: UITableViewCell{
+
     @IBOutlet weak var draftVisited: UIButton!
+    @IBOutlet weak var draftFavorites: UIButton!
+    @IBOutlet weak var draftLocationLabel: UILabel!
+    @IBOutlet weak var draftRatingsLabel: UILabel!
+    //@IBOutlet weak var draftProfile: UIImageView!
+    @IBOutlet weak var draftNameLabel: UILabel!
     
 }
 
 
 class OfficeTimeCell: UITableViewCell{
     @IBOutlet weak var dayLabel: UILabel!
+
     @IBOutlet weak var timeLabel: UILabel!
     
 }
@@ -224,12 +227,13 @@ class OfficeTimeCell: UITableViewCell{
 class DraftBeerCell: UITableViewCell{
     @IBOutlet weak var draftBeerNameLabel: UILabel!
     @IBOutlet weak var draftBeerPriceLabel: UILabel!
+
     
 }
 
 class BottledBeerCell: UITableViewCell{
     @IBOutlet weak var bottledBeerNameLabel: UILabel!
-    
     @IBOutlet weak var bottledBeerPriceLabel: UILabel!
+
 }
 

@@ -20,6 +20,7 @@
 		DA2177CA1D62FE9A005C2F9D /* PilotPlant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; };
 		DA2177CB1D62FE9A005C2F9D /* PilotPlant.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA2177C81D62FE94005C2F9D /* PilotPlant.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA2178071D641882005C2F9D /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2178061D641882005C2F9D /* Brewery.swift */; };
+		DA354CDD1D66C6B400CC89B3 /* FavobeenTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */; };
 		DA354CDF1D66C79E00CC89B3 /* FavoBeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */; };
 		DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */; };
 		DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFB01D37346F0049C008 /* AppDelegate.swift */; };
@@ -85,6 +86,7 @@
 		69F8CA4C587D2216B2A14D01 /* Pods-ThirstyTraveler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirstyTraveler.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirstyTraveler/Pods-ThirstyTraveler.release.xcconfig"; sourceTree = "<group>"; };
 		DA2177C81D62FE94005C2F9D /* PilotPlant.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PilotPlant.framework; sourceTree = "<group>"; };
 		DA2178061D641882005C2F9D /* Brewery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
+		DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavobeenTableViewController.swift; sourceTree = "<group>"; };
 		DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoBeenViewController.swift; sourceTree = "<group>"; };
 		DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favobeenTableViewCell.swift; sourceTree = "<group>"; };
 		DA6BBFAD1D37346F0049C008 /* ThirstyTraveler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ThirstyTraveler.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,6 +200,7 @@
 				DA6BBFBC1D37346F0049C008 /* Info.plist */,
 				DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */,
 				DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */,
+				DA354CDC1D66C6B400CC89B3 /* FavobeenTableViewController.swift */,
 				3BEC83331D64287700B60366 /* ParentClass.swift */,
 				DD7A3A231D65838C0059A1A7 /* Draft.swift */,
 				DA2178061D641882005C2F9D /* Brewery.swift */,
@@ -433,6 +436,7 @@
 				DA2178071D641882005C2F9D /* Brewery.swift in Sources */,
 				3B60E8C51D6C194A00AE6CF5 /* PopUpViewController.swift in Sources */,
 				DDFB004D1D6C12490037BF23 /* DraftDetailTableViewController.swift in Sources */,
+				DA354CDD1D66C6B400CC89B3 /* FavobeenTableViewController.swift in Sources */,
 				DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */,
 				DD7A3A241D65838C0059A1A7 /* Draft.swift in Sources */,
 				3B60E8C31D6C190600AE6CF5 /* MapViewController.swift in Sources */,

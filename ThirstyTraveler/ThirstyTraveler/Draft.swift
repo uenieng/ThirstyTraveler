@@ -19,7 +19,7 @@ class DraftBeer : BeerPlace{
     }
     
     
-    convenience init(officeTime:[(String,Int,Int)], draftPriceList:[String:Int], bottledDPriceList:[String:Int],OfficeNumber:String,  name:String, type:String, location:(Double, Double))
+    convenience init(officeTime:[OpenTimev], draftPriceList:[String:Int], bottledDPriceList:[String:Int],OfficeNumber:String,  name:String, type:String, location:(Double, Double))
     {
         self.init()
         self.officeTime = officeTime

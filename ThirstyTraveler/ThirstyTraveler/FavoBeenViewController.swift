@@ -16,32 +16,78 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UIView!
     
-    var beerplaces:Array<[BeerPlace]> = []
+<<<<<<< HEAD
+    var beerplaces:Array<BeerPlace> = []
+=======
+    var beerTableVC:FavobeenTableViewController?
+    var beerplaces:Array<BeerPlace> = []
+    
+>>>>>>> origin/master
     var wishlist:Array<BeerPlace> = []
     var haveBeen:Array<BeerPlace> = []
-    var itemsOnSegView:Array<BeerPlace> = []
+  //  let favobeen:[String:[BeerPlace]] = ["즐겨찾기":wishlist,"방문기록":haveBeen]
+
  
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        beerplaces.append(factoryArray0)
-        beerplaces.append(breweryArray0)
-        beerplaces.append(draftArray0)
+<<<<<<< HEAD
+        beerplaces = []
+        beerplaces += (factoryArray0 as [BeerPlace])
+        beerplaces += (breweryArray0 as [BeerPlace])
+        beerplaces += (draftArray0 as [BeerPlace])
         
-        for items in beerplaces{
-                 wishlist = items.filter ({(i:BeerPlace) -> (Bool) in
+                 wishlist = beerplaces.filter ({(i:BeerPlace) -> (Bool) in
                 if i.wishlist == true {return true}
                 return false})
-                haveBeen = items.filter ({(i:BeerPlace) -> (Bool) in
+                haveBeen = beerplaces.filter ({(i:BeerPlace) -> (Bool) in
                 if i.haveBeen == true {return true}
                 return false})
             
             itemsOnSegView = wishlist
+        
+=======
+
+     print(itemsOnSegView)
+        
+        for items in breweryArray0 {
+            
+            if items.wishlist == true {
+                wishlist += [items]
+                
+            }
+            if items.haveBeen == true {
+                    haveBeen += [items]
+            }
+            
+        }
+        for items in factoryArray0 {
+            if items.wishlist == true{
+                wishlist += [items]
+            }
+            if items.haveBeen == true {
+                haveBeen += [items]
+            }
+        }
+        
+        for items in draftArray0 {
+            if items.wishlist == true{
+                wishlist += [items]
+            }
+            if items.haveBeen == true {
+                haveBeen += [items]
+            }
+            
+            itemsOnSegView += wishlist
+
         }
 
+>>>>>>> origin/master
        //itemsOnSegview가 nil일때 빈 테이블뷰를 호출하는 코드 작성
         //빈 테이블뷰를 어떻게 불러오지?
-        }
+        
+        // Do any additional setup after loading the view.
+    }
     
     
     
@@ -64,7 +110,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             returnValue = haveBeen.count
             break
         
-        default : 0
+        default :
         break
         }
         
@@ -73,11 +119,22 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         
         
     }
+    //Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
     
+    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls) 
+    
+    
+   
+    
+    
+    var itemsOnSegView:Array<BeerPlace> = []
 
     
     @IBAction func FavoBeenEmbed(sender: UISegmentedControl){
-                switch(FavoBeen.selectedSegmentIndex)
+        
+        
+        
+        switch(FavoBeen.selectedSegmentIndex)
         {
         case 0:
             itemsOnSegView = wishlist
@@ -90,7 +147,15 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             break
             
         }
-                return
+        
+        
+        
+        
+        return
+        
+        
+        //여기에 returnValue array 값 childViewControllers로 보내는 매쏘드 작성 해야함
+        
     }
 
      func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
@@ -103,9 +168,18 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         // 그러면 불러와야할 것은
         // 가게 이름, 주소, 이미지, 평점, 타입 이정도인데
         let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView[indexPath.row].name) //
+        print (placeNames)
         let placeName:String = placeNames[indexPath.section]
-        let placeAddress:String = String(itemsOnSegView[indexPath.row].address) // 나중에 parentclass에 address 넣으면 .address로 변경하면 됨.
-
+        let placeAddress:String = String(itemsOnSegView[indexPath.row].name) // 나중에 parentclass에 address 넣으면 .address로 변경하면 됨.
+        
+//        for items in itemsOnSegView {
+//            print(items.name)
+//        }
+        
+        print(placeNames)
+        print(placeName)
+        print(placeAddress)
+    
         favobeenCell.beerplaceName.text = placeName
         favobeenCell.beerplaceAddress.text = placeAddress
         
@@ -113,6 +187,15 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         return favobeenCell
     }
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
 

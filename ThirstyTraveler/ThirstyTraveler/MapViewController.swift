@@ -182,6 +182,10 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     
     func getIdByCoordinate(location: CLLocationCoordinate2D)-> String{
         var result:String = ""
+        var thisLatitude = location.latitude
+        var thisLonitude = location.longitude
+        thisLatitude = round(location.latitude*1000000)/1000000
+        thisLonitude = round(location.longitude*1000000)/1000000
         for draft in draftArray0{
             if(location.latitude == draft.location.0 && location.longitude == draft.location.1){
                 result = draft.placeID

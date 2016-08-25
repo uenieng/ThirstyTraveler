@@ -91,7 +91,7 @@ class DraftDetailTableViewController: UITableViewController {
                 let cell0 = cell as! DraftDetailTableViewCell
                 cell0.draftProfile.image = "beer1_yellow
                 //cell0.draftType
-                cell0.draftTitle.text = cleanDraft.name
+                cell0.draftTDraftDetailTableViewControlleritle.text = cleanDraft.name
                 cell0.draftRatings.text = String(cleanDraft.ratings)
                 cell0.draftLocation.text = cleanDraft.placeID
                 cell0.draftFavorites.enabled = cleanDraft.wishlist

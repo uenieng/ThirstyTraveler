@@ -1,15 +1,17 @@
 //
-//  DetailTableViewCell.swift
+//  BottleBeerTableViewCell.swift
 //  CustomizedTableTest
 //
-//  Created by cscoi017 on 2016. 8. 22..
+//  Created by cscoi017 on 2016. 8. 29..
 //  Copyright © 2016년 Sun. All rights reserved.
 //
 
 import UIKit
 
-class DetailTableViewCell: UITableViewCell {
+class BottleBeerTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var BBNameLabel: UILabel!
+    @IBOutlet weak var BBPriceLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

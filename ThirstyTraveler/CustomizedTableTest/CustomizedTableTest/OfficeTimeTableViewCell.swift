@@ -1,26 +1,17 @@
 //
-//  DrinkerTableViewCell.swift
+//  OfficeTimeTableViewCell.swift
 //  CustomizedTableTest
 //
-//  Created by cscoi017 on 2016. 8. 19..
+//  Created by cscoi017 on 2016. 8. 29..
 //  Copyright © 2016년 Sun. All rights reserved.
 //
 
 import UIKit
 
-class DrinkerTableViewCell: UITableViewCell {
+class OfficeTimeTableViewCell: UITableViewCell {
+    @IBOutlet weak var DayLabel: UILabel!
+    @IBOutlet weak var TimeLabel: UILabel!
 
-    @IBOutlet weak var profileImageView: UIImageView!
-    
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    @IBOutlet weak var locationLabel: UILabel!
-    
-    @IBOutlet weak var typeLabel: UIImageView!
-    
-    @IBOutlet weak var ratingsLabel: UILabel!
-
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -15,8 +15,8 @@ import GoogleMapsCore
 func createMarker(mapview: GMSMapView, FactoryList: [Factory], icon: UIImage, sliderValue: Double){
     let MapView = MapViewController()
     for factory in FactoryList{
-        if(sliderValue <= round(factory.ratings*10)/10){
-            print("sliderValue : \(sliderValue), factory : \(factory.ratings)")
+        if(factoryValue <= round(factory.ratings*10)/10){
+            print("factoryValue : \(sliderValue), factory : \(factory.ratings)")
             let position = CLLocationCoordinate2DMake(factory.location.0, factory.location.1)
             let marker = GMSMarker(position: position)
             marker.title = factory.name
@@ -31,7 +31,7 @@ func createMarker(mapview: GMSMapView, FactoryList: [Factory], icon: UIImage, sl
 func createMarker(mapview: GMSMapView, BreweryList: [Brewery],  icon: UIImage, sliderValue: Double){
     let MapView = MapViewController()
     for brewery in BreweryList{
-        if(sliderValue <= round(brewery.ratings*10)/10){
+        if(breweryValue <= round(brewery.ratings*10)/10){
             let position = CLLocationCoordinate2DMake(brewery.location.0, brewery.location.1)
             let marker = GMSMarker(position: position)
             marker.title = brewery.name
@@ -46,7 +46,7 @@ func createMarker(mapview: GMSMapView, BreweryList: [Brewery],  icon: UIImage, s
 func createMarker(mapview: GMSMapView, DraftList: [DraftBeer],  icon: UIImage, sliderValue: Double){
     let MapView = MapViewController()
     for draft in DraftList{
-        if(sliderValue <= round(draft.ratings*10)/10){
+        if(draftValue <= round(draft.ratings*10)/10){
             let position = CLLocationCoordinate2DMake(draft.location.0, draft.location.1)
             let marker = GMSMarker(position: position)
             marker.title = draft.name

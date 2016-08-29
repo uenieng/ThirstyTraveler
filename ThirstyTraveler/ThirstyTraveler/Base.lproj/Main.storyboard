@@ -310,7 +310,6 @@
                                 <rect key="frame" x="83" y="211" width="214" height="31"/>
                                 <connections>
                                     <action selector="breweryValueChanged:" destination="OWB-c1-Bbi" eventType="valueChanged" id="ocD-d9-MkB"/>
-                                    <action selector="sliderValueChanged:" destination="OWB-c1-Bbi" eventType="valueChanged" id="69n-yp-jYw"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH5-DK-yNn">
@@ -325,7 +324,6 @@
                                 <rect key="frame" x="83" y="258" width="214" height="31"/>
                                 <connections>
                                     <action selector="factoryValueChanged:" destination="OWB-c1-Bbi" eventType="valueChanged" id="j2T-6n-meG"/>
-                                    <action selector="sliderValueChanged:" destination="OWB-c1-Bbi" eventType="valueChanged" id="yVN-iL-DwO"/>
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-N6-ae9">
@@ -336,13 +334,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beer_1_fill" translatesAutoresizingMaskIntoConstraints="NO" id="l3V-Gg-bam">
                                 <rect key="frame" x="32" y="157" width="39" height="39"/>
                             </imageView>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="s2W-Ah-L8g">
-                                <rect key="frame" x="83" y="164" width="214" height="31"/>
-                                <connections>
-                                    <action selector="draftValueChanged:" destination="OWB-c1-Bbi" eventType="valueChanged" id="uXb-e7-UmY"/>
-                                    <action selector="sliderValueChanged:" destination="OWB-c1-Bbi" eventType="valueChanged" id="woZ-jC-Oc1"/>
-                                </connections>
-                            </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOE-tM-MdX">
                                 <rect key="frame" x="303" y="169" width="29" height="27"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -423,6 +414,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="s2W-Ah-L8g">
+                                <rect key="frame" x="83" y="166" width="214" height="31"/>
+                                <connections>
+                                    <action selector="draftValueChanged:" destination="OWB-c1-Bbi" eventType="valueChanged" id="uXb-e7-UmY"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>

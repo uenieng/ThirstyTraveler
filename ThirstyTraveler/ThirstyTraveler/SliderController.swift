@@ -19,9 +19,9 @@ class SliderController: UIViewController {
     
     @IBOutlet weak var Slider: UISlider!
     @IBOutlet weak var draftSlider: UISlider!
-    
     @IBOutlet weak var brewerySlider: UISlider!
     @IBOutlet var factorySlider: UIView!
+    
     @IBOutlet weak var Label: UILabel!
     @IBOutlet weak var draftLabel: UILabel!
     @IBOutlet weak var breweryLabel: UILabel!

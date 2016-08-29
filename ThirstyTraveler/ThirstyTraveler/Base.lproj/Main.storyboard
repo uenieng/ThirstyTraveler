@@ -2700,7 +2700,6 @@
             </objects>
             <point key="canvasLocation" x="-191.5" y="773.5"/>
         </scene>
-<<<<<<< HEAD
         <!--Table View Controller-->
         <scene sceneID="j6U-Vo-rwq">
             <objects>
@@ -2713,7 +2712,7 @@
                             <tableViewSection id="wmm-7D-Aql">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftDetailTableViewCell" rowHeight="157" id="L1B-JJ-oc5" customClass="DraftDetailTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="64" width="375" height="157"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L1B-JJ-oc5" id="9Oz-1f-e3S">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="156.5"/>
@@ -2755,7 +2754,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="32" id="14o-ox-Nlr" customClass="OfficeTimeCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="221" width="375" height="32"/>
+                                        <rect key="frame" x="0.0" y="157" width="375" height="32"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14o-ox-Nlr" id="zha-P9-QlP">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
@@ -2775,7 +2774,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeCell" id="UHT-BX-CsP" customClass="OfficeTimeCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="253" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="189" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UHT-BX-CsP" id="pqU-AY-ICD">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -2801,7 +2800,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="rTJ-tn-rHL" customClass="DraftBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="297" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="233" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rTJ-tn-rHL" id="Fp0-FP-N8b">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -2827,7 +2826,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="ogq-eE-GeN" customClass="DraftBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="341" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="277" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ogq-eE-GeN" id="pFr-sk-lUo">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -2853,7 +2852,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="32" id="w1x-Ji-9SR" customClass="OfficeTimeCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="385" width="375" height="32"/>
+                                        <rect key="frame" x="0.0" y="321" width="375" height="32"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w1x-Ji-9SR" id="mi6-uN-iUn">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
@@ -2873,7 +2872,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeCell" id="2hC-AQ-NLO" customClass="OfficeTimeCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="417" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="353" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2hC-AQ-NLO" id="txX-dJ-0DA">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -2899,7 +2898,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="wZj-eY-0rS" customClass="DraftBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="461" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="397" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wZj-eY-0rS" id="1JG-iN-S60">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -2925,7 +2924,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="iN3-CX-iS5" customClass="DraftBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="505" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="441" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iN3-CX-iS5" id="Do6-cZ-GPG">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -2951,7 +2950,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="32" id="kvg-7Z-8vc" customClass="OfficeTimeCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="549" width="375" height="32"/>
+                                        <rect key="frame" x="0.0" y="485" width="375" height="32"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kvg-7Z-8vc" id="RUL-C5-TbI">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="31.5"/>
@@ -2971,7 +2970,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeCell" id="IVS-Iy-KtR" customClass="OfficeTimeCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="581" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="517" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IVS-Iy-KtR" id="OPG-2d-vZp">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -2997,7 +2996,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="gF4-nI-b1d" customClass="DraftBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="625" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="561" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gF4-nI-b1d" id="CBn-bo-fee">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -3023,7 +3022,7 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerCell" id="xtk-Bb-qsR" customClass="DraftBeerCell" customModule="ThirstyTraveler" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="669" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="605" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xtk-Bb-qsR" id="KtW-P1-JAF">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
@@ -3063,8 +3062,6 @@
             </objects>
             <point key="canvasLocation" x="-1477.5" y="2418.5"/>
         </scene>
-=======
->>>>>>> origin/master
         <!--My List-->
         <scene sceneID="9ZF-ta-EW7">
             <objects>

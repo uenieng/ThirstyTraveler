@@ -25,9 +25,11 @@ func defaultFactory() -> [Factory]{
     factory4.placeID = "factory4"
     
     let factory5 = Factory(name:"하이네켄", type:"Factory", location:(37.582700,127.028995), officeTime: [("월~금",0900,1700),("토~일",0000,0000)], programList:["하이네켄만들기","시음하기","공장투어"], officeNumber:"07045687982", officeURL:"http://facebook.com" )
-    factory5.placeID = "factory5"
+    factory5.haveBeen = true
     
         factoryArray += [factory1,factory2,factory3,factory4,factory5]
+    
+    
     
     return   factoryArray
 }

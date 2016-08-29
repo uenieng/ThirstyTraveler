@@ -9,12 +9,14 @@
 import UIKit
 
 
-
 class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
+    
+    var mapview = MapViewController()
+    
     
     
     @IBOutlet var FavoBeen: UISegmentedControl!
-    @IBOutlet var FavoEmbed: UIView!
+    @IBOutlet var FavoEmbed: UITableView!
     
     var beerplaces:Array<BeerPlace> = []
     var wishList:Array<BeerPlace> = []
@@ -34,29 +36,23 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             if i == true {
                 temporary.append(a)
             } else {}
-        } // 인스턴스의 불값을 확인
+        } // 인스턴스의 불값을 확인하는 함수
 
         
         for items in beerplaces{
             addTempo(items.wishlist, a: items) //wishlist들 검증하여 어레이에 저장
-        } //반복문 종료
+        }
         wishList = temporary
         
         temporary.removeAll()
         for items in beerplaces{
             addTempo(items.haveBeen, a: items) //방문기록 검증하여 어레이에 저장
-        } //반복문 종료
+        }
         haveBeen = temporary
 
             itemsOnSegView = wishList
 
         }
-    
-    
-       //itemsOnSegview가 nil일때 빈 테이블뷰를 호출하는 코드 작성
-        //빈 테이블뷰를 어떻게 불러오지?
-    
-    
     
     
     override func didReceiveMemoryWarning() {
@@ -68,25 +64,31 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
         var returnValue = 1
+        var verify:BeerPlace?
+        verify = wishList[0]
         
-        
+        if (verify == nil) {
+            
+        returnValue = 1
+            
+        }
+        else {
+            
         switch(FavoBeen.selectedSegmentIndex){
         case 0:
             returnValue = wishList.count
             break
         case 1:
             returnValue = haveBeen.count
-//            print(returnValue)
+
             break
         
-        default : 0
+        default : 1
+        
         break
         }
-        
+        }
         return returnValue
-        
-        
-        
     }
     
 
@@ -95,11 +97,12 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
                 switch(FavoBeen.selectedSegmentIndex)
         {
         case 0:
-//            itemsOnSegView!.removeAll()
+            itemsOnSegView!.removeAll()
             itemsOnSegView = wishList
+            
             break
         case 1:
-//            itemsOnSegView!.removeAll()
+            itemsOnSegView!.removeAll()
             itemsOnSegView = haveBeen
             break
             
@@ -107,6 +110,9 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             break
             
         }
+        
+        self.FavoEmbed.reloadData()
+
                 return
     }
 
@@ -114,25 +120,34 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         
     {
         let favobeenCell = tableView.dequeueReusableCellWithIdentifier("favobeenCell", forIndexPath: indexPath) as! favobeenTableViewCell
-        
-        
-        // 지금까지 제대로 실행되었다면 itemsOnSegView에 beerplace타입의 객체들이 인스턴스화 되어있을것.
-        // 그러면 불러와야할 것은
-        // 가게 이름, 주소, 이미지, 평점, 타입 이정도인데
-        
-//        if itemsOnSegView != nil {
+        if itemsOnSegView != nil {
         
             let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView![indexPath.row].name) //
             print (placeNames)
             let placeName:String = placeNames[indexPath.section]
             let placeAddress:String = String(itemsOnSegView![indexPath.row].address)
-            
+            let placeRatings:String? = String(itemsOnSegView![indexPath.row].ratings)
             favobeenCell.beerplaceName.text = placeName
             favobeenCell.beerplaceAddress.text = placeAddress
-//        } else {
-//            favobeenCell.beerplaceName.text = "안녕하세요!"
-//            favobeenCell.beerplaceAddress.text = "좀더 둘러볼까요?"
-//        }
+            
+            if placeRatings != nil {
+            favobeenCell.beerplaceRatings.text = placeRatings
+            } else {
+                favobeenCell.beerplaceRatings.text = "5.0"
+            }
+//            let placeImage = UIImage(named:"defaultImage")
+//            let placeImageView:UIImageView = UIImageView(image:placeImage)
+//            
+//            
+//            mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: placeImageView)
+//            
+//            favobeenCell.beerplaceImage.image = placeImageView.image
+            
+        } else if itemsOnSegView == nil {
+            favobeenCell.beerplaceName.text = "안녕하세요!"
+            favobeenCell.beerplaceAddress.text = "좀더 둘러볼까요?"
+        }
+        
         
         
         return favobeenCell

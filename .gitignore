@@ -69,3 +69,5 @@ fastlane/test_output
 ThirstyTraveler/ThirstyTraveler/Brewery.swift
 
 ThirstyTraveler/ThirstyTraveler/FilterToggle.swift
+
+.DS_Store

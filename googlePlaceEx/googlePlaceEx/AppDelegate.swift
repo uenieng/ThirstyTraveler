@@ -8,6 +8,7 @@
 
 import GoogleMaps
 import UIKit
+import GooglePlaces
 
 let myAPIKey = "AIzaSyBDuqzSKsz7dzNaM05ykfz-TQdV6ohBes4"
 
@@ -26,6 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             fatalError("Please provide an API Key using myAPIKey")
         }
         GMSServices.provideAPIKey(myAPIKey)
+        GMSPlacesClient.provideAPIKey(myAPIKey)
 
         return true
         

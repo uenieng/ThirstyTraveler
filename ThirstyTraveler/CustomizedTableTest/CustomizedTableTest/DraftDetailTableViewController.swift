@@ -21,7 +21,7 @@ class DraftDetailTableViewController: UITableViewController {
         currentDraft = myData[0]
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 160
+        //tableView.estimatedRowHeight = 160
         
         
         // Uncomment the following line to preserve selection between presentations
@@ -120,12 +120,12 @@ class DraftDetailTableViewController: UITableViewController {
                 
                 var thename:String = "yup"
                 
-                for i in 0...nameList.count{
+                for i in 0...nameList.count-1{
                    
                     thename = nameList[i]
+                    
                 }
-                
-                return thename
+                return thename // 이부분이 잘못됨! for문 안에다가 프린트문을 넣던지 해야함
             }
             
             switch indexPath.section{
@@ -162,7 +162,7 @@ class DraftDetailTableViewController: UITableViewController {
                     //String(cleanDraft.draftPriceList.values)
             case 3:
                 let cell3 = cell as! BottleBeerTableViewCell
-                cell3.BBNameLabel.text = String(bBNameList[0])
+                cell3.BBNameLabel.text = String(beerName(bBNameList))
                 cell3.BBPriceLabel.text = "\(bBPriceList[0]) 원"
             default: break
             

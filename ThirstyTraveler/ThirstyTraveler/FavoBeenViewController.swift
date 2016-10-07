@@ -7,11 +7,14 @@
 //
 
 import UIKit
+import GoogleMaps
+import GoogleMapsCore
+import GooglePlaces
 
-
-class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableViewDelegate {
+class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableViewDelegate, GMSMapViewDelegate {
     
     var mapview = MapViewController()
+    
     
     
     
@@ -123,7 +126,6 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         if itemsOnSegView != nil {
         
             let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView![indexPath.row].name) //
-            print (placeNames)
             let placeName:String = placeNames[indexPath.section]
             let placeAddress:String = String(itemsOnSegView![indexPath.row].address)
             let placeRatings:String? = String(itemsOnSegView![indexPath.row].ratings)
@@ -135,13 +137,11 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             } else {
                 favobeenCell.beerplaceRatings.text = "5.0"
             }
-//            let placeImage = UIImage(named:"defaultImage")
-//            let placeImageView:UIImageView = UIImageView(image:placeImage)
-//            
-//            
-//            mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: placeImageView)
-//            
-//            favobeenCell.beerplaceImage.image = placeImageView.image
+            let placeImage = UIImage(named:"defaultImage")
+            let placeImageView:UIImageView = UIImageView(image:placeImage)
+
+            mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: placeImageView)
+            favobeenCell.beerplaceImage.image = placeImageView.image
             
         } else if itemsOnSegView == nil {
             favobeenCell.beerplaceName.text = "안녕하세요!"

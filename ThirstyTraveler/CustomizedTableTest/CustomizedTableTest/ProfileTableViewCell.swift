@@ -30,6 +30,14 @@ class ProfileTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-   
+    @IBAction func favoritesTapped(sender: UIButton) {
+        let favoritePushed = UIImage(named: "beer_favorites_fill.png") as UIImage!
+        FavoritesLabel.setImage(favoritePushed, forState: UIControlState.Normal)
+        
+    }
+    @IBAction func visitedTapped(sender: UIButton) {
+        let visitedPushed = UIImage(named:"beer_visited_fill.png") as UIImage!
+        VisitedLabel.setImage(visitedPushed, forState: UIControlState.Normal)
+    }
 
 }

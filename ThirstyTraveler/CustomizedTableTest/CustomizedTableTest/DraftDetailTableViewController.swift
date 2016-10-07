@@ -149,7 +149,6 @@ class DraftDetailTableViewController: UITableViewController {
                 else {"\(openTime.open) ~ \(openTime.close)"}*/
             case 2:
                 let cell2 = cell as! DraftBeerTableViewCell
-                let(dBname) = dBNameList [indexPath.row]
                 cell2.DBNameLabel.text = String(beerName(dBNameList))
                 /*cell2.DBNameLabel.text = String(for number in 0...dBNameList.count{
                     "\(dBNameList[number])"})*/

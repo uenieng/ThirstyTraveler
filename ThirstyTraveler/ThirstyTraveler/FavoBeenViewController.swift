@@ -148,7 +148,6 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             favobeenCell.beerplaceAddress.text = "좀더 둘러볼까요?"
         }
         
-        //yoyo
         
         return favobeenCell
     }

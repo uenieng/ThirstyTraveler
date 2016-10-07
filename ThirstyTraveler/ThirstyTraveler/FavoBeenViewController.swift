@@ -140,8 +140,12 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             let placeImage = UIImage(named:"defaultImage")
             let placeImageView:UIImageView = UIImageView(image:placeImage)
 
-            mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: placeImageView)
-            favobeenCell.beerplaceImage.image = placeImageView.image
+            
+            print(itemsOnSegView![indexPath.row].placeID)
+            
+            mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: favobeenCell.beerplaceImage)
+            
+//            favobeenCell.beerplaceImage.image = placeImageView.image
             
         } else if itemsOnSegView == nil {
             favobeenCell.beerplaceName.text = "안녕하세요!"

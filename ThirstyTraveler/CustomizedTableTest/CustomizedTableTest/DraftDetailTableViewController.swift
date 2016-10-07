@@ -120,7 +120,7 @@ class DraftDetailTableViewController: UITableViewController {
                 
                 var thename:String = "yup"
                 
-                for i in 0...nameList.count-1{
+                for i in 0...nameList.count-2{
                    
                     thename = nameList[i]
                     
@@ -150,6 +150,8 @@ class DraftDetailTableViewController: UITableViewController {
             case 2:
                 let cell2 = cell as! DraftBeerTableViewCell
                 cell2.DBNameLabel.text = String(beerName(dBNameList))
+                /*cell2.DBNameLabel.text = String(for number in 0...dBNameList.count{
+                    "\(dBNameList[number])"})*/
                     //String(cleanDraft.draftPriceList.keys)
                 /*
                 for number in 0...3{

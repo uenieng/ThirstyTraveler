@@ -138,10 +138,25 @@ class DraftDetailTableViewController: UITableViewController {
                 else {"\(openTime.open) ~ \(openTime.close)"}*/
             case 2:
                 let cell2 = cell as! DraftBeerTableViewCell
+<<<<<<< HEAD
                 let(dBname) = dBNameList [indexPath.row]
                 cell2.DBNameLabel.text = dBname
                 let(dBprice) = dBPriceList [indexPath.row]
                 cell2.DBPriceLabel.text = "\(dBprice) 원"
+=======
+                cell2.DBNameLabel.text = String(beerName(dBNameList))
+                /*cell2.DBNameLabel.text = String(for number in 0...dBNameList.count{
+                    "\(dBNameList[number])"})*/
+                    //String(cleanDraft.draftPriceList.keys)
+                /*
+                for number in 0...3{
+                "\(dBNameList[number])"
+                }
+                */
+                
+
+                cell2.DBPriceLabel.text = "\(dBPriceList[0]) 원"
+>>>>>>> master
                     //String(cleanDraft.draftPriceList.values)
             case 3:
                 let cell3 = cell as! BottleBeerTableViewCell

@@ -1,15 +1,17 @@
 //
-//  BreweryDetailTableViewCell.swift
+//  D_DraftBeerTableViewCell.swift
 //  ThirstyTraveler
 //
-//  Created by cscoi017 on 2016. 8. 23..
+//  Created by cscoi017 on 2016. 10. 28..
 //  Copyright © 2016년 moonyoung. All rights reserved.
 //
 
 import UIKit
 
-class BreweryDetailTableViewCell: UITableViewCell {
+class D_DraftBeerTableViewCell: UITableViewCell {
+    @IBOutlet weak var DBNameLabel: UILabel!
 
+    @IBOutlet weak var DBPriceLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

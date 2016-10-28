@@ -115,18 +115,7 @@ class DraftDetailTableViewController: UITableViewController {
             
             
             
-            func beerName(nameList:[String]) -> String{
-
-                
-                var thename:String = "yup"
-                
-                for i in 0...nameList.count-2{
-                   
-                    thename = nameList[i]
-                    
-                }
-                return thename // 이부분이 잘못됨! for문 안에다가 프린트문을 넣던지 해야함
-            }
+            
             
             switch indexPath.section{
             case 0:
@@ -149,6 +138,12 @@ class DraftDetailTableViewController: UITableViewController {
                 else {"\(openTime.open) ~ \(openTime.close)"}*/
             case 2:
                 let cell2 = cell as! DraftBeerTableViewCell
+<<<<<<< HEAD
+                let(dBname) = dBNameList [indexPath.row]
+                cell2.DBNameLabel.text = dBname
+                let(dBprice) = dBPriceList [indexPath.row]
+                cell2.DBPriceLabel.text = "\(dBprice) 원"
+=======
                 cell2.DBNameLabel.text = String(beerName(dBNameList))
                 /*cell2.DBNameLabel.text = String(for number in 0...dBNameList.count{
                     "\(dBNameList[number])"})*/
@@ -161,11 +156,14 @@ class DraftDetailTableViewController: UITableViewController {
                 
 
                 cell2.DBPriceLabel.text = "\(dBPriceList[0]) 원"
+>>>>>>> master
                     //String(cleanDraft.draftPriceList.values)
             case 3:
                 let cell3 = cell as! BottleBeerTableViewCell
-                cell3.BBNameLabel.text = String(beerName(bBNameList))
-                cell3.BBPriceLabel.text = "\(bBPriceList[0]) 원"
+                let(bBname) = bBNameList [indexPath.row]
+                let(bBprice) = bBPriceList [indexPath.row]
+                cell3.BBNameLabel.text = bBname
+                cell3.BBPriceLabel.text = "\(bBprice) 원"
             default: break
             
             }

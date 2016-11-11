@@ -27,7 +27,11 @@
 		DA6BBFC61D37346F0049C008 /* ThirstyTravelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFC51D37346F0049C008 /* ThirstyTravelerTests.swift */; };
 		DA6BBFD11D3734700049C008 /* ThirstyTravelerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFD01D3734700049C008 /* ThirstyTravelerUITests.swift */; };
 		DD7A3A241D65838C0059A1A7 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3A231D65838C0059A1A7 /* Draft.swift */; };
-		DDFB004D1D6C12490037BF23 /* DraftDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB004C1D6C12490037BF23 /* DraftDetailTableViewController.swift */; };
+		DDB7744E1DD595520058CE0A /* DraftDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */; };
+		DDB774501DD596730058CE0A /* D_ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB7744F1DD596730058CE0A /* D_ProfileTableViewCell.swift */; };
+		DDB774521DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB774511DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift */; };
+		DDB774541DD596910058CE0A /* D_DraftBeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB774531DD596910058CE0A /* D_DraftBeerTableViewCell.swift */; };
+		DDB774561DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB774551DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift */; };
 		DDFB004F1D6C12550037BF23 /* BreweryDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */; };
 		DDFB00511D6C125E0037BF23 /* FactoryDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */; };
 		DDFB00551D6C14860037BF23 /* BreweryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */; };
@@ -94,7 +98,11 @@
 		DA6BBFD01D3734700049C008 /* ThirstyTravelerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirstyTravelerUITests.swift; sourceTree = "<group>"; };
 		DA6BBFD21D3734700049C008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7A3A231D65838C0059A1A7 /* Draft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
-		DDFB004C1D6C12490037BF23 /* DraftDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftDetailTableViewController.swift; sourceTree = "<group>"; };
+		DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftDetailTableViewController.swift; sourceTree = "<group>"; };
+		DDB7744F1DD596730058CE0A /* D_ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		DDB774511DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_OfficeTimeTableViewCell.swift; sourceTree = "<group>"; };
+		DDB774531DD596910058CE0A /* D_DraftBeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_DraftBeerTableViewCell.swift; sourceTree = "<group>"; };
+		DDB774551DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_BottleBeerTableViewCell.swift; sourceTree = "<group>"; };
 		DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDetailTableViewController.swift; sourceTree = "<group>"; };
 		DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryDetailTableViewController.swift; sourceTree = "<group>"; };
 		DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDetailTableViewCell.swift; sourceTree = "<group>"; };
@@ -173,8 +181,12 @@
 				DA6BBFB01D37346F0049C008 /* AppDelegate.swift */,
 				DA6BBFB21D37346F0049C008 /* ViewController.swift */,
 				DA6BBFB41D37346F0049C008 /* Main.storyboard */,
+				DDB7744F1DD596730058CE0A /* D_ProfileTableViewCell.swift */,
+				DDB774511DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift */,
+				DDB774531DD596910058CE0A /* D_DraftBeerTableViewCell.swift */,
+				DDB774551DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift */,
+				DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */,
 				3B8A070A1D6D7FEE00FCB98C /* SliderController.swift */,
-				DDFB004C1D6C12490037BF23 /* DraftDetailTableViewController.swift */,
 				DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */,
 				DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */,
 				DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */,
@@ -411,15 +423,19 @@
 				DDFB00511D6C125E0037BF23 /* FactoryDetailTableViewController.swift in Sources */,
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
 				DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */,
+				DDB774501DD596730058CE0A /* D_ProfileTableViewCell.swift in Sources */,
+				DDB774541DD596910058CE0A /* D_DraftBeerTableViewCell.swift in Sources */,
+				DDB774521DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift in Sources */,
 				DDFB00571D6C14950037BF23 /* FactoryDatailTableViewCell.swift in Sources */,
 				3B0B9DE61D6CBA3700D84884 /* CreatingMark.swift in Sources */,
 				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
 				DDFB00551D6C14860037BF23 /* BreweryDetailTableViewCell.swift in Sources */,
+				DDB7744E1DD595520058CE0A /* DraftDetailTableViewController.swift in Sources */,
+				DDB774561DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift in Sources */,
 				3BEC83341D64287700B60366 /* ParentClass.swift in Sources */,
 				DDFB004F1D6C12550037BF23 /* BreweryDetailTableViewController.swift in Sources */,
 				DA2178071D641882005C2F9D /* Brewery.swift in Sources */,
 				3B60E8C51D6C194A00AE6CF5 /* PopUpViewController.swift in Sources */,
-				DDFB004D1D6C12490037BF23 /* DraftDetailTableViewController.swift in Sources */,
 				DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */,
 				DD7A3A241D65838C0059A1A7 /* Draft.swift in Sources */,
 				3B60E8C31D6C190600AE6CF5 /* MapViewController.swift in Sources */,

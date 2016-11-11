@@ -2046,7 +2046,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileTableViewCell" id="sGo-Xs-OlM" customClass="D_ProfileTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="D_ProfileTableViewCell" rowHeight="160" id="sGo-Xs-OlM" customClass="D_ProfileTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sGo-Xs-OlM" id="HEE-mp-UDJ">
@@ -2067,9 +2067,6 @@
                                             <rect key="frame" x="231" y="102" width="41" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button" image="beer_visited_gray"/>
-                                            <connections>
-                                                <action selector="visitedTapped:" destination="sGo-Xs-OlM" eventType="touchUpInside" id="5PA-iL-bpe"/>
-                                            </connections>
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RB-SA-HqQ">
                                             <rect key="frame" x="217" y="20" width="150" height="26"/>
@@ -2093,9 +2090,6 @@
                                             <rect key="frame" x="174" y="102" width="40" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="Button" image="beer_favorites_gray"/>
-                                            <connections>
-                                                <action selector="favoritesTapped:" destination="sGo-Xs-OlM" eventType="touchUpInside" id="CY0-pf-D96"/>
-                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -2108,16 +2102,11 @@
                                     <outlet property="DraftFavoritesLabel" destination="PmV-Uj-44D" id="Z7N-FQ-YBa"/>
                                     <outlet property="DraftImageLabel" destination="5Js-Nn-wy2" id="nhm-XF-2uD"/>
                                     <outlet property="DraftNameLabel" destination="5RB-SA-HqQ" id="28v-kM-clx"/>
-                                    <outlet property="DraftRatingLabel" destination="Auz-gO-URd" id="ykj-Fz-F8A"/>
                                     <outlet property="DraftRatingsLabel" destination="Auz-gO-URd" id="T1R-lj-ZZ4"/>
                                     <outlet property="DraftVisitedLabel" destination="gdF-lj-6W3" id="Til-9J-QpC"/>
-                                    <outlet property="FavoritesLabel" destination="PmV-Uj-44D" id="e8J-3A-H5g"/>
-                                    <outlet property="ImageLabel" destination="5Js-Nn-wy2" id="7Fu-8W-2g7"/>
-                                    <outlet property="LocationLabel" destination="J8a-4Q-42Y" id="g2w-5C-NnY"/>
-                                    <outlet property="VisitedLabel" destination="gdF-lj-6W3" id="B5C-YE-M3b"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OfficeTimeTableViewCell" rowHeight="44" id="3bM-SQ-ui5" customClass="D_OfficeTimeTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="D_OfficeTimeTableViewCell" rowHeight="44" id="3bM-SQ-ui5" customClass="D_OfficeTimeTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="188" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3bM-SQ-ui5" id="CQL-oN-mJ3">
@@ -2141,15 +2130,11 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="DayLabel" destination="vj9-7e-pOB" id="Oz0-MP-It8"/>
                                     <outlet property="DraftDayLabel" destination="vj9-7e-pOB" id="ff2-Mq-EH9"/>
                                     <outlet property="DraftTimeLabel" destination="p60-oB-DpG" id="Q81-Gf-4a4"/>
-                                    <outlet property="TimeLabel" destination="p60-oB-DpG" id="mZE-O7-ZCE"/>
-                                    <outlet property="dayLabel" destination="vj9-7e-pOB" id="pNX-2o-Ued"/>
-                                    <outlet property="timeLabel" destination="p60-oB-DpG" id="bxZ-En-lpB"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DraftBeerTableViewCell" rowHeight="44" id="JZg-hG-3fs" customClass="D_DraftBeerTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="D_DraftBeerTableViewCell" rowHeight="44" id="JZg-hG-3fs" customClass="D_DraftBeerTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="232" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JZg-hG-3fs" id="dDt-46-C2F">
@@ -2173,13 +2158,11 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="DBNameLabel" destination="Rp0-DX-dsA" id="HHl-IB-djG"/>
-                                    <outlet property="DBPriceLabel" destination="Ucs-Co-Tbx" id="N4l-X4-z1t"/>
                                     <outlet property="DraftDBNameLabel" destination="Rp0-DX-dsA" id="z23-Oi-EwC"/>
                                     <outlet property="DraftDBPriceLabel" destination="Ucs-Co-Tbx" id="pzQ-s4-iaC"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BottleBeerTableViewCell" rowHeight="44" id="lyu-8c-wCN" customClass="D_BottleBeerTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="D_BottleBeerTableViewCell" rowHeight="44" id="lyu-8c-wCN" customClass="D_BottleBeerTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="276" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="lyu-8c-wCN" id="cns-Us-Fd1">
@@ -2203,8 +2186,6 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="BBNameLabel" destination="D21-5z-2aZ" id="TnC-on-wgt"/>
-                                    <outlet property="BBPriceLabel" destination="Vej-vK-A3b" id="2cG-Dd-9es"/>
                                     <outlet property="DraftBBNameLabel" destination="D21-5z-2aZ" id="bGt-l7-yKJ"/>
                                     <outlet property="DraftBBPriceLabel" destination="Vej-vK-A3b" id="Jbp-qy-kr1"/>
                                 </connections>

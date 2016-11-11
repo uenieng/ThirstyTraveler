@@ -20,6 +20,8 @@ class DraftDetailTableViewController: UITableViewController {
         
         currentDraft = myData[0] // to be modified** get info from previous tap
         
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

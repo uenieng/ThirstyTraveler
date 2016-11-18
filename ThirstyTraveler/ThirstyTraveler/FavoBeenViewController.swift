@@ -17,7 +17,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     
     
     
-    
+    @IBOutlet var tableView: UITableView!
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UITableView!
     
@@ -30,10 +30,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        beerplaces.removeAll()
-        beerplaces += (factoryArray0 as [BeerPlace])
-        beerplaces += (breweryArray0 as [BeerPlace])
-        beerplaces += (draftArray0 as [BeerPlace])
+        
         
         func addTempo (i:Bool, a:BeerPlace) -> (){
             if i == true {
@@ -155,8 +152,36 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         
         return favobeenCell
     }
-
+    
+    func returntype(placename: BeerPlace) -> String{
+        let typename = placename.type
+        return typename
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        //목적지 뷰 컨트롤러 확보
+        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let selected:BeerPlace = self.itemsOnSegView![selectedIndex.row]
+        
+        
+        
+        if(returntype(selected) == "Draft"){
+        let destVC = segue.destinationViewController as! DraftDetailTableViewController
+        
+        //테이블 뷰에서 선택된 오브젝트 확보
+        
+    
+            
+        //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
+        destVC.currentDraft = selected as! DraftBeer
+        }
+        
+        
 
 }
 
 
+}

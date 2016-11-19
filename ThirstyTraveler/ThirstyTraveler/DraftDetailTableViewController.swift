@@ -10,6 +10,7 @@ import UIKit
 
 class DraftDetailTableViewController: UITableViewController {
     
+    
     var myData:[DraftBeer] = []
     var currentDraft:DraftBeer? = nil
 

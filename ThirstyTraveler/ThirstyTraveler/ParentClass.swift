@@ -28,6 +28,10 @@ class BeerPlace {
     }
     
     
+
+    
+ 
+    
 } //class 닫음
 
 

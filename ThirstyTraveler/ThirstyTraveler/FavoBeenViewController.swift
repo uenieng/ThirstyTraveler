@@ -17,7 +17,6 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     
     
     
-    @IBOutlet var tableView: UITableView!
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UITableView!
     
@@ -30,6 +29,10 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        beerplaces.removeAll()
+        beerplaces += (factoryArray0 as [BeerPlace])
+        beerplaces += (breweryArray0 as [BeerPlace])
+        beerplaces += (draftArray0 as [BeerPlace])
         
         
         func addTempo (i:Bool, a:BeerPlace) -> (){
@@ -120,42 +123,82 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         
     {
         let favobeenCell = tableView.dequeueReusableCellWithIdentifier("favobeenCell", forIndexPath: indexPath) as! favobeenTableViewCell
+        
+        
         if itemsOnSegView != nil {
         
-            let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView![indexPath.row].name) //
+           /* 커스텀셀에 기본정보 입력, 텍스트라벨, 평점, 등등. */
+            
+            let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView![indexPath.row].name)
             let placeName:String = placeNames[indexPath.section]
             let placeAddress:String = String(itemsOnSegView![indexPath.row].address)
             let placeRatings:String? = String(itemsOnSegView![indexPath.row].ratings)
+          
             favobeenCell.beerplaceName.text = placeName
             favobeenCell.beerplaceAddress.text = placeAddress
             
             if placeRatings != nil {
             favobeenCell.beerplaceRatings.text = placeRatings
             } else {
-                favobeenCell.beerplaceRatings.text = "5.0"
+                favobeenCell.beerplaceRatings.text = "0.0"
             }
-            let placeImage = UIImage(named:"defaultImage")
+            
+            /* 커스텀셀에 이미지 및 아이콘 할당하는 부분 */
+            let placeImage = UIImage(named:"beer_6_fill")
             let placeImageView:UIImageView = UIImageView(image:placeImage)
+            
+            let placeType:String = String(itemsOnSegView![indexPath.row].type)
+            var placeTypeDefaultIcon=UIImage(named:"beer_5_black")
+            var placeTypeIcon: UIImageView = UIImageView(image:placeTypeDefaultIcon)
 
+              mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: favobeenCell.beerplaceImage) //json에서 이미지 호출
             
-            print(itemsOnSegView![indexPath.row].placeID)
+            func assignTypeIcon ()-> UIImageView{
+                
+                if placeType == "Factory" {
+                    placeTypeDefaultIcon = UIImage(named:"beer_3_fill")
+                }
+                else if placeType == "Brewery"{
+                    placeTypeDefaultIcon = UIImage(named:"beer_2_fill2")
+                }
+                else if placeType == "DraftBeer"{
+                    placeTypeDefaultIcon = UIImage(named:"beer_5_fill")
+                }
+                
+                placeTypeIcon = UIImageView(image:placeTypeDefaultIcon)
+
+                return placeTypeIcon
+            }
             
-            mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: favobeenCell.beerplaceImage)
             
-//            favobeenCell.beerplaceImage.image = placeImageView.image
+            assignTypeIcon()
+            favobeenCell.beerplaceType.image = placeTypeDefaultIcon
+
+            /* 이미지 및 아이콘 할당 완료 */
             
-        } else if itemsOnSegView == nil {
-            favobeenCell.beerplaceName.text = "안녕하세요!"
-            favobeenCell.beerplaceAddress.text = "좀더 둘러볼까요?"
+            
+          
         }
-        
         
         return favobeenCell
     }
     
-    func returntype(placename: BeerPlace) -> String{
-        let typename = placename.type
-        return typename
+    
+    /* segway를 위해서 타입을 인트형 변수로 변환해주기 */
+    func selectedPlaceType(placename: BeerPlace) -> Int{
+        let selectedPlaceType = placename.type
+        var selectedTypeNumber = 0
+        
+        if selectedPlaceType == "Factory" {
+            selectedTypeNumber = 0
+        }
+        if selectedPlaceType == "Brewery"{
+            selectedTypeNumber = 1
+        }
+        if selectedPlaceType == "Draft"{
+            selectedTypeNumber = 2
+        }
+        return selectedTypeNumber
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -163,25 +206,46 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         //목적지 뷰 컨트롤러 확보
-        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let selectedIndex:NSIndexPath = self.FavoEmbed.indexPathForSelectedRow!
         let selected:BeerPlace = self.itemsOnSegView![selectedIndex.row]
         
         
         
-        if(returntype(selected) == "Draft"){
-        let destVC = segue.destinationViewController as! DraftDetailTableViewController
-        
-        //테이블 뷰에서 선택된 오브젝트 확보
-        
-    
+        ////여기부터 나중에 디테일뷰 완성되면 삭제하고 스위치문으로 바꾸던가 if else로 대치
+        if(selectedPlaceType(selected)==2){
+            let destVC = segue.destinationViewController as! DraftDetailTableViewController
+            destVC.currentDraft = selected as! DraftBeer
             
-        //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
-        destVC.currentDraft = selected as! DraftBeer
         }
+        ////여기까지 추후 수정 필요함
         
         
-
-}
-
+        
+        
+//        switch(selectedPlaceType(selected)){
+//            
+//        case 0: //factory로 수정 필요
+//                let destVC = segue.destinationViewController as! DraftDetailTableViewController
+//                destVC.currentDraft = selected as! DraftBeer
+//                break
+//            
+//        case 1: //brewery로 수정 필요
+//                let destVC = segue.destinationViewController as! DraftDetailTableViewController
+//                destVC.currentDraft = selected as! DraftBeer
+//                break
+//            
+//        case 2:
+//            let destVC = segue.destinationViewController as! DraftDetailTableViewController
+//                destVC.currentDraft = selected as! DraftBeer
+//                break
+//            
+//        default :
+//            break
+//        }//switch문 닫음
+    
+    
+    
+    
+    } //prepareforsegue 닫음
 
 }

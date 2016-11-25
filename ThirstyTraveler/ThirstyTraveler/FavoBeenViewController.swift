@@ -17,7 +17,6 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     
     
     
-//    @IBOutlet var tableView: UITableView!
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UITableView!
     
@@ -34,6 +33,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         beerplaces += (factoryArray0 as [BeerPlace])
         beerplaces += (breweryArray0 as [BeerPlace])
         beerplaces += (draftArray0 as [BeerPlace])
+        
         
         func addTempo (i:Bool, a:BeerPlace) -> (){
             if i == true {
@@ -156,9 +156,20 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         return favobeenCell
     }
     
-    func returntype(placename: BeerPlace) -> String{
-        let typename = placename.type
-        return typename
+    func selectedPlaceType(placename: BeerPlace) -> Int{
+        let selectedPlaceType = placename.type
+        var selectedTypeNumber = 0
+        
+        if selectedPlaceType == "Factory" {
+            selectedTypeNumber = 0
+        }
+        if selectedPlaceType == "Brewery"{
+            selectedTypeNumber = 1
+        }
+        if selectedPlaceType == "Draft"{
+            selectedTypeNumber = 2
+        }
+        return selectedTypeNumber
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -171,20 +182,41 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         
         
         
-        if(returntype(selected) == "Draft"){
-        let destVC = segue.destinationViewController as! DraftDetailTableViewController
-        
-        //테이블 뷰에서 선택된 오브젝트 확보
-        
-    
+        ////여기부터 나중에 디테일뷰 완성되면 삭제하고 스위치문으로 바꾸던가 if else로 대치
+        if(selectedPlaceType(selected)==2){
+            let destVC = segue.destinationViewController as! DraftDetailTableViewController
+            destVC.currentDraft = selected as! DraftBeer
             
-        //목적지 뷰 컨트롤러에 선택된 오브젝트 전달
-        destVC.currentDraft = selected as! DraftBeer
         }
+        ////여기까지 추후 수정 필요함
         
         
-
-}
-
+        
+        
+//        switch(selectedPlaceType(selected)){
+//            
+//        case 0: //factory로 수정 필요
+//                let destVC = segue.destinationViewController as! DraftDetailTableViewController
+//                destVC.currentDraft = selected as! DraftBeer
+//                break
+//            
+//        case 1: //brewery로 수정 필요
+//                let destVC = segue.destinationViewController as! DraftDetailTableViewController
+//                destVC.currentDraft = selected as! DraftBeer
+//                break
+//            
+//        case 2:
+//            let destVC = segue.destinationViewController as! DraftDetailTableViewController
+//                destVC.currentDraft = selected as! DraftBeer
+//                break
+//            
+//        default :
+//            break
+//        }//switch문 닫음
+    
+    
+    
+    
+    } //prepareforsegue 닫음
 
 }

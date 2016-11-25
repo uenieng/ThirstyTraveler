@@ -123,39 +123,68 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         
     {
         let favobeenCell = tableView.dequeueReusableCellWithIdentifier("favobeenCell", forIndexPath: indexPath) as! favobeenTableViewCell
+        
+        
         if itemsOnSegView != nil {
         
-            let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView![indexPath.row].name) //
+           /* 커스텀셀에 기본정보 입력, 텍스트라벨, 평점, 등등. */
+            
+            let placeNames:Array<String> = Array(arrayLiteral: itemsOnSegView![indexPath.row].name)
             let placeName:String = placeNames[indexPath.section]
             let placeAddress:String = String(itemsOnSegView![indexPath.row].address)
             let placeRatings:String? = String(itemsOnSegView![indexPath.row].ratings)
+          
             favobeenCell.beerplaceName.text = placeName
             favobeenCell.beerplaceAddress.text = placeAddress
             
             if placeRatings != nil {
             favobeenCell.beerplaceRatings.text = placeRatings
             } else {
-                favobeenCell.beerplaceRatings.text = "5.0"
+                favobeenCell.beerplaceRatings.text = "0.0"
             }
-            let placeImage = UIImage(named:"defaultImage")
+            
+            /* 커스텀셀에 이미지 및 아이콘 할당하는 부분 */
+            let placeImage = UIImage(named:"beer_6_fill")
             let placeImageView:UIImageView = UIImageView(image:placeImage)
+            
+            let placeType:String = String(itemsOnSegView![indexPath.row].type)
+            var placeTypeDefaultIcon=UIImage(named:"beer_5_black")
+            var placeTypeIcon: UIImageView = UIImageView(image:placeTypeDefaultIcon)
 
+              mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: favobeenCell.beerplaceImage) //json에서 이미지 호출
             
-//            print(itemsOnSegView![indexPath.row].placeID)
+            func assignTypeIcon ()-> UIImageView{
+                
+                if placeType == "Factory" {
+                    placeTypeDefaultIcon = UIImage(named:"beer_3_fill")
+                }
+                else if placeType == "Brewery"{
+                    placeTypeDefaultIcon = UIImage(named:"beer_2_fill2")
+                }
+                else if placeType == "DraftBeer"{
+                    placeTypeDefaultIcon = UIImage(named:"beer_5_fill")
+                }
+                
+                placeTypeIcon = UIImageView(image:placeTypeDefaultIcon)
+
+                return placeTypeIcon
+            }
             
-            mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: favobeenCell.beerplaceImage)
             
-//            favobeenCell.beerplaceImage.image = placeImageView.image
+            assignTypeIcon()
+            favobeenCell.beerplaceType.image = placeTypeDefaultIcon
+
+            /* 이미지 및 아이콘 할당 완료 */
             
-        } else if itemsOnSegView == nil {
-            favobeenCell.beerplaceName.text = "안녕하세요!"
-            favobeenCell.beerplaceAddress.text = "좀더 둘러볼까요?"
+            
+          
         }
-        
         
         return favobeenCell
     }
     
+    
+    /* segway를 위해서 타입을 인트형 변수로 변환해주기 */
     func selectedPlaceType(placename: BeerPlace) -> Int{
         let selectedPlaceType = placename.type
         var selectedTypeNumber = 0

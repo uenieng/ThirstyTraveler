@@ -17,7 +17,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     
     
     
-    @IBOutlet var tableView: UITableView!
+//    @IBOutlet var tableView: UITableView!
     @IBOutlet var FavoBeen: UISegmentedControl!
     @IBOutlet var FavoEmbed: UITableView!
     
@@ -30,7 +30,10 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        beerplaces.removeAll()
+        beerplaces += (factoryArray0 as [BeerPlace])
+        beerplaces += (breweryArray0 as [BeerPlace])
+        beerplaces += (draftArray0 as [BeerPlace])
         
         func addTempo (i:Bool, a:BeerPlace) -> (){
             if i == true {
@@ -138,7 +141,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
             let placeImageView:UIImageView = UIImageView(image:placeImage)
 
             
-            print(itemsOnSegView![indexPath.row].placeID)
+//            print(itemsOnSegView![indexPath.row].placeID)
             
             mapview.loadFirstPhotoForPlace(itemsOnSegView![indexPath.row].placeID, imageView: favobeenCell.beerplaceImage)
             
@@ -163,7 +166,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         //목적지 뷰 컨트롤러 확보
-        let selectedIndex:NSIndexPath = self.tableView.indexPathForSelectedRow!
+        let selectedIndex:NSIndexPath = self.FavoEmbed.indexPathForSelectedRow!
         let selected:BeerPlace = self.itemsOnSegView![selectedIndex.row]
         
         

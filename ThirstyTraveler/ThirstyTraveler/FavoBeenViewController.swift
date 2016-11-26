@@ -161,7 +161,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
                 else if placeType == "Brewery"{
                     placeTypeDefaultIcon = UIImage(named:"beer_2_fill2")
                 }
-                else if placeType == "DraftBeer"{
+                else if placeType == "Draft"{
                     placeTypeDefaultIcon = UIImage(named:"beer_5_fill")
                 }
                 

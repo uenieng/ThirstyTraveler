@@ -126,22 +126,22 @@ func jsonToInstance(){
                 let website = element["website"] as! String
                 let ratings = element["ratings"] as! Double
                 let name = element["name"] as! String
-                let types = element["types"] as! String
-                if(types == "draft"){
+                let type = element["types"] as! String
+                if(type == "draft"){
                     let draftInstance: DraftBeer = DraftBeer(officeTime: [("월~목",1500,2400),("금,토",1700,0100),("일",0000,0000)],draftPriceList:["IPA":7000,"Duh":8000,"Whaeva":7500],bottledDPriceList:["버드와이저":3500,"Cass":3300,"Hite":4000], OfficeNumber : phoneNumber, name:name,type:"Draft", location:(latitude,longitude))
                     draftInstance.ratings = ratings
                     draftInstance.address = address
                     draftInstance.placeID = placeID
                     draftArray0.append(draftInstance)
                 }
-                else if(types == "brewery"){
+                else if(type == "brewery"){
                     let breweryInstance: Brewery = Brewery(name:name, type:"Brewery",location:(latitude,longitude), officeNumber:phoneNumber, officeTime:[("Mon",1200,1800)],brewedPricelist: ["브루":7000,"어리":8000],bottledBPricelist:["카스":400,"OB":7000,"하이트":5000])
                     breweryInstance.ratings = ratings
                     breweryInstance.address = address
                     breweryInstance.placeID = placeID
                     breweryArray0.append(breweryInstance)}
-                else if(types == "factory"){
-                    let factoryInstance: Factory = Factory(name:name, type:"Draft", location:(latitude,longitude), officeTime: [("월~금",0900,1700),("토~일",0000,0000)], programList:["맥주만들기"], officeNumber:phoneNumber, officeURL:website)
+                else if(type == "factory"){
+                    let factoryInstance: Factory = Factory(name:name, type:"Factory", location:(latitude,longitude), officeTime: [("월~금",0900,1700),("토~일",0000,0000)], programList:["맥주만들기"], officeNumber:phoneNumber, officeURL:website)
                     factoryInstance.ratings = ratings
                     factoryInstance.address = address
                     factoryInstance.placeID = placeID

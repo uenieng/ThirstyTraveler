@@ -209,43 +209,65 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         let selectedIndex:NSIndexPath = self.FavoEmbed.indexPathForSelectedRow!
         let selected:BeerPlace = self.itemsOnSegView![selectedIndex.row]
         
-        
-        
+/*
+        switch(selectedPlaceType(selected)){
+            
+        case 0: //factory로 수정 필요
+            let destVC = segue.destinationViewController as! FactoryDetailTableViewController
+            destVC.currentFactory = selected as! Factory
+            break
+            
+        case 1: //brewery로 수정 필요
+            let destVC = segue.destinationViewController as! BreweryDetailTableViewController
+            destVC.currentBrewery = selected as! Brewery
+            break
+            
+        case 2:
+            let destVC = segue.destinationViewController as! DraftDetailTableViewController
+            destVC.currentDraft = selected as! DraftBeer
+            break
+            
+        default :
+            break
+        }//switch문 닫음
+    }*/
         ////여기부터 나중에 디테일뷰 완성되면 삭제하고 스위치문으로 바꾸던가 if else로 대치
-        if(selectedPlaceType(selected)==2){
+       if(selectedPlaceType(selected)==2){
             let destVC = segue.destinationViewController as! DraftDetailTableViewController
             destVC.currentDraft = selected as! DraftBeer
             
         }
+    }
+}
         ////여기까지 추후 수정 필요함
         
         
         
         
-//        switch(selectedPlaceType(selected)){
-//            
-//        case 0: //factory로 수정 필요
-//                let destVC = segue.destinationViewController as! DraftDetailTableViewController
-//                destVC.currentDraft = selected as! DraftBeer
-//                break
-//            
-//        case 1: //brewery로 수정 필요
-//                let destVC = segue.destinationViewController as! DraftDetailTableViewController
-//                destVC.currentDraft = selected as! DraftBeer
-//                break
-//            
-//        case 2:
-//            let destVC = segue.destinationViewController as! DraftDetailTableViewController
-//                destVC.currentDraft = selected as! DraftBeer
-//                break
-//            
-//        default :
-//            break
-//        }//switch문 닫음
+/*        switch(selectedPlaceType(selected)){
+         
+        case 0: //factory로 수정 필요
+                let destVC = segue.destinationViewController as! DraftDetailTableViewController
+                destVC.currentDraft = selected as! DraftBeer
+                break
+         
+        case 1: //brewery로 수정 필요
+                let destVC = segue.destinationViewController as! BreweryDetailTableViewController
+                destVC.currentBrewery = selected as! Brewery
+                break
+
+        case 2:
+            let destVC = segue.destinationViewController as! FactoryDetailTableViewController
+                destVC.currentFactory = selected as! Factory
+                break
+         
+        default :
+            break
+        }//switch문 닫음
     
-    
+ 
     
     
     } //prepareforsegue 닫음
 
-}
+}*/

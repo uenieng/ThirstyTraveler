@@ -29,9 +29,9 @@ class BeerPlace:NSObject, NSCoding {
     
     
     required init?(coder aDecoder: NSCoder) {
-        self.name = aDecoder.decodeObjectForKey("name") as! String
-        self.type = aDecoder.decodeObjectForKey("type") as! String
-        self.ratings = aDecoder.decodeObjectForKey("ratings") as! Double
+//        self.name = aDecoder.decodeObjectForKey("name") as! String
+//        self.type = aDecoder.decodeObjectForKey("type") as! String
+//        self.ratings = aDecoder.decodeObjectForKey("ratings") as! Double
         self.location.0 = aDecoder.decodeObjectForKey("location.0") as! Double
         self.location.1 = aDecoder.decodeObjectForKey("location.1") as! Double
         self.wishlist = aDecoder.decodeObjectForKey("wishlist") as! Bool
@@ -43,16 +43,16 @@ class BeerPlace:NSObject, NSCoding {
     }
 
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeObject(self.name, forKey: "name")
-        aCoder.encodeObject(self.type, forKey: "type")
-        aCoder.encodeObject(self.ratings, forKey: "ratings")
-        aCoder.encodeObject(self.location.0, forKey: "location.0")
-        aCoder.encodeObject(self.location.1, forKey: "location.1")
+//        aCoder.encodeObject(self.name, forKey: "name")
+//        aCoder.encodeObject(self.type, forKey: "type")
+//        aCoder.encodeObject(self.ratings, forKey: "ratings")
+//        aCoder.encodeObject(self.location.0, forKey: "location.0")
+//        aCoder.encodeObject(self.location.1, forKey: "location.1")
         aCoder.encodeObject(self.wishlist, forKey: "wishlist")
         aCoder.encodeObject(self.haveBeen, forKey: "haveBeen")
-        aCoder.encodeObject(self.officeNumber, forKey: "officeNumber")
+//        aCoder.encodeObject(self.officeNumber, forKey: "officeNumber")
 //        aCoder.encodeObject(self.officeTime, forKey: "officeTime")
-        aCoder.encodeObject(self.address, forKey: "address")
+//        aCoder.encodeObject(self.address, forKey: "address")
         aCoder.encodeObject(self.placeID, forKey: "placeID")
     }
     

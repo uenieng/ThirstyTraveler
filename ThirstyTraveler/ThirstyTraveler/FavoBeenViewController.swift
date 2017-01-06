@@ -184,40 +184,20 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
     }
     
     
-    /* segway를 위해서 타입을 인트형 변수로 변환해주기 */
-    func selectedPlaceType(placename: BeerPlace) -> Int{
-        let selectedPlaceType = placename.type
-        var selectedTypeNumber = 0
-        
-        if selectedPlaceType == "Factory" {
-            selectedTypeNumber = 0
-        }
-        if selectedPlaceType == "Brewery"{
-            selectedTypeNumber = 1
-        }
-        if selectedPlaceType == "Draft"{
-            selectedTypeNumber = 2
-        }
-        return selectedTypeNumber
-    }
-    
+ 
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        //목적지 뷰 컨트롤러 확보
-        
+    
         let selectedIndex:NSIndexPath = self.FavoEmbed.indexPathForSelectedRow!
-        let selected:BeerPlace = self.itemsOnSegView![selectedIndex.row]
+        let selected:BeerPlace = self.itemsOnSegView![selectedIndex.row] //전달할것
         
         
         
         ////여기부터 나중에 디테일뷰 완성되면 삭제하고 스위치문으로 바꾸던가 if else로 대치
-        if(selectedPlaceType(selected)==2){
-            let destVC = segue.destinationViewController as! DraftDetailTableViewController
-            destVC.currentDraft = selected as? DraftBeer
+//        if(selectedPlaceType(selected)==2){
+            let destVC = segue.destinationViewController as! DetailViewController //목적지 뷰컨트롤러
+            destVC.currentPlace = selected //목적지뷰컨트롤러.currentplac에 전달할 항목 할당
             
-        }
+//        }
         ////여기까지 추후 수정 필요함
         
         
@@ -225,13 +205,13 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         /*
         switch(selectedPlaceType(selected)){
             
-        case 0: //factory로 수정 필요
+        case 0:
                 let destVC = segue.destinationViewController as! FactoryDetailTableViewController
                 destVC.currentFactory = selected as! Factory
                 
                 break
             
-        case 1: //brewery로 수정 필요
+        case 1: 
                 let destVC = segue.destinationViewController as! BreweryDetailTableViewController
                 destVC.currentBrewery = selected as! Brewery
                 break

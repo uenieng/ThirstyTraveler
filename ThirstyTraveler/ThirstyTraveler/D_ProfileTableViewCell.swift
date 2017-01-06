@@ -3,7 +3,11 @@
 //  ThirstyTraveler
 //
 <<<<<<< HEAD
+<<<<<<< HEAD
 //  Created by cscoi017 on 2016. 10. 28..
+=======
+//  Created by cscoi017 on 2016. 11. 11..
+>>>>>>> master
 =======
 //  Created by cscoi017 on 2016. 11. 11..
 >>>>>>> master
@@ -14,6 +18,7 @@ import UIKit
 
 class D_ProfileTableViewCell: UITableViewCell {
 <<<<<<< HEAD
+<<<<<<< HEAD
     @IBOutlet weak var LocationLabel: UILabel!
     @IBOutlet weak var ImageLabel: UIImageView!
     @IBOutlet weak var DraftNameLabel: UILabel!
@@ -22,6 +27,8 @@ class D_ProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var DraftRatingsLabel: UILabel!
 
 =======
+=======
+>>>>>>> master
 
     @IBOutlet weak var DraftNameLabel: UILabel!
     @IBOutlet weak var DraftRatingsLabel: UILabel!
@@ -31,6 +38,9 @@ class D_ProfileTableViewCell: UITableViewCell {
     @IBOutlet weak var DraftImageLabel: UIImageView!
     
     
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -38,7 +48,11 @@ class D_ProfileTableViewCell: UITableViewCell {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     override func setSelected(_ selected: Bool, animated: Bool) {
+=======
+    override func setSelected(selected: Bool, animated: Bool) {
+>>>>>>> master
 =======
     override func setSelected(selected: Bool, animated: Bool) {
 >>>>>>> master
@@ -48,7 +62,13 @@ class D_ProfileTableViewCell: UITableViewCell {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
+=======
+
+}
+
+>>>>>>> master
 =======
 
 }

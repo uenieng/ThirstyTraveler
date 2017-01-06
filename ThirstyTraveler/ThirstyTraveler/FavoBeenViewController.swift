@@ -234,7 +234,11 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         ////여기부터 나중에 디테일뷰 완성되면 삭제하고 스위치문으로 바꾸던가 if else로 대치
        if(selectedPlaceType(selected)==2){
             let destVC = segue.destinationViewController as! DraftDetailTableViewController
+<<<<<<< HEAD
             destVC.currentDraft = selected as! DraftBeer
+=======
+            destVC.currentDraft = selected as? DraftBeer
+>>>>>>> master
             
         }
     }

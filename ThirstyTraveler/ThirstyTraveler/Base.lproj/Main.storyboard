@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eDK-dF-vdT">
     <device id="retina4_7" orientation="portrait">
@@ -8,6 +9,8 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
 =======
+=======
+>>>>>>> master
 <?xml version="1.0" encoding="UTF-8"?>
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -29,6 +32,9 @@
 >>>>>>> origin/master
 =======
 >>>>>>> origin/master
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
@@ -83,6 +89,7 @@
             </objects>
             <point key="canvasLocation" x="-1522.5" y="-129.5"/>
         </scene>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <!--mainpage-->
         <scene sceneID="tne-QT-ifu">
@@ -301,6 +308,8 @@
         </scene>
 =======
 >>>>>>> master
+=======
+>>>>>>> master
         <!--Settings-->
         <scene sceneID="bgl-ff-Y76">
             <objects>
@@ -493,6 +502,7 @@
                         <outlet property="factoryLabel" destination="mEp-N6-ae9" id="GsV-9c-44E"/>
                         <outlet property="factorySlider" destination="QwK-oX-Y2d" id="ltH-GF-sFX"/>
                     </connections>
+<<<<<<< HEAD
 <<<<<<< HEAD
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cT3-OZ-w2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1480,6 +1490,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cT3-OZ-w2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
 >>>>>>> master
+=======
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cT3-OZ-w2K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+>>>>>>> master
             </objects>
             <point key="canvasLocation" x="-1575" y="1609"/>
         </scene>
@@ -1540,7 +1554,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dph-g6-jXc" id="X0U-iG-Oxl">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+=======
+                                            <frame key="frameInset" width="375" height="100"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="100"/>
 >>>>>>> master
@@ -1639,6 +1657,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aSC-Wr-stV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="-690.5" y="781.5"/>
         </scene>
         <!--Item-->
@@ -1718,6 +1737,9 @@
 =======
             <point key="canvasLocation" x="-834" y="780"/>
 >>>>>>> master
+=======
+            <point key="canvasLocation" x="-834" y="780"/>
+>>>>>>> master
         </scene>
         <!--Favobeen Table View Controller-->
         <scene sceneID="6qK-hm-7ga">
@@ -1735,7 +1757,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tGs-ma-wPr" id="DeU-HP-vxV">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+=======
+                                            <frame key="frameInset" width="375" height="60"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="60"/>
 >>>>>>> master
@@ -1790,7 +1816,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8EK-eb-maS" id="E7f-EM-8ro">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+=======
+                                            <frame key="frameInset" width="375" height="60"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="60"/>
 >>>>>>> master
@@ -1845,7 +1875,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vMH-es-700" id="H9X-KN-JU1">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+=======
+                                            <frame key="frameInset" width="375" height="60"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="60"/>
 >>>>>>> master
@@ -1924,7 +1958,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="boL-8z-79q" id="feE-92-df3">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+=======
+                                            <frame key="frameInset" width="375" height="60"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="60"/>
 >>>>>>> master
@@ -2139,7 +2177,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2z-X1-vRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="799" y="1544"/>
+=======
+            <point key="canvasLocation" x="727" y="2283"/>
+>>>>>>> master
 =======
             <point key="canvasLocation" x="727" y="2283"/>
 >>>>>>> master
@@ -2169,6 +2211,9 @@
 =======
                                         <frame key="frameInset" minX="201" minY="255" width="39" height="30"/>
                                         <color key="backgroundColor" red="0.91516309976577759" green="0.69830387830734253" blue="0.17034327983856201" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                                         <state key="normal" title="Close">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -2229,7 +2274,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Ilm-7X-riW" id="qqu-NV-CaB">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+=======
+                                    <frame key="frameInset" width="375" height="157"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="157"/>
 >>>>>>> master
@@ -2294,7 +2343,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3l3-Af-WsZ" id="9nZ-Kk-whR">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                    <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2326,7 +2379,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TCA-IA-wAx" id="tWA-hd-i1t">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                    <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2358,7 +2415,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Neb-Fh-YcR" id="NIw-0N-OAq">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                    <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2395,7 +2456,11 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GjI-2I-BTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
 <<<<<<< HEAD
+<<<<<<< HEAD
             <point key="canvasLocation" x="-599" y="2550"/>
+=======
+            <point key="canvasLocation" x="-39" y="83"/>
+>>>>>>> master
 =======
             <point key="canvasLocation" x="-39" y="83"/>
 >>>>>>> master
@@ -2414,7 +2479,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rMM-06-jgs" id="Qv3-bV-asz">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                    <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2426,7 +2495,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vpl-hG-fRK" id="1S0-Xm-xg4">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+=======
+                                    <frame key="frameInset" width="375" height="157"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="157"/>
 >>>>>>> master
@@ -2490,7 +2563,11 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fyG-rZ-sV7" id="rlU-QP-9sl">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                    <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2522,6 +2599,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="4UJ-0Z-QRB" id="LFn-SQ-9hn">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -2534,6 +2612,13 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kbu-52-XhK">
                                             <rect key="frame" x="220" y="11" width="108" height="21"/>
+=======
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f7o-z7-aSx">
+                                            <frame key="frameInset" minX="44" minY="11" width="283" height="21"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -2557,6 +2642,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8lf-NG-yeR" id="hY0-hV-rTI">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
@@ -2569,6 +2655,13 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qz0-05-pka">
                                             <rect key="frame" x="220" y="11" width="108" height="21"/>
+=======
+                                    <frame key="frameInset" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WuJ-Sv-I5m">
+                                            <frame key="frameInset" minX="44" minY="11" width="286" height="21"/>
+>>>>>>> master
 =======
                                     <frame key="frameInset" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -2614,7 +2707,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yyA-0J-6ib" id="iTL-1P-bRc">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+=======
+                                            <frame key="frameInset" width="375" height="157"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="157"/>
 >>>>>>> master
@@ -2667,7 +2764,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IDp-kY-Cw3" id="W6U-f4-kKD">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+=======
+                                            <frame key="frameInset" width="375" height="32"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="32"/>
 >>>>>>> master
@@ -2692,7 +2793,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oJL-Rp-yxo" id="wVX-6s-gKv">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2724,7 +2829,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="j9Y-Rs-g0j" id="vrv-iU-Edc">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2756,7 +2865,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cu2-Fy-lph" id="xKH-I4-Fk1">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2788,7 +2901,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dbF-nS-fOk" id="eZq-qV-jKX">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+=======
+                                            <frame key="frameInset" width="375" height="32"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="32"/>
 >>>>>>> master
@@ -2813,7 +2930,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="K36-Ii-yGh" id="XSC-5Z-lKe">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2845,7 +2966,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1xN-Wa-byt" id="Rrb-CK-dYb">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2877,7 +3002,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h8b-YT-Q97" id="FbH-jJ-BBe">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2909,7 +3038,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aeL-qr-ycC" id="7q1-cl-Fax">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+=======
+                                            <frame key="frameInset" width="375" height="32"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="32"/>
 >>>>>>> master
@@ -2934,7 +3067,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GRH-07-qZI" id="dA0-BK-wFR">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2966,7 +3103,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G9v-cL-IRT" id="PN4-FC-Rv1">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -2998,7 +3139,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DTf-gE-icl" id="9jG-AR-iv0">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3056,7 +3201,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="L1B-JJ-oc5" id="9Oz-1f-e3S">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="157"/>
+=======
+                                            <frame key="frameInset" width="375" height="157"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="157"/>
 >>>>>>> master
@@ -3109,7 +3258,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="14o-ox-Nlr" id="zha-P9-QlP">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+=======
+                                            <frame key="frameInset" width="375" height="32"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="32"/>
 >>>>>>> master
@@ -3134,7 +3287,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="UHT-BX-CsP" id="pqU-AY-ICD">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3166,7 +3323,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rTJ-tn-rHL" id="Fp0-FP-N8b">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3198,7 +3359,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ogq-eE-GeN" id="pFr-sk-lUo">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3230,7 +3395,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w1x-Ji-9SR" id="mi6-uN-iUn">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+=======
+                                            <frame key="frameInset" width="375" height="32"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="32"/>
 >>>>>>> master
@@ -3255,7 +3424,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2hC-AQ-NLO" id="txX-dJ-0DA">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3287,7 +3460,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wZj-eY-0rS" id="1JG-iN-S60">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3319,7 +3496,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="iN3-CX-iS5" id="Do6-cZ-GPG">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3351,7 +3532,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kvg-7Z-8vc" id="RUL-C5-TbI">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="32"/>
+=======
+                                            <frame key="frameInset" width="375" height="32"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="32"/>
 >>>>>>> master
@@ -3376,7 +3561,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IVS-Iy-KtR" id="OPG-2d-vZp">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3408,7 +3597,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gF4-nI-b1d" id="CBn-bo-fee">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3440,7 +3633,11 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xtk-Bb-qsR" id="KtW-P1-JAF">
 <<<<<<< HEAD
+<<<<<<< HEAD
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+=======
+                                            <frame key="frameInset" width="375" height="44"/>
+>>>>>>> master
 =======
                                             <frame key="frameInset" width="375" height="44"/>
 >>>>>>> master
@@ -3521,22 +3718,29 @@
             <point key="canvasLocation" x="-2235" y="1609"/>
         </scene>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <!--Draft Table View Controller-->
         <scene sceneID="SGR-34-znW">
             <objects>
                 <tableViewController id="DfX-nJ-pgY" customClass="DraftTableViewController" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" id="tTz-NG-9gs">
 =======
+=======
+>>>>>>> master
         <!--Draft Detail Table View Controller-->
         <scene sceneID="HZL-zf-xVZ">
             <objects>
                 <tableViewController id="8jo-xB-VKc" customClass="DraftDetailTableViewController" customModule="ThirstyTraveler" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="160" sectionHeaderHeight="28" sectionFooterHeight="28" id="q5x-qk-VXB">
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
+<<<<<<< HEAD
 <<<<<<< HEAD
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProfileTableViewCell" id="Ny3-WJ-Eee" customClass="D_ProfileTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="160"/>
@@ -3551,6 +3755,8 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CVu-GA-ahW">
                                             <rect key="frame" x="173" y="73" width="194" height="21"/>
 =======
+=======
+>>>>>>> master
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="D_ProfileTableViewCell" rowHeight="160" id="sGo-Xs-OlM" customClass="D_ProfileTableViewCell" customModule="ThirstyTraveler" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="160"/>
                                 <autoresizingMask key="autoresizingMask"/>
@@ -3563,6 +3769,9 @@
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J8a-4Q-42Y">
                                             <frame key="frameInset" minX="173" minY="73" width="194" height="21"/>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -3570,9 +3779,12 @@
                                             <nil key="highlightedColor"/>
                                         </label>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qhq-iO-5IG">
                                             <rect key="frame" x="217" y="20" width="150" height="26"/>
 =======
+=======
+>>>>>>> master
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdF-lj-6W3">
                                             <frame key="frameInset" minX="231" minY="102" width="41" height="40"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3580,6 +3792,9 @@
                                         </button>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5RB-SA-HqQ">
                                             <frame key="frameInset" minX="217" minY="20" width="150" height="26"/>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
@@ -3587,8 +3802,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkI-Xb-WVS">
                                             <rect key="frame" x="217" y="49" width="84" height="21"/>
+=======
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auz-gO-URd">
+                                            <frame key="frameInset" minX="217" minY="49" width="84" height="21"/>
+>>>>>>> master
 =======
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ratings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Auz-gO-URd">
                                             <frame key="frameInset" minX="217" minY="49" width="84" height="21"/>
@@ -3598,6 +3818,7 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beer_1_fill" translatesAutoresizingMaskIntoConstraints="NO" id="Lqr-6W-Ur1">
                                             <rect key="frame" x="173" y="23" width="41" height="41"/>
@@ -3645,6 +3866,8 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7pN-YU-pdp">
                                             <rect key="frame" x="43" y="11" width="108" height="21"/>
 =======
+=======
+>>>>>>> master
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="beer_1_fill" translatesAutoresizingMaskIntoConstraints="NO" id="SOH-Cn-66U">
                                             <frame key="frameInset" minX="173" minY="23" width="41" height="41"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -3678,6 +3901,9 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vj9-7e-pOB">
                                             <frame key="frameInset" minX="43" minY="11" width="108" height="21"/>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -3685,8 +3911,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uuk-NP-hOC">
                                             <rect key="frame" x="221" y="11" width="108" height="21"/>
+=======
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p60-oB-DpG">
+                                            <frame key="frameInset" minX="221" minY="11" width="108" height="21"/>
+>>>>>>> master
 =======
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p60-oB-DpG">
                                             <frame key="frameInset" minX="221" minY="11" width="108" height="21"/>
@@ -3699,6 +3930,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <outlet property="DayLabel" destination="7pN-YU-pdp" id="wzy-Xe-QJw"/>
                                     <outlet property="TimeLabel" destination="Uuk-NP-hOC" id="VfH-TL-Hu7"/>
@@ -3716,6 +3948,8 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ig9-Wp-k99">
                                             <rect key="frame" x="44" y="11" width="108" height="21"/>
 =======
+=======
+>>>>>>> master
                                     <outlet property="DraftDayLabel" destination="vj9-7e-pOB" id="ff2-Mq-EH9"/>
                                     <outlet property="DraftTimeLabel" destination="p60-oB-DpG" id="Q81-Gf-4a4"/>
                                 </connections>
@@ -3729,6 +3963,9 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rp0-DX-dsA">
                                             <frame key="frameInset" minX="44" minY="11" width="108" height="21"/>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -3736,8 +3973,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7lU-QM-ajD">
                                             <rect key="frame" x="220" y="11" width="108" height="21"/>
+=======
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucs-Co-Tbx">
+                                            <frame key="frameInset" minX="220" minY="11" width="108" height="21"/>
+>>>>>>> master
 =======
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucs-Co-Tbx">
                                             <frame key="frameInset" minX="220" minY="11" width="108" height="21"/>
@@ -3750,6 +3992,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+<<<<<<< HEAD
 <<<<<<< HEAD
                                     <outlet property="DBNameLabel" destination="ig9-Wp-k99" id="97q-vE-YeF"/>
                                     <outlet property="DBPriceLabel" destination="7lU-QM-ajD" id="Imb-Pr-0P8"/>
@@ -3765,6 +4008,8 @@
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZe-Ri-oxh">
                                             <rect key="frame" x="44" y="11" width="108" height="21"/>
 =======
+=======
+>>>>>>> master
                                     <outlet property="DraftDBNameLabel" destination="Rp0-DX-dsA" id="z23-Oi-EwC"/>
                                     <outlet property="DraftDBPriceLabel" destination="Ucs-Co-Tbx" id="pzQ-s4-iaC"/>
                                 </connections>
@@ -3778,6 +4023,9 @@
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D21-5z-2aZ">
                                             <frame key="frameInset" minX="44" minY="11" width="108" height="21"/>
+<<<<<<< HEAD
+>>>>>>> master
+=======
 >>>>>>> master
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -3785,8 +4033,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7vn-We-lQV">
                                             <rect key="frame" x="220" y="11" width="108" height="21"/>
+=======
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vej-vK-A3b">
+                                            <frame key="frameInset" minX="220" minY="11" width="108" height="21"/>
+>>>>>>> master
 =======
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vej-vK-A3b">
                                             <frame key="frameInset" minX="220" minY="11" width="108" height="21"/>
@@ -3800,8 +4053,13 @@
                                 </tableViewCellContentView>
                                 <connections>
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <outlet property="BBNameLabel" destination="NZe-Ri-oxh" id="fu9-dT-U6K"/>
                                     <outlet property="BBPriceLabel" destination="7vn-We-lQV" id="JAe-3x-Uz7"/>
+=======
+                                    <outlet property="DraftBBNameLabel" destination="D21-5z-2aZ" id="bGt-l7-yKJ"/>
+                                    <outlet property="DraftBBPriceLabel" destination="Vej-vK-A3b" id="Jbp-qy-kr1"/>
+>>>>>>> master
 =======
                                     <outlet property="DraftBBNameLabel" destination="D21-5z-2aZ" id="bGt-l7-yKJ"/>
                                     <outlet property="DraftBBPriceLabel" destination="Vej-vK-A3b" id="Jbp-qy-kr1"/>
@@ -3811,8 +4069,13 @@
                         </prototypes>
                         <connections>
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <outlet property="dataSource" destination="DfX-nJ-pgY" id="1I7-1g-G1Q"/>
                             <outlet property="delegate" destination="DfX-nJ-pgY" id="gkV-D2-65V"/>
+=======
+                            <outlet property="dataSource" destination="8jo-xB-VKc" id="ny9-wX-ijM"/>
+                            <outlet property="delegate" destination="8jo-xB-VKc" id="Ix2-so-JFC"/>
+>>>>>>> master
 =======
                             <outlet property="dataSource" destination="8jo-xB-VKc" id="ny9-wX-ijM"/>
                             <outlet property="delegate" destination="8jo-xB-VKc" id="Ix2-so-JFC"/>
@@ -3823,9 +4086,15 @@
                     <size key="freeformSize" width="375" height="667"/>
                 </tableViewController>
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IHY-py-vfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3287" y="-198"/>
+=======
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RwX-U5-LUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-38" y="779"/>
+>>>>>>> master
 =======
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RwX-U5-LUT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

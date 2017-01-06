@@ -139,6 +139,10 @@ class DraftDetailTableViewController: UITableViewController {
             case 2:
                 let cell2 = cell as! DraftBeerTableViewCell
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
 =======
 
 >>>>>>> master
@@ -146,6 +150,7 @@ class DraftDetailTableViewController: UITableViewController {
                 cell2.DBNameLabel.text = dBname
                 let(dBprice) = dBPriceList [indexPath.row]
                 cell2.DBPriceLabel.text = "\(dBprice) 원"
+<<<<<<< HEAD
 <<<<<<< HEAD
                 /*cell2.DBNameLabel.text = String(beerName(dBNameList))*/
                 /*cell2.DBNameLabel.text = String(for number in 0...dBNameList.count{
@@ -161,6 +166,8 @@ class DraftDetailTableViewController: UITableViewController {
                 cell2.DBPriceLabel.text = "\(dBPriceList[0]) 원"
 
                     //String(cleanDraft.draftPriceList.values)
+=======
+>>>>>>> master
 =======
 >>>>>>> master
             case 3:

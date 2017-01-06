@@ -16,14 +16,6 @@
 		3BEC83141D62D1B000B60366 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83131D62D1B000B60366 /* Factory.swift */; };
 		3BEC83341D64287700B60366 /* ParentClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83331D64287700B60366 /* ParentClass.swift */; };
 		3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */; };
-		A597016F1E1634A700DDA882 /* B_ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597016E1E1634A700DDA882 /* B_ProfileTableViewCell.swift */; };
-		A59701711E1634BB00DDA882 /* B_OfficeTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59701701E1634BB00DDA882 /* B_OfficeTimeTableViewCell.swift */; };
-		A59701751E16351800DDA882 /* B_BottleBeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59701741E16351800DDA882 /* B_BottleBeerTableViewCell.swift */; };
-		A59701771E16389D00DDA882 /* B_BrewedBeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59701761E16389D00DDA882 /* B_BrewedBeerTableViewCell.swift */; };
-		A59701791E163B6300DDA882 /* F_ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59701781E163B6300DDA882 /* F_ProfileTableViewCell.swift */; };
-		A597017D1E163BD900DDA882 /* F_ProgramTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597017C1E163BD900DDA882 /* F_ProgramTableViewCell.swift */; };
-		A597017F1E163BE500DDA882 /* F_URLTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A597017E1E163BE500DDA882 /* F_URLTableViewCell.swift */; };
-		A59701811E16419500DDA882 /* F_OfficeTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A59701801E16419500DDA882 /* F_OfficeTimeTableViewCell.swift */; };
 		DA2178071D641882005C2F9D /* Brewery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA2178061D641882005C2F9D /* Brewery.swift */; };
 		DA354CDF1D66C79E00CC89B3 /* FavoBeenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */; };
 		DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */; };
@@ -35,16 +27,6 @@
 		DA6BBFC61D37346F0049C008 /* ThirstyTravelerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFC51D37346F0049C008 /* ThirstyTravelerTests.swift */; };
 		DA6BBFD11D3734700049C008 /* ThirstyTravelerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA6BBFD01D3734700049C008 /* ThirstyTravelerUITests.swift */; };
 		DD7A3A241D65838C0059A1A7 /* Draft.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7A3A231D65838C0059A1A7 /* Draft.swift */; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-		DDE82BEF1DC32915002DBABE /* DraftTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE82BEE1DC32915002DBABE /* DraftTableViewController.swift */; };
-		DDE82BF11DC3295D002DBABE /* D_OfficeTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE82BF01DC3295D002DBABE /* D_OfficeTimeTableViewCell.swift */; };
-		DDE82BF31DC3296E002DBABE /* D_ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE82BF21DC3296E002DBABE /* D_ProfileTableViewCell.swift */; };
-		DDE82BF51DC3297E002DBABE /* D_DraftBeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE82BF41DC3297E002DBABE /* D_DraftBeerTableViewCell.swift */; };
-		DDE82BF71DC3298E002DBABE /* D_BottleBeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE82BF61DC3298E002DBABE /* D_BottleBeerTableViewCell.swift */; };
-=======
-=======
->>>>>>> master
 		DDB7744E1DD595520058CE0A /* DraftDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */; };
 		DDB774501DD596730058CE0A /* D_ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB7744F1DD596730058CE0A /* D_ProfileTableViewCell.swift */; };
 		DDB774521DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB774511DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift */; };
@@ -52,8 +34,8 @@
 		DDB774561DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB774551DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift */; };
 		DDFB004F1D6C12550037BF23 /* BreweryDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */; };
 		DDFB00511D6C125E0037BF23 /* FactoryDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */; };
+		DDFB00551D6C14860037BF23 /* BreweryDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */; };
 		DDFB00571D6C14950037BF23 /* FactoryDatailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDFB00561D6C14950037BF23 /* FactoryDatailTableViewCell.swift */; };
->>>>>>> master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,14 +81,6 @@
 		635382223661B55994141704 /* libPods-ThirstyTraveler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirstyTraveler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6576056E687BE5690C94AB43 /* Pods-ThirstyTraveler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirstyTraveler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ThirstyTraveler/Pods-ThirstyTraveler.debug.xcconfig"; sourceTree = "<group>"; };
 		69F8CA4C587D2216B2A14D01 /* Pods-ThirstyTraveler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ThirstyTraveler.release.xcconfig"; path = "Pods/Target Support Files/Pods-ThirstyTraveler/Pods-ThirstyTraveler.release.xcconfig"; sourceTree = "<group>"; };
-		A597016E1E1634A700DDA882 /* B_ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = B_ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		A59701701E1634BB00DDA882 /* B_OfficeTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = B_OfficeTimeTableViewCell.swift; sourceTree = "<group>"; };
-		A59701741E16351800DDA882 /* B_BottleBeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = B_BottleBeerTableViewCell.swift; sourceTree = "<group>"; };
-		A59701761E16389D00DDA882 /* B_BrewedBeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = B_BrewedBeerTableViewCell.swift; sourceTree = "<group>"; };
-		A59701781E163B6300DDA882 /* F_ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F_ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		A597017C1E163BD900DDA882 /* F_ProgramTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F_ProgramTableViewCell.swift; sourceTree = "<group>"; };
-		A597017E1E163BE500DDA882 /* F_URLTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F_URLTableViewCell.swift; sourceTree = "<group>"; };
-		A59701801E16419500DDA882 /* F_OfficeTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = F_OfficeTimeTableViewCell.swift; sourceTree = "<group>"; };
 		DA2178061D641882005C2F9D /* Brewery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brewery.swift; sourceTree = "<group>"; };
 		DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoBeenViewController.swift; sourceTree = "<group>"; };
 		DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favobeenTableViewCell.swift; sourceTree = "<group>"; };
@@ -124,16 +98,6 @@
 		DA6BBFD01D3734700049C008 /* ThirstyTravelerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirstyTravelerUITests.swift; sourceTree = "<group>"; };
 		DA6BBFD21D3734700049C008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD7A3A231D65838C0059A1A7 /* Draft.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Draft.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-<<<<<<< HEAD
-		DDE82BEE1DC32915002DBABE /* DraftTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DraftTableViewController.swift; path = ../DraftTableViewController.swift; sourceTree = "<group>"; };
-		DDE82BF01DC3295D002DBABE /* D_OfficeTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_OfficeTimeTableViewCell.swift; sourceTree = "<group>"; };
-		DDE82BF21DC3296E002DBABE /* D_ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ProfileTableViewCell.swift; sourceTree = "<group>"; };
-		DDE82BF41DC3297E002DBABE /* D_DraftBeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_DraftBeerTableViewCell.swift; sourceTree = "<group>"; };
-		DDE82BF61DC3298E002DBABE /* D_BottleBeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_BottleBeerTableViewCell.swift; sourceTree = "<group>"; };
-=======
-=======
->>>>>>> master
 		DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DraftDetailTableViewController.swift; sourceTree = "<group>"; };
 		DDB7744F1DD596730058CE0A /* D_ProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		DDB774511DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_OfficeTimeTableViewCell.swift; sourceTree = "<group>"; };
@@ -141,8 +105,8 @@
 		DDB774551DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = D_BottleBeerTableViewCell.swift; sourceTree = "<group>"; };
 		DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDetailTableViewController.swift; sourceTree = "<group>"; };
 		DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryDetailTableViewController.swift; sourceTree = "<group>"; };
+		DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BreweryDetailTableViewCell.swift; sourceTree = "<group>"; };
 		DDFB00561D6C14950037BF23 /* FactoryDatailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryDatailTableViewCell.swift; sourceTree = "<group>"; };
->>>>>>> master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,33 +180,17 @@
 				3B4D81311D6C8F7500168C19 /* data.json */,
 				DA6BBFB01D37346F0049C008 /* AppDelegate.swift */,
 				DA6BBFB21D37346F0049C008 /* ViewController.swift */,
-				DDE82BEE1DC32915002DBABE /* DraftTableViewController.swift */,
-				DDE82BF01DC3295D002DBABE /* D_OfficeTimeTableViewCell.swift */,
-				DDE82BF21DC3296E002DBABE /* D_ProfileTableViewCell.swift */,
-				DDE82BF41DC3297E002DBABE /* D_DraftBeerTableViewCell.swift */,
-				DDE82BF61DC3298E002DBABE /* D_BottleBeerTableViewCell.swift */,
 				DA6BBFB41D37346F0049C008 /* Main.storyboard */,
-				A597017E1E163BE500DDA882 /* F_URLTableViewCell.swift */,
-				A597017C1E163BD900DDA882 /* F_ProgramTableViewCell.swift */,
-				A59701781E163B6300DDA882 /* F_ProfileTableViewCell.swift */,
 				DDB7744F1DD596730058CE0A /* D_ProfileTableViewCell.swift */,
 				DDB774511DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift */,
 				DDB774531DD596910058CE0A /* D_DraftBeerTableViewCell.swift */,
 				DDB774551DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift */,
 				DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */,
 				3B8A070A1D6D7FEE00FCB98C /* SliderController.swift */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> master
 				DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */,
-				A597016E1E1634A700DDA882 /* B_ProfileTableViewCell.swift */,
-				A59701701E1634BB00DDA882 /* B_OfficeTimeTableViewCell.swift */,
-				A59701741E16351800DDA882 /* B_BottleBeerTableViewCell.swift */,
+				DDFB00541D6C14860037BF23 /* BreweryDetailTableViewCell.swift */,
 				DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */,
 				DDFB00561D6C14950037BF23 /* FactoryDatailTableViewCell.swift */,
->>>>>>> master
 				DA6BBFB71D37346F0049C008 /* Assets.xcassets */,
 				DA6BBFB91D37346F0049C008 /* LaunchScreen.storyboard */,
 				DA6BBFBC1D37346F0049C008 /* Info.plist */,
@@ -256,8 +204,6 @@
 				3B0B9DE51D6CBA3700D84884 /* CreatingMark.swift */,
 				3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */,
 				3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */,
-				A59701761E16389D00DDA882 /* B_BrewedBeerTableViewCell.swift */,
-				A59701801E16419500DDA882 /* F_OfficeTimeTableViewCell.swift */,
 			);
 			path = ThirstyTraveler;
 			sourceTree = "<group>";
@@ -471,68 +417,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A59701791E163B6300DDA882 /* F_ProfileTableViewCell.swift in Sources */,
 				DA354CDF1D66C79E00CC89B3 /* FavoBeenViewController.swift in Sources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-				DDE82BEF1DC32915002DBABE /* DraftTableViewController.swift in Sources */,
-				DDE82BF71DC3298E002DBABE /* D_BottleBeerTableViewCell.swift in Sources */,
-				3BEC83141D62D1B000B60366 /* Factory.swift in Sources */,
-				3B8A070B1D6D7FEE00FCB98C /* SliderController.swift in Sources */,
-=======
-=======
->>>>>>> master
-				A59701711E1634BB00DDA882 /* B_OfficeTimeTableViewCell.swift in Sources */,
 				3BEC83141D62D1B000B60366 /* Factory.swift in Sources */,
 				3B8A070B1D6D7FEE00FCB98C /* SliderController.swift in Sources */,
 				DDFB00511D6C125E0037BF23 /* FactoryDetailTableViewController.swift in Sources */,
-				A59701751E16351800DDA882 /* B_BottleBeerTableViewCell.swift in Sources */,
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 				3BEC83361D64B98600B60366 /* MakingFactoryInstance.swift in Sources */,
-				DDE82BF51DC3297E002DBABE /* D_DraftBeerTableViewCell.swift in Sources */,
 				DA68F96D1D6ADFB4000EF096 /* favobeenTableViewCell.swift in Sources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-				3B0B9DE61D6CBA3700D84884 /* CreatingMark.swift in Sources */,
-				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
-=======
-=======
->>>>>>> master
 				DDB774501DD596730058CE0A /* D_ProfileTableViewCell.swift in Sources */,
 				DDB774541DD596910058CE0A /* D_DraftBeerTableViewCell.swift in Sources */,
 				DDB774521DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift in Sources */,
 				DDFB00571D6C14950037BF23 /* FactoryDatailTableViewCell.swift in Sources */,
 				3B0B9DE61D6CBA3700D84884 /* CreatingMark.swift in Sources */,
 				DA6BBFB31D37346F0049C008 /* ViewController.swift in Sources */,
+				DDFB00551D6C14860037BF23 /* BreweryDetailTableViewCell.swift in Sources */,
 				DDB7744E1DD595520058CE0A /* DraftDetailTableViewController.swift in Sources */,
 				DDB774561DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift in Sources */,
-				A59701771E16389D00DDA882 /* B_BrewedBeerTableViewCell.swift in Sources */,
-				A597017D1E163BD900DDA882 /* F_ProgramTableViewCell.swift in Sources */,
-<<<<<<< HEAD
->>>>>>> master
-=======
->>>>>>> master
 				3BEC83341D64287700B60366 /* ParentClass.swift in Sources */,
+				DDFB004F1D6C12550037BF23 /* BreweryDetailTableViewController.swift in Sources */,
 				DA2178071D641882005C2F9D /* Brewery.swift in Sources */,
-				A597016F1E1634A700DDA882 /* B_ProfileTableViewCell.swift in Sources */,
 				3B60E8C51D6C194A00AE6CF5 /* PopUpViewController.swift in Sources */,
 				DA6BBFB11D37346F0049C008 /* AppDelegate.swift in Sources */,
-				DDE82BF11DC3295D002DBABE /* D_OfficeTimeTableViewCell.swift in Sources */,
 				DD7A3A241D65838C0059A1A7 /* Draft.swift in Sources */,
-<<<<<<< HEAD
-<<<<<<< HEAD
-				DDE82BF31DC3296E002DBABE /* D_ProfileTableViewCell.swift in Sources */,
-=======
-				A59701811E16419500DDA882 /* F_OfficeTimeTableViewCell.swift in Sources */,
-				A597017F1E163BE500DDA882 /* F_URLTableViewCell.swift in Sources */,
->>>>>>> master
-=======
-				A59701811E16419500DDA882 /* F_OfficeTimeTableViewCell.swift in Sources */,
-				A597017F1E163BE500DDA882 /* F_URLTableViewCell.swift in Sources */,
->>>>>>> master
 				3B60E8C31D6C190600AE6CF5 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

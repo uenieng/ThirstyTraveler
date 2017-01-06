@@ -12,6 +12,9 @@ import UIKit
 class DetailViewController: UIViewController {
     
     var currentPlace:BeerPlace? = nil
+    var factoryController = FactoryDetailTableViewController()
+    var breweryController = BreweryDetailTableViewController()
+    var draftController = DraftDetailTableViewController()
 
     
     override func viewDidLoad() {
@@ -46,14 +49,23 @@ class DetailViewController: UIViewController {
                 
             case 0:
                 embededVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("FactoryDetail") as! FactoryDetailTableViewController
+                
+                    factoryController.viewDidLoad()
+
                 break
                 
             case 1:
                 embededVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("BreweryDetail") as! BreweryDetailTableViewController
+                    breweryController.viewDidLoad()
                 break
+                
                 
             case 2:
                 embededVC = UIStoryboard(name: "Main", bundle:nil).instantiateViewControllerWithIdentifier("DraftDetail") as! DraftDetailTableViewController
+                    draftController.viewDidLoad()
+                    draftController.currentDraft = currentPlace as? DraftBeer
+
+                
                 break
                 
             default :
@@ -66,6 +78,8 @@ class DetailViewController: UIViewController {
             self.view.addSubview(embededVC.view)
             embededVC.didMoveToParentViewController(self)
             
+            
+            
 //            loadFirstPhotoForPlace(PlaceIdOfMark, imageView: popOverVC.PopUpImage)
 //            popOverVC.PopUpTitle.text = getNameById(PlaceIdOfMark)
 //            print("result : \(popOverVC.PopUpTitle.text)")
@@ -74,6 +88,13 @@ class DetailViewController: UIViewController {
             
             
         } //embededdetail닫음
+//        
+//        func loadFactoryDetailTableView (place:BeerPlace){
+//            place.officeTime.0.day
+//            
+//            
+//        }
+        
         embededDetail(currentPlace!)
         
         

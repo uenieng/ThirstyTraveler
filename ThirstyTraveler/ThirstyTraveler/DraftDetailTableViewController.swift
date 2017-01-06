@@ -11,7 +11,7 @@ import UIKit
 class DraftDetailTableViewController: UITableViewController {
     
     
-    var myData:[DraftBeer] = []
+//    var myData:[DraftBeer] = []
     var currentDraft:DraftBeer? = nil
 
     override func viewDidLoad() {
@@ -46,16 +46,16 @@ class DraftDetailTableViewController: UITableViewController {
         
         var rowCount:Int = 0
         
+//        if section == 0{
+//            rowCount = 1
+//        }
         if section == 0{
-            rowCount = 1
-        }
-        if section == 1{
             rowCount = currentDraft!.officeTime.count
         }
-        if section == 2{
+        if section == 1{
             rowCount = currentDraft!.draftPriceList.count
         }
-        if section == 3{
+        if section == 2{
             rowCount = currentDraft!.bottledDPriceList.count
         }
         
@@ -67,13 +67,13 @@ class DraftDetailTableViewController: UITableViewController {
         var identifier:String
         
         switch indexPath.section{
+//        case 0:
+//            identifier = "D_ProfileTableViewCell"
         case 0:
-            identifier = "D_ProfileTableViewCell"
-        case 1:
             identifier = "D_OfficeTimeTableViewCell"
-        case 2:
+        case 1:
             identifier = "D_DraftBeerTableViewCell"
-        case 3:
+        case 2:
             identifier = "D_BottleBeerTableViewCell"
             
         default : identifier = ""
@@ -110,25 +110,25 @@ class DraftDetailTableViewController: UITableViewController {
             
             
             switch indexPath.section{
+//            case 0:
+//                let cell0 = cell as! D_ProfileTableViewCell
+//                cell0.DraftNameLabel.text = cleanDraft.name
+//                cell0.DraftRatingsLabel.text = String(cleanDraft.ratings)
+//                cell0.DraftAddressLabel.text = cleanDraft.address
+//                cell0.DraftFavoritesLabel.enabled = cleanDraft.wishlist
+//                cell0.DraftVisitedLabel.enabled = cleanDraft.haveBeen
+//                //cell0.DraftImageLabel
             case 0:
-                let cell0 = cell as! D_ProfileTableViewCell
-                cell0.DraftNameLabel.text = cleanDraft.name
-                cell0.DraftRatingsLabel.text = String(cleanDraft.ratings)
-                cell0.DraftAddressLabel.text = cleanDraft.address
-                cell0.DraftFavoritesLabel.enabled = cleanDraft.wishlist
-                cell0.DraftVisitedLabel.enabled = cleanDraft.haveBeen
-                //cell0.DraftImageLabel
-            case 1:
                 let cell1 = cell as! D_OfficeTimeTableViewCell
                 cell1.DraftDayLabel.text = openTime.day
                 cell1.DraftTimeLabel.text = vacay(openTime)
-            case 2:
+            case 1:
                 let cell2 = cell as! D_DraftBeerTableViewCell
                 let(dBname) = dBNameList[indexPath.row]
                 let(dBprice) = dBPriceList[indexPath.row]
                 cell2.DraftDBNameLabel.text = dBname
                 cell2.DraftDBPriceLabel.text = "\(dBprice)원"
-            case 3:
+            case 2:
                 let cell3 = cell as! D_BottleBeerTableViewCell
                 let(bBname) = bBNameList[indexPath.row]
                 let(bBprice) = bBPriceList[indexPath.row]
@@ -145,13 +145,13 @@ class DraftDetailTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
         var returnValue:String = ""
-        if (section == 1){
+        if (section == 0){
             returnValue = "영업시간"
         }
-        if (section == 2){
+        if (section == 1){
             returnValue = "Draft Beer"
         }
-        if (section == 3){
+        if (section == 2){
             returnValue = "Bottle Beer"
         }
         

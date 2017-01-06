@@ -41,6 +41,10 @@ class Brewery:BeerPlace{
             self.brewedPricelist = brewedPricelist
             self.bottledBPricelist = bottledBPricelist
         }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     }
 //    

@@ -30,6 +30,10 @@ class DraftBeer : BeerPlace{
         self.type = type
         self.location = location
     }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
  //   let draft1 = DraftBeer(name:"버드나무",type:"Draft",location:(123,456),officeTime:[("월~목",1500,2400),("금,토",1700,0100),("일",0000,0000)],officeNumber : 025478546,draftPriceList:["IPA":7000,"Duh":8000,"Whaeva":7500],bottledPriceList:["버드와이저":3500,"Cass":3300,"Hite":4000])

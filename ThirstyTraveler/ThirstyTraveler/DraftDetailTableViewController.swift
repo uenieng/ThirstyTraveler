@@ -1,28 +1,27 @@
 //
 //  DraftDetailTableViewController.swift
-//  CustomizedTableTest
+//  ThirstyTraveler
 //
-//  Created by cscoi017 on 2016. 8. 29..
-//  Copyright © 2016년 Sun. All rights reserved.
+//  Created by cscoi017 on 2016. 11. 11..
+//  Copyright © 2016년 moonyoung. All rights reserved.
 //
 
 import UIKit
 
 class DraftDetailTableViewController: UITableViewController {
     
+    
     var myData:[DraftBeer] = []
-    var  currentDraft:DraftBeer? = nil
+    var currentDraft:DraftBeer? = nil
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         myData += defaultDraft()
         
-        currentDraft = myData[0]
+        currentDraft = myData[0] // to be modified** get info from previous tap
         
         tableView.rowHeight = UITableViewAutomaticDimension
-        //tableView.estimatedRowHeight = 160
-        
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -44,7 +43,6 @@ class DraftDetailTableViewController: UITableViewController {
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         
         var rowCount:Int = 0
         
@@ -60,33 +58,31 @@ class DraftDetailTableViewController: UITableViewController {
         if section == 3{
             rowCount = currentDraft!.bottledDPriceList.count
         }
+        
         return rowCount
     }
 
-    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         var identifier:String
         
         switch indexPath.section{
-            case 0:
-                identifier = "ProfileTableViewCell"
+        case 0:
+            identifier = "D_ProfileTableViewCell"
         case 1:
-            identifier = "OfficeTimeTableViewCell"
+            identifier = "D_OfficeTimeTableViewCell"
         case 2:
-            identifier = "DraftBeerTableViewCell"
+            identifier = "D_DraftBeerTableViewCell"
         case 3:
-            identifier = "BottleBeerTableViewCell"
-
+            identifier = "D_BottleBeerTableViewCell"
+            
         default : identifier = ""
+            
         }
         
-        
-        
         let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath)
-
-        // Configure the cell...
-
+        
+        //configure the cell
         
         if let cleanDraft = currentDraft{
             let openTime:OpenTime = cleanDraft.officeTime[indexPath.row]
@@ -96,11 +92,10 @@ class DraftDetailTableViewController: UITableViewController {
                 
                 if openTime.open == openTime.close
                 {isVacay = "휴무"}
-                else {isVacay = "\(openTime.open) ~ \(openTime.close)"}
+                else{isVacay = "\(openTime.open)~\(openTime.close)"}
                 
                 return isVacay
             }
-            
             var dBNameList:[String] = []
             dBNameList += cleanDraft.draftPriceList.keys
             
@@ -114,69 +109,38 @@ class DraftDetailTableViewController: UITableViewController {
             bBPriceList += cleanDraft.bottledDPriceList.values
             
             
-            
-            
-            
             switch indexPath.section{
             case 0:
-                let cell0 = cell as! ProfileTableViewCell
+                let cell0 = cell as! D_ProfileTableViewCell
                 cell0.DraftNameLabel.text = cleanDraft.name
-                cell0.DraftRatingLabel.text = String(cleanDraft.ratings)
-                cell0.LocationLabel.text = cleanDraft.address
-                cell0.FavoritesLabel.enabled = cleanDraft.wishlist
-                cell0.VisitedLabel.enabled = cleanDraft.haveBeen
+                cell0.DraftRatingsLabel.text = String(cleanDraft.ratings)
+                cell0.DraftAddressLabel.text = cleanDraft.address
+                cell0.DraftFavoritesLabel.enabled = cleanDraft.wishlist
+                cell0.DraftVisitedLabel.enabled = cleanDraft.haveBeen
+                //cell0.DraftImageLabel
             case 1:
-                
-                let cell1 = cell as! OfficeTimeTableViewCell
-                
-
-                cell1.DayLabel.text = openTime.day
-                cell1.TimeLabel.text = vacay(openTime)
-                /*if openTime.open == openTime.close{
-                    "휴무"
-                }
-                else {"\(openTime.open) ~ \(openTime.close)"}*/
+                let cell1 = cell as! D_OfficeTimeTableViewCell
+                cell1.DraftDayLabel.text = openTime.day
+                cell1.DraftTimeLabel.text = vacay(openTime)
             case 2:
-                let cell2 = cell as! DraftBeerTableViewCell
-<<<<<<< HEAD
-=======
-
->>>>>>> master
-                let(dBname) = dBNameList [indexPath.row]
-                cell2.DBNameLabel.text = dBname
-                let(dBprice) = dBPriceList [indexPath.row]
-                cell2.DBPriceLabel.text = "\(dBprice) 원"
-<<<<<<< HEAD
-                /*cell2.DBNameLabel.text = String(beerName(dBNameList))*/
-                /*cell2.DBNameLabel.text = String(for number in 0...dBNameList.count{
-                    "\(dBNameList[number])"})*/
-                    //String(cleanDraft.draftPriceList.keys)
-                /*
-                for number in 0...3{
-                "\(dBNameList[number])"
-                }
-                */
-                
-
-                cell2.DBPriceLabel.text = "\(dBPriceList[0]) 원"
-
-                    //String(cleanDraft.draftPriceList.values)
-=======
->>>>>>> master
+                let cell2 = cell as! D_DraftBeerTableViewCell
+                let(dBname) = dBNameList[indexPath.row]
+                let(dBprice) = dBPriceList[indexPath.row]
+                cell2.DraftDBNameLabel.text = dBname
+                cell2.DraftDBPriceLabel.text = "\(dBprice)원"
             case 3:
-                let cell3 = cell as! BottleBeerTableViewCell
-                let(bBname) = bBNameList [indexPath.row]
-                let(bBprice) = bBPriceList [indexPath.row]
-                cell3.BBNameLabel.text = bBname
-                cell3.BBPriceLabel.text = "\(bBprice) 원"
+                let cell3 = cell as! D_BottleBeerTableViewCell
+                let(bBname) = bBNameList[indexPath.row]
+                let(bBprice) = bBPriceList[indexPath.row]
+                cell3.DraftBBNameLabel.text = bBname
+                cell3.DraftBBPriceLabel.text = "\(bBprice)원"
             default: break
-            
             }
+            
         }
-
         return cell
     }
-    
+
     
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         
@@ -193,13 +157,11 @@ class DraftDetailTableViewController: UITableViewController {
         
         return returnValue
         
-            }
-
+    }
     
-
     /*
     // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
@@ -207,11 +169,11 @@ class DraftDetailTableViewController: UITableViewController {
 
     /*
     // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
             // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
+            tableView.deleteRows(at: [indexPath], with: .fade)
+        } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
@@ -219,14 +181,14 @@ class DraftDetailTableViewController: UITableViewController {
 
     /*
     // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
+    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
     */
 
     /*
     // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
+    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the item to be re-orderable.
         return true
     }
@@ -236,7 +198,7 @@ class DraftDetailTableViewController: UITableViewController {
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }

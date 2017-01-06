@@ -17,9 +17,9 @@ class DraftDetailTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        myData += defaultDraft()
+       myData += defaultDraft()
         
-        currentDraft = myData[0] // to be modified** get info from previous tap
+       currentDraft = myData[0] // to be modified** get info from previous tap
         
         tableView.rowHeight = UITableViewAutomaticDimension
         

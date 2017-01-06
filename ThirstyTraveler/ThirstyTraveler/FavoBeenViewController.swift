@@ -206,6 +206,7 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         //목적지 뷰 컨트롤러 확보
+        
         let selectedIndex:NSIndexPath = self.FavoEmbed.indexPathForSelectedRow!
         let selected:BeerPlace = self.itemsOnSegView![selectedIndex.row]
         
@@ -221,29 +222,30 @@ class FavoBeenViewController: UIViewController , UITableViewDataSource, UITableV
         
         
         
-        
-//        switch(selectedPlaceType(selected)){
-//            
-//        case 0: //factory로 수정 필요
-//                let destVC = segue.destinationViewController as! DraftDetailTableViewController
-//                destVC.currentDraft = selected as! DraftBeer
-//                break
-//            
-//        case 1: //brewery로 수정 필요
-//                let destVC = segue.destinationViewController as! DraftDetailTableViewController
-//                destVC.currentDraft = selected as! DraftBeer
-//                break
-//            
-//        case 2:
-//            let destVC = segue.destinationViewController as! DraftDetailTableViewController
-//                destVC.currentDraft = selected as! DraftBeer
-//                break
-//            
-//        default :
-//            break
-//        }//switch문 닫음
+        /*
+        switch(selectedPlaceType(selected)){
+            
+        case 0: //factory로 수정 필요
+                let destVC = segue.destinationViewController as! FactoryDetailTableViewController
+                destVC.currentFactory = selected as! Factory
+                
+                break
+            
+        case 1: //brewery로 수정 필요
+                let destVC = segue.destinationViewController as! BreweryDetailTableViewController
+                destVC.currentBrewery = selected as! Brewery
+                break
+
+        case 2:
+            let destVC = segue.destinationViewController as! DraftDetailTableViewController
+                destVC.currentDraft = selected as! DraftBeer
+                break
+            
+        default :
+            break
+        }//switch문 닫음
     
-    
+    */
     
     
     } //prepareforsegue 닫음

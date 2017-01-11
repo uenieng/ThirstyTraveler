@@ -146,6 +146,75 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B0331B91E261E940013DD06 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				3B0B9DE51D6CBA3700D84884 /* CreatingMark.swift */,
+				3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */,
+				3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */,
+			);
+			name = MapView;
+			sourceTree = "<group>";
+		};
+		3B0331BA1E261F210013DD06 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				3B0331BE1E2620A30013DD06 /* Controller */,
+				A5226C561E1F774A009EC9F7 /* F_URLTableViewCell.swift */,
+				A5226C541E1F7741009EC9F7 /* F_ProgramTableViewCell.swift */,
+				A5226C521E1F7738009EC9F7 /* F_OfficeTimeTableViewCell.swift */,
+				A5226C501E1F772C009EC9F7 /* F_ProfileTableViewCell.swift */,
+				A5226C4E1E1F7722009EC9F7 /* B_BottleBeerTableViewCell.swift */,
+				A5226C4C1E1F7713009EC9F7 /* B_BrewedBeerTableViewCell.swift */,
+				A5226C4A1E1F7700009EC9F7 /* B_OfficeTimeTableViewCell.swift */,
+				A5DEB9701E1F76A300C30058 /* B_ProfileTableViewCell.swift */,
+				DDB7744F1DD596730058CE0A /* D_ProfileTableViewCell.swift */,
+				DDB774511DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift */,
+				DDB774531DD596910058CE0A /* D_DraftBeerTableViewCell.swift */,
+				DDB774551DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift */,
+			);
+			name = DetailView;
+			sourceTree = "<group>";
+		};
+		3B0331BB1E261F540013DD06 /* FavoBeenView */ = {
+			isa = PBXGroup;
+			children = (
+				DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */,
+				DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */,
+			);
+			name = FavoBeenView;
+			sourceTree = "<group>";
+		};
+		3B0331BC1E261F770013DD06 /* OptionView */ = {
+			isa = PBXGroup;
+			children = (
+				3B8A070A1D6D7FEE00FCB98C /* SliderController.swift */,
+			);
+			name = OptionView;
+			sourceTree = "<group>";
+		};
+		3B0331BD1E261F9E0013DD06 /* ObjectClass */ = {
+			isa = PBXGroup;
+			children = (
+				3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */,
+				3BEC83331D64287700B60366 /* ParentClass.swift */,
+				DD7A3A231D65838C0059A1A7 /* Draft.swift */,
+				DA2178061D641882005C2F9D /* Brewery.swift */,
+				3BEC83131D62D1B000B60366 /* Factory.swift */,
+			);
+			name = ObjectClass;
+			sourceTree = "<group>";
+		};
+		3B0331BE1E2620A30013DD06 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */,
+				DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */,
+				DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		635F6F90EF93ACE954D54493 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,39 +258,18 @@
 		DA6BBFAF1D37346F0049C008 /* ThirstyTraveler */ = {
 			isa = PBXGroup;
 			children = (
+				3B0331BD1E261F9E0013DD06 /* ObjectClass */,
+				3B0331BC1E261F770013DD06 /* OptionView */,
+				3B0331BB1E261F540013DD06 /* FavoBeenView */,
+				3B0331BA1E261F210013DD06 /* DetailView */,
+				3B0331B91E261E940013DD06 /* MapView */,
 				3B4D81311D6C8F7500168C19 /* data.json */,
 				DA6BBFB01D37346F0049C008 /* AppDelegate.swift */,
 				DA6BBFB21D37346F0049C008 /* ViewController.swift */,
 				DA6BBFB41D37346F0049C008 /* Main.storyboard */,
-				A5226C561E1F774A009EC9F7 /* F_URLTableViewCell.swift */,
-				A5226C541E1F7741009EC9F7 /* F_ProgramTableViewCell.swift */,
-				A5226C521E1F7738009EC9F7 /* F_OfficeTimeTableViewCell.swift */,
-				A5226C501E1F772C009EC9F7 /* F_ProfileTableViewCell.swift */,
-				A5226C4E1E1F7722009EC9F7 /* B_BottleBeerTableViewCell.swift */,
-				A5226C4C1E1F7713009EC9F7 /* B_BrewedBeerTableViewCell.swift */,
-				A5226C4A1E1F7700009EC9F7 /* B_OfficeTimeTableViewCell.swift */,
-				A5DEB9701E1F76A300C30058 /* B_ProfileTableViewCell.swift */,
-				DDB7744F1DD596730058CE0A /* D_ProfileTableViewCell.swift */,
-				DDB774511DD5967F0058CE0A /* D_OfficeTimeTableViewCell.swift */,
-				DDB774531DD596910058CE0A /* D_DraftBeerTableViewCell.swift */,
-				DDB774551DD5969A0058CE0A /* D_BottleBeerTableViewCell.swift */,
-				DDB7744D1DD595520058CE0A /* DraftDetailTableViewController.swift */,
-				DDFB004E1D6C12550037BF23 /* BreweryDetailTableViewController.swift */,
-				DDFB00501D6C125E0037BF23 /* FactoryDetailTableViewController.swift */,
-				3B8A070A1D6D7FEE00FCB98C /* SliderController.swift */,
 				DA6BBFB71D37346F0049C008 /* Assets.xcassets */,
 				DA6BBFB91D37346F0049C008 /* LaunchScreen.storyboard */,
 				DA6BBFBC1D37346F0049C008 /* Info.plist */,
-				DA354CDE1D66C79E00CC89B3 /* FavoBeenViewController.swift */,
-				DA68F96C1D6ADFB4000EF096 /* favobeenTableViewCell.swift */,
-				3BEC83331D64287700B60366 /* ParentClass.swift */,
-				DD7A3A231D65838C0059A1A7 /* Draft.swift */,
-				DA2178061D641882005C2F9D /* Brewery.swift */,
-				3BEC83131D62D1B000B60366 /* Factory.swift */,
-				3BEC83351D64B98600B60366 /* MakingFactoryInstance.swift */,
-				3B0B9DE51D6CBA3700D84884 /* CreatingMark.swift */,
-				3B60E8C21D6C190600AE6CF5 /* MapViewController.swift */,
-				3B60E8C41D6C194A00AE6CF5 /* PopUpViewController.swift */,
 			);
 			path = ThirstyTraveler;
 			sourceTree = "<group>";

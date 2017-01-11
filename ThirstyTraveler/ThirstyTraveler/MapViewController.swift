@@ -2,7 +2,13 @@ import UIKit
 import GoogleMaps
 import GoogleMapsCore
 import GooglePlaces
+
+/*
+ *
+ */
 let Slider = SliderController()
+
+
 class MapViewController: UIViewController, GMSMapViewDelegate {
     var sliderValue: Double = 0
     var masterMakrer: [AnyObject] = []
